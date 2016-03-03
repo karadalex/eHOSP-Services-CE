@@ -3,6 +3,19 @@ Virtual Machine configuration:
 
 Docker configuration:
 =====================
+Run the following commands, here `C:\Users\User1\Desktop\GOOGLE SCIENCE FAIR 2016\MAIN CODE` is the path on the host
+where the project, the code and the Dockerfile live:
+```
+$ cd "C:\Users\User1\Desktop\GOOGLE SCIENCE FAIR 2016\MAIN CODE"
+$ docker build -t nnginx-container-name .
+$ docker run -p 8080:80 nnginx-container-name
+```
+
+or alternatively run this commands to run server files manually:
+```
+$ cd "C:\Users\User1\Desktop\GOOGLE SCIENCE FAIR 2016\MAIN CODE"
+$ docker run -d -p 8080:80 --name nginx-bitnami-test2 bitnami/nginx
+```
 
 
 Vagrant configuration:
