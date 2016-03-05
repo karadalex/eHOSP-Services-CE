@@ -7,8 +7,8 @@ Run the following commands, here `C:\Users\User1\Desktop\GOOGLE SCIENCE FAIR 201
 where the project, the code and the Dockerfile live:
 ```
 $ cd "C:\Users\User1\Desktop\GOOGLE SCIENCE FAIR 2016\MAIN CODE"
-$ docker build -t nnginx-container-name .
-$ docker run -p 8080:80 nnginx-container-name
+$ docker build -t nginx-container-name .
+$ docker run -p 8080:80 nginx-container-name
 ```
 
 or alternatively run this commands to run server files manually:
