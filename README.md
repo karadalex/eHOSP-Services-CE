@@ -1,5 +1,6 @@
-# Google Science Fair 2016 Project - eHospital:
+# eHOSP (eHospital):
 [![Build Status](https://travis-ci.com/karadalex/GSF2016_MainCode.svg?token=FumMyzspBbeAxFNpcgVB&branch=master)](https://travis-ci.com/karadalex/GSF2016_MainCode)
+##### A Google Science Fair 2016 Project by Alex Karadimos
 
 Virtual Machine configuration:
 ==============================
