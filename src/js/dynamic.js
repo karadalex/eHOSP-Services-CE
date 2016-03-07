@@ -1,4 +1,4 @@
-function getWidth() {
+/*function getWidth() {
 	var width = window.innerWidth;
 	return width;
 }
@@ -16,3 +16,4 @@ var padding_space = map_range(getWidth(), 0, 1366, 3, 80);
 for (element in document.getElementsByClassName('menu')) {
 	element.style.padding = "5px 80px";
 }
+*/
