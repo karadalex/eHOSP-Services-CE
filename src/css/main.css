@@ -1,5 +1,27 @@
 body {
 	background-color: #bgbgbg;
-	margin: 0 auto;
-	padding: 10% 10%;
+	text-align: center;
+}
+
+button.services {
+    background-color: #2bb673;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 15px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 50%;
+
+}
+
+button.services:hover {
+	color: #fff;
+	background: #8ad5e4;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
