@@ -1,11 +1,8 @@
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
 html, body {
 	height: 100%;
+	background-color: #ebebeb;
 }
+
 
 *, h1 {
 	font-family: 'Source Sans Pro'
@@ -17,11 +14,13 @@ p {
 
 a:hover {
 	color: #fff;
-	background: #0094b4;
+	background: #2bb673;
 }
 
 header {
-	background: #00abd0;
+	margin-top: 1cm;
+	background: #cccccc;
+	max-height: 4em;
 }
 
 header:after {
@@ -43,16 +42,28 @@ header ul li {
 	float: left;
 }
 
+header ul li ul li {
+	display: inline;
+	float: left;
+}
+
+header ul li img {
+	max-width: 135px;
+	max-height: 106px;
+	margin-right: 10em;
+}
+
 header ul li a {
-	color: #fff;
-	padding: 20px 30px;
+	color: #2bb673;
+	padding: 5px 50px;
+	font-size: 2em;
 	display: block;
 }
 
 h1 {
-	margin-top: 70px;
+	margin-top: 100px;
 	font-size: 4em;
-	color: #00abd0;
+	color: #2bb673;
 }
 
 .selected {
