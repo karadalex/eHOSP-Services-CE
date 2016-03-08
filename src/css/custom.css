@@ -72,12 +72,105 @@ h1 {
 }
 
 @media only screen and (max-width: 64.063em) {
+	
+	header ul li a {
+		padding: 5px 20px;
+		font-size: 1.5em;
+	}
 
+	h1 {
+		font-size: 3em;
+	}
+
+	header {
+		max-height: 3em;
+	}
+
+	header ul li img {
+		max-width: 120px;
+		max-height: 100px;
+		margin-right: 2em;
+	}
+
+	.row {
+		width: 95%;
+	}
 
 }
 
 
 @media only screen and (max-width: 40.063em) {
 
+	header ul li ul {
+		display:none;
+	}
+
+	#toggleMenu {
+		display: block;
+		margin: 30px;
+		float: right;
+	}
+
+	header ul li img {
+		display: inline-block;
+		background: #ebebeb;
+		max-width: 145px;
+		max-height: 116px;
+		margin-left: 3em;
+		margin-top: 3em;
+		float: left;
+	}
+
+	header {
+		background: none;
+	}
+
+	.row {
+		width: 90%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		margin-top: 5em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	a:hover {
+		background: none;
+		box-shadow: none;
+	}
+
+	#menuOut {
+		display: block;
+		cursor: pointer;
+		margin: 30px 0 40px 30px;
+		background: #00abd0;
+	}
+
+	header ul li ul {
+		background: #00abd0;
+		height: 100%;
+		position: absolute;
+		top: -30px;
+		right: -20px;
+	}
+
+	header ul li ul li {
+		display: block !important;
+		clear: both;
+		background: #00a1c4;
+		width: 100%;
+	}
+
+	header ul li a {
+		padding: 10px 38px;
+	}
+
+	header ul li a:hover {
+		background: #0094b4;
+	}
 
 }
