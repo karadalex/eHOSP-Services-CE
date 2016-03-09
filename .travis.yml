@@ -1,3 +1,8 @@
+# -----------------------------------------------------------------------------
+# Build test for PHP
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
+
 # language: php
 # php:
 #   - '5.4'
@@ -6,3 +11,9 @@
 #   - '7.0'
 #   - hhvm
 #   - nightly
+
+
+# -----------------------------------------------------------------------------
+# Build test for JAVASCRIPT
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
