@@ -6,14 +6,17 @@ nginxserver:
   ports:
     - 8080:80
 
+appdb:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: rootpsswd
+
 phpPhpmyadmin:
   image: phpmyadmin/phpmyadmin
   links:
     - appdb:mysql
   ports:
-    - 8081:80
-
-appdb:
-  image: mariadb
+    - 8181:80
   environment:
+    MYSQL_USERNAME: root
     MYSQL_ROOT_PASSWORD: rootpsswd
