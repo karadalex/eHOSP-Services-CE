@@ -68,11 +68,11 @@ h1 {
 }
 
 .selected {
-	background-color: #009aba;
+	background-color: rgba(43, 181, 114, 0.72);
 }
 
 @media only screen and (max-width: 64.063em) {
-	
+
 	header ul li a {
 		padding: 5px 20px;
 		font-size: 1.5em;
@@ -117,7 +117,7 @@ h1 {
 		max-width: 145px;
 		max-height: 116px;
 		margin-left: 3em;
-		margin-top: 3em;
+		/*margin-top: 3em;*/
 		float: left;
 	}
 
@@ -126,7 +126,7 @@ h1 {
 	}
 
 	.row {
-		width: 90%;
+		width: 80%;
 	}
 
 	h1 {
@@ -147,30 +147,36 @@ h1 {
 		display: block;
 		cursor: pointer;
 		margin: 30px 0 40px 30px;
-		background: #00abd0;
+		background-color: #2bb673;
 	}
 
 	header ul li ul {
-		background: #00abd0;
+		background: #2bb673;
+        display: block;
 		height: 100%;
 		position: absolute;
 		top: -30px;
 		right: -20px;
 	}
 
-	header ul li ul li {
+	header li#menuOut {
 		display: block !important;
 		clear: both;
-		background: #00a1c4;
-		width: 100%;
+		background: none;
+		width: 80%;
 	}
 
-	header ul li a {
+    header ul li ul li {
+
+    }
+
+	header ul li ul li a {
+        color: #fff;
 		padding: 10px 38px;
 	}
 
 	header ul li a:hover {
-		background: #0094b4;
+		background: #076b3c;
 	}
 
 }
