@@ -17,3 +17,15 @@
 # Build test for JAVASCRIPT
 # (uncomment the following and comment the lines which correspond to other languages).
 # ------------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
+# Build test for DOCKER
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
+# Build test for DOCKER-COMPOSE
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
