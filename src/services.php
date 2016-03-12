@@ -27,40 +27,37 @@
 	        <h1>
 	        	eHOSP Services
 	        </h1>
-	        <table style="width: 100%">
-			  <tr>
-			    <td>
-			    	<a href="services/medical-diagnosis">
+
+	        <ul>
+	        	<li>
+	        		<a href="services/medical-diagnosis">
 						<button type="button" class="services">
 							Medical diagnosis & Diseases Database
 						</button>
 					</a>
-			    </td>
-			    <td>
-			    	<a href="services/patient-med-profile">
+	        	</li>
+	        	<li>
+	        		<a href="services/patient-med-profile">
 						<button type="button" class="services">
 							Patient Medical Profile
 						</button>
 					</a>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    	<a href="services/surgery-printing">
+	        	</li>
+	        	<li>
+	        		<a href="services/surgery-printing">
 						<button type="button" class="services">
 							Remote Surgery & Remote 3D Bioprinting tool
 						</button>
 					</a>
-			    </td>
-			    <td>
-			    	<a href="services/research-platform">
+	        	</li>
+	        	<li>
+	        		<a href="services/research-platform">
 						<button type="button" class="services">
 							Research Platform
 						</button>
 					</a>
-			    </td>
-			  </tr>
-			</table>
+	        	</li>
+	        </ul>
       	</div>
 	</div>
 
