@@ -27,7 +27,7 @@ input[type="text"] {
   border-radius: none;
 }
 
-input[type="password"] {
+input[type="password"], input[type="email"] {
   display: block;
   margin: 0;
   width: 100%;
@@ -98,6 +98,21 @@ ul.input-list li {
   transition: box-shadow 0.3s, border 0.3s;
 }
 .style-1 input[type="password"]:focus, .style-1 input[type="password"].focus {
+  border: solid 1px #707070;
+  -webkit-box-shadow: 0 0 5px 1px #969696;
+  -moz-box-shadow: 0 0 5px 1px #969696;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.style-1 input[type="email"] {
+  padding: 10px;
+  border: solid 1px gainsboro;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  -moz-transition: box-shadow 0.3s, border 0.3s;
+  -o-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="email"]:focus, .style-1 input[type="email"].focus {
   border: solid 1px #707070;
   -webkit-box-shadow: 0 0 5px 1px #969696;
   -moz-box-shadow: 0 0 5px 1px #969696;

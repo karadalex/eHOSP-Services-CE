@@ -25,24 +25,35 @@
 		<script src="js/w3-include-HTML.js"></script>
 
 		<div>
-	        <h1> Sign in or Create an account</h1>
+	        <h1> Create an account</h1>
 
 	        <section>
 				<ul class="input-list style-1 clearfix">
 					<li>
-						<input type="text" placeholder="Username">
+						<input type="text" placeholder="First Name">
+					</li>
+					<li>
+						<input type="text" placeholder="Last Name">
+					</li>
+					<li>
+						<input type="email" placeholder="Email">
+					</li>
+					<li>
+						<input type="text" placeholder="Userame">
 					</li>
 					<li>
 						<input type="password" placeholder="Password">
 					</li>
+                    <li>
+						<input type="password" placeholder="Retype password">
+					</li>
 				</ul>
 				<a href="">
 					<button type="button" class="services">
-						Sign in
+						Register
 					</button>
 				</a>
 			</section>
-			<p>Don't you have an account? Click <a href="register.php"> here</a> to register<p>
 
       	</div>
 	</div>
