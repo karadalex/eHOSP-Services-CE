@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<title>eHOSP - Hospital on the cloud</title>
+	<title>eHOSP - About</title>
 
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/sign.css">
 
 	<link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/custom.css" />
@@ -24,22 +21,12 @@
 		<div w3-include-HTML="includes/html/header.html"></div>
 		<script src="js/w3-include-HTML.js"></script>
 
-		<div>
-	        <h1> Sign in or Create an account</h1>
-
-	        <section>
-				<form action="sign.php">
-					<ul class="input-list style-1 clearfix">
-						<li>
-							<input type="text" placeholder="Username">
-						</li>
-						<li>
-							<input type="password" placeholder="Password">
-						</li>
-					</ul>
-				</form>
-			</section>
-
+		<div class="row">
+	        <h1>About eHOSP</h1>
+	        <p>
+				Welcome to eHOSP, the hospital on the cloud,
+				a platform for e-health and e-medicine!
+			</p>
       	</div>
 	</div>
 

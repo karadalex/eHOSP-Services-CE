@@ -152,7 +152,7 @@ h1 {
 
 	header ul li ul {
 		background: #2bb673;
-        display: block;
+    display: block;
 		height: 100%;
 		position: absolute;
 		top: -30px;
@@ -166,9 +166,6 @@ h1 {
 		width: 80%;
 	}
 
-    header ul li ul li {
-
-    }
 
 	header ul li ul li a {
         color: #fff;

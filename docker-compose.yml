@@ -10,6 +10,8 @@ appdb:
   image: mariadb
   environment:
     MYSQL_ROOT_PASSWORD: rootpsswd
+  ports:
+    - 3306:3306
 
 phpPhpmyadmin:
   image: phpmyadmin/phpmyadmin
