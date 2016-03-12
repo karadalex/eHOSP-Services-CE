@@ -30,14 +30,14 @@
 	        <table style="width: 100%">
 			  <tr>
 			    <td>
-			    	<a href="medical-diagnosis/index.php">
+			    	<a href="services/medical-diagnosis">
 						<button type="button" class="services">
 							Medical diagnosis & Diseases Database
 						</button>
 					</a>
 			    </td>
 			    <td>
-			    	<a href="patient-med-profile">
+			    	<a href="services/patient-med-profile">
 						<button type="button" class="services">
 							Patient Medical Profile
 						</button>
@@ -46,14 +46,14 @@
 			  </tr>
 			  <tr>
 			    <td>
-			    	<a href="surgery-printing">
+			    	<a href="services/surgery-printing">
 						<button type="button" class="services">
 							Remote Surgery & Remote 3D Bioprinting tool
 						</button>
 					</a>
 			    </td>
 			    <td>
-			    	<a href="research-platform">
+			    	<a href="services/research-platform">
 						<button type="button" class="services">
 							Research Platform
 						</button>
