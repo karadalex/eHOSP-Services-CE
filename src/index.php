@@ -33,13 +33,13 @@
 				Click below to get started
 			</p>
 			<p>
-				<a href="sign.html">
+				<a href="sign.php">
 					<button type="button" class="services">
 						Get Started
 					</button>
 				</a>
 			</p>
-      	</div> 
+    </div>
 	</div>
 
 	<script src="js/foundation.min.js"></script>

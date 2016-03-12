@@ -30,38 +30,38 @@
 	        <table style="width: 100%">
 			  <tr>
 			    <td>
-			    	<a href="services.html">
+			    	<a href="medical-diagnosis/index.php">
 						<button type="button" class="services">
-							Service 1
+							Medical diagnosis & Diseases Database
 						</button>
 					</a>
 			    </td>
 			    <td>
-			    	<a href="services.html">
+			    	<a href="patient-med-profile">
 						<button type="button" class="services">
-							Service 2
+							Patient Medical Profile
 						</button>
 					</a>
-			    </td>		
+			    </td>
 			  </tr>
 			  <tr>
 			    <td>
-			    	<a href="services.html">
+			    	<a href="surgery-printing">
 						<button type="button" class="services">
-							Service 3
+							Remote Surgery & Remote 3D Bioprinting tool
 						</button>
 					</a>
 			    </td>
 			    <td>
-			    	<a href="services.html">
+			    	<a href="research-platform">
 						<button type="button" class="services">
-							Service 4
+							Research Platform
 						</button>
 					</a>
-			    </td>	
+			    </td>
 			  </tr>
 			</table>
-      	</div> 
+      	</div>
 	</div>
 
 	<script src="js/foundation.min.js"></script>
