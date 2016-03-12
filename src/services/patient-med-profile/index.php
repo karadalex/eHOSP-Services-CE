@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<title></title>
+	<title>Patient Health</title>
 
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
 		<script src="js/w3-include-HTML.js"></script>
 
 		<div class="row">
-	        <h1></h1>
+	        <h1>Patient Health Profile</h1>
 	        <p>
 				Welcome to eHOSP, the hospital on the cloud,
 				a platform for e-health and e-medicine!

@@ -47,7 +47,26 @@
                     <li>
 						<input type="password" placeholder="Retype password">
 					</li>
+					<hr>
+					<li>
+						<select>
+							<option value="null">Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</li>
+					<li>
+						<input type="text" placeholder="Age">
+					</li>
+					<li>
+						<input type="text" placeholder="Birth Country">
+					</li>
+					<li>
+						<input type="text" placeholder="Social Security Number">
+					</li>
+
 				</ul>
+
 				<a href="">
 					<button type="button" class="services">
 						Register

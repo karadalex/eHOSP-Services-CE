@@ -39,7 +39,7 @@
 	        	<li>
 	        		<a href="services/patient-med-profile">
 						<button type="button" class="services">
-							Patient Medical Profile
+							Patient Health Profile
 						</button>
 					</a>
 	        	</li>
