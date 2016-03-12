@@ -3,14 +3,14 @@
 # (uncomment the following and comment the lines which correspond to other languages).
 # ------------------------------------------------------------------------------
 
-language: php
-php:
-  - '5.4'
-  - '5.5'
-  - '5.6'
-  - '7.0'
-  - hhvm
-  - nightly
+# language: php
+# php:
+#   - '5.4'
+#   - '5.5'
+#   - '5.6'
+#   - '7.0'
+#   - hhvm
+#   - nightly
 
 
 # -----------------------------------------------------------------------------
@@ -24,6 +24,10 @@ php:
 # (uncomment the following and comment the lines which correspond to other languages).
 # ------------------------------------------------------------------------------
 
+# sudo: required
+#
+# services:
+#     - docker
 
 # -----------------------------------------------------------------------------
 # Build test for DOCKER-COMPOSE
