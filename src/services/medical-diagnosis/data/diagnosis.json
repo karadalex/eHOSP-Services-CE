@@ -1,13 +1,112 @@
 {
     "pathologies-section": {
         "NUTRITIONAL DISORDERS": {
+            "NUTRITION: GENERAL CONSIDERATIONS": [
 
+            ],
+            "MALNUTRITION": [
+
+            ],
+            "VITAMIN DEFICIENCY, DEPENDENCY, AND TOXICITY": [
+
+            ],
+            "MINERAL DEFICIENCY AND TOXICITY": [
+
+            ],
+            "OBESITY": [
+
+            ]
         },
         "ENDOCRINE AND METABOLIC DISORDERS": {
+            "HYPOTHALAMIC-PITUITARY RELATIONSHIPS": [
 
+            ],
+            "PITUITARY DISORDERS": [
+
+            ],
+            "THYROID DISORDERS": [
+
+            ],
+            "ADRENAL DISORDERS": [
+
+            ],
+            "MULTIPLE ENDOCRINE NEOPLASIA SYNDROMES": [
+
+            ],
+            "POLYGLANDURAL DEFICIENCY SYNDROMES": [
+
+            ],
+            "WATER, ELECTROLYTE, MINERAL, AND ACID-BASE METABOLISM": [
+
+            ],
+            "DISORDERS OF CARBOHYDRATE METABOLISM": [
+
+            ],
+            "THE PORPHYRIAS": [
+
+            ],
+            "HYPERLIPIDEMIA": [
+
+            ],
+            "HYPOLIPIDEMIA AND THE LIPIDOSES": [
+
+            ],
+            "CARCINOID TUMORS": [
+
+            ],
+            "AMYLOIDOSIS": [
+
+            ]
         },
         "GASTROINTESINAL DISORDERS": {
+            "ESOPHAGEAL DISORDERS": [
 
+            ],
+            "FUNCTIONAL UPPER GASTROINTESINAL COMPLAINTS": [
+
+            ],
+            "GASTROINTESINAL BLEEDING": [
+
+            ],
+            "GASTRITIS AND PEPTIC ULCER DISEASE":[
+
+            ],
+            "BEZOARS AND FOREIGN BODIES": [
+
+            ],
+            "ACUTE ABDOMEN AND SURGICAL GASTROENTEROLOGY": [
+
+            ],
+            "PANCREATITIS": [
+
+            ],
+            "DIARRHEA AND CONSTIPATION": [
+
+            ],
+            "GASTROENTERITIS": [
+
+            ],
+            "ANTIBIOTIC-ASSOCIATED COLITIS": [
+
+            ],
+            "MALABSORPTION SYNDROMES": [
+
+            ],
+            "INFLAMMATORY BOWEL DISEASES": [
+
+            ],
+            "FUNCTIONAL BOWEL DISORDERS": [
+
+            ],
+            "DIVERTICULAR DISEASE": [
+
+            ],
+            "TUMORS OF THE GASTROINTESINAL TRACT": [
+
+            ],
+            "ANORECTAL DISORDERS": [
+
+            ]
         },
         "HEPATIC AND BILIARY DISORDERS": {
 
@@ -64,7 +163,7 @@
 
         },
         "POISONING": {
-            
+
         }
     }
 }
