@@ -164,7 +164,7 @@ h1 {
 		right: -20px;
 	}
 
-	header li#menuOut {
+	header ul li ul li#menuOut {
 		display: block !important;
 		clear: both;
 		background: none;
