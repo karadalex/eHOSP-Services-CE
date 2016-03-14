@@ -8,26 +8,7 @@ section:last-child {
 }
 
 /* form elements */
-input[type="text"] {
-  display: block;
-  margin: 0;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: none;
-  -moz-border-radius: none;
-  -ms-border-radius: none;
-  -o-border-radius: none;
-  border-radius: none;
-}
-
-input[type="password"], input[type="email"], select {
+input[type="text"], input[type="password"], input[type="email"], select {
   display: block;
   margin: 0;
   width: 100%;
@@ -75,7 +56,7 @@ ul.input-list li {
 /* ============================================================
   STYLE 1
 ============================================================ */
-.style-1 input[type="text"] {
+.style-1 input[type="text"], .style-1 input[type="password"], .style-1 input[type="email"], .style-1 select {
   padding: 10px;
   border: solid 1px gainsboro;
   -webkit-transition: box-shadow 0.3s, border 0.3s;
@@ -83,52 +64,7 @@ ul.input-list li {
   -o-transition: box-shadow 0.3s, border 0.3s;
   transition: box-shadow 0.3s, border 0.3s;
 }
-.style-1 input[type="text"]:focus, .style-1 input[type="text"].focus {
-  border: solid 1px #707070;
-  -webkit-box-shadow: 0 0 5px 1px #969696;
-  -moz-box-shadow: 0 0 5px 1px #969696;
-  box-shadow: 0 0 5px 1px #969696;
-}
-
-.style-1 input[type="password"] {
-  padding: 10px;
-  border: solid 1px gainsboro;
-  -webkit-transition: box-shadow 0.3s, border 0.3s;
-  -moz-transition: box-shadow 0.3s, border 0.3s;
-  -o-transition: box-shadow 0.3s, border 0.3s;
-  transition: box-shadow 0.3s, border 0.3s;
-}
-.style-1 input[type="password"]:focus, .style-1 input[type="password"].focus {
-  border: solid 1px #707070;
-  -webkit-box-shadow: 0 0 5px 1px #969696;
-  -moz-box-shadow: 0 0 5px 1px #969696;
-  box-shadow: 0 0 5px 1px #969696;
-}
-
-.style-1 input[type="email"] {
-  padding: 10px;
-  border: solid 1px gainsboro;
-  -webkit-transition: box-shadow 0.3s, border 0.3s;
-  -moz-transition: box-shadow 0.3s, border 0.3s;
-  -o-transition: box-shadow 0.3s, border 0.3s;
-  transition: box-shadow 0.3s, border 0.3s;
-}
-.style-1 input[type="email"]:focus, .style-1 input[type="email"].focus {
-  border: solid 1px #707070;
-  -webkit-box-shadow: 0 0 5px 1px #969696;
-  -moz-box-shadow: 0 0 5px 1px #969696;
-  box-shadow: 0 0 5px 1px #969696;
-}
-
-.style-1 select {
-  padding: 10px;
-  border: solid 1px gainsboro;
-  -webkit-transition: box-shadow 0.3s, border 0.3s;
-  -moz-transition: box-shadow 0.3s, border 0.3s;
-  -o-transition: box-shadow 0.3s, border 0.3s;
-  transition: box-shadow 0.3s, border 0.3s;
-}
-.style-1 select:focus, .style-1 select.focus {
+.style-1 input[type="text"]:focus, .style-1 input[type="text"].focus, .style-1 input[type="password"]:focus, .style-1 input[type="password"].focus, .style-1 input[type="email"]:focus, .style-1 input[type="email"].focus, .style-1 select:focus, .style-1 select.focus {
   border: solid 1px #707070;
   -webkit-box-shadow: 0 0 5px 1px #969696;
   -moz-box-shadow: 0 0 5px 1px #969696;
