@@ -8,7 +8,9 @@
     "gulp-uglify": "^1.5.3",
     "grunt": "^0.4.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-imagemin": "^2.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
