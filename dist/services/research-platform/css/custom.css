@@ -1,0 +1,184 @@
+html, body {
+	height: 100%;
+	background-color: #ebebeb;
+}
+
+
+*, h1 {
+	font-family: 'Source Sans Pro'
+}
+
+p {
+	font-size: 1.1em;
+}
+
+a:hover {
+	color: #fff;
+	background: #2bb673;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ul li {
+	display: block;
+	list-style-type: none;
+}
+
+header {
+	margin-top: 1cm;
+	background: #cccccc;
+	max-height: 4em;
+}
+
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#toggleMenu, #menuOut {
+	display:none;
+}
+
+header ul {
+	list-style: none;
+}
+
+header ul li {
+	display: inline;
+	float: left;
+}
+
+header ul li ul li {
+	display: inline;
+	float: left;
+}
+
+header ul li img {
+	max-width: 135px;
+	max-height: 106px;
+	margin-right: 10em;
+}
+
+header ul li a {
+	color: #2bb673;
+	padding: 5px 40px;
+	font-size: 2em;
+	display: block;
+}
+
+h1 {
+	margin-top: 100px;
+	font-size: 4em;
+	color: #2bb673;
+}
+
+.selected {
+	background-color: rgba(43, 181, 114, 0.72);
+}
+
+@media only screen and (max-width: 64.063em) {
+
+	header ul li a {
+		padding: 5px 20px;
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	header {
+		max-height: 3em;
+	}
+
+	header ul li img {
+		max-width: 120px;
+		max-height: 100px;
+		margin-right: 2em;
+	}
+
+	.row {
+		width: 95%;
+	}
+
+}
+
+
+@media only screen and (max-width: 40.063em) {
+
+	header ul li ul {
+		display:none;
+	}
+
+	#toggleMenu {
+		display: block;
+		margin: 30px;
+		float: right;
+	}
+
+	header ul li img {
+		display: inline-block;
+		background: #ebebeb;
+		max-width: 145px;
+		max-height: 116px;
+		margin-left: 3em;
+		/*margin-top: 3em;*/
+		float: left;
+	}
+
+	header {
+		background: none;
+	}
+
+	.row {
+		width: 80%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		margin-top: 5em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	a:hover {
+		background: none;
+		box-shadow: none;
+	}
+
+	#menuOut {
+		display: block;
+		cursor: pointer;
+		margin: 30px 0 40px 30px;
+		background-color: #2bb673;
+	}
+
+	header ul li ul {
+		background: #2bb673;
+    	display: none;
+		height: 100%;
+		position: absolute;
+		top: -30px;
+		right: -20px;
+	}
+
+	header li#menuOut {
+		display: block !important;
+		clear: both;
+		background: none;
+		width: 80%;
+	}
+
+
+	header ul li ul li a {
+        color: #fff;
+		padding: 10px 38px;
+	}
+
+	header ul li a:hover {
+		background: #076b3c;
+	}
+
+}
