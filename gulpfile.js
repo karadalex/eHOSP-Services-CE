@@ -1,5 +1,9 @@
-var gulp = require('gulp');
+var gulp = require('gulp')
+    uglify = require('gulp-uglify');
 
+// Minify javascript files and put the minified version in the dist folder
 gulp.task('default', function(){
-    console.log('Hello World');
+    gulp.src('src/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'));
 });
