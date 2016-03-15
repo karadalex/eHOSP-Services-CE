@@ -1,0 +1,5 @@
+# Ignore locally installed help packages:
+node_modules
+
+# Ignore log files:
+/npm-debug.log

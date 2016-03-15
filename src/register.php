@@ -56,6 +56,13 @@
 						</select>
 					</li>
 					<li>
+						<select>
+							<option value="null">User-type</option>
+							<option value="male">Doctor</option>
+							<option value="female">Patient</option>
+						</select>
+					</li>
+					<li>
 						<input type="text" placeholder="Age">
 					</li>
 					<li>

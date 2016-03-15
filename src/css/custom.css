@@ -175,6 +175,7 @@ h1 {
 	header ul li ul li a {
         color: #fff;
 		padding: 10px 38px;
+		width: 90%;
 	}
 
 	header ul li a:hover {

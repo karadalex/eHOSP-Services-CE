@@ -24,10 +24,29 @@
 		<div class="row">
 	        <h1>Medical Diagnosis & Medical Database</h1>
 	        <p>
-				Welcome to eHOSP, the hospital on the cloud,
-				a platform for e-health and e-medicine!
+				Use the "Medical Diagnosis" service to diagnose accurately the disease or disorder of
+				the patient and do the necessary steps to cure it.
 			</p>
-      	</div>
+			<p>
+				Use the "Medical Database" to find information about diseases, medication and other.
+			</p>
+			<ul>
+	        	<li>
+	        		<a href="#">
+						<button type="button" class="services">
+							Medical Diagnosis
+						</button>
+					</a>
+	        	</li>
+	        	<li>
+	        		<a href="#">
+						<button type="button" class="services">
+							Medical Database
+						</button>
+					</a>
+	        	</li>
+	        </ul>
+    	</div>
 	</div>
 
 	<script src="js/foundation.min.js"></script>

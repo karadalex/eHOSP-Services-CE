@@ -5,7 +5,7 @@ $(document).ready(function() {
 	});
 
 	$("#menuOut").click(function() {
-		$(".row ul li ul").slideToggle('slide', {direction: 'right'}, 500);
+		$(".row ul li ul").slideToggle('slide', {direction: 'left'}, 500);
 	});
 
 });
