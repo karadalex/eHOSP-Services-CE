@@ -244,52 +244,606 @@
             ]
         },
         "EAR, NOSE AND THROAT DISORDERS": {
-            
+            "EXTERNAL EAR": [
+
+            ],
+            "TYMPANIC MEMBRANE AND MIDDLE EAR": [
+
+            ],
+            "INNER EAR": [
+
+            ],
+            "NOSE AND PARANASAL SINUSES": [
+
+            ],
+            "PHARYNX": [
+
+            ],
+            "LARYNX": [
+
+            ],
+            "NEOPLASMS OF THE HEAD AND THE NECK": [
+
+            ]
         },
         "OPHTHALMOLOGIC DISORDERS": {
+            "EYE INJURIES": [
 
+            ],
+            "DISORDERS OF THE ORBIT": [
+
+            ],
+            "DISORDERS OF THE LACRIMAL APPARATUS": [
+
+            ],
+            "EYELID DISORDERS": [
+
+            ],
+            "CONJUCTIVAL DISORDERS": [
+
+            ],
+            "CORNEAL DISORDERS": [
+
+            ],
+            "CATARCT": [
+
+            ],
+            "UVEITIS": [
+
+            ],
+            "RETINAL DISORDERS": [
+
+            ],
+            "CLAUCOMA":[
+
+            ],
+            "OPTIC NERVE AND OPTIC PATHWAY DISORDERS":[
+
+            ],
+            "REFRACTIVE ERROR": [
+
+            ]
         },
         "DENTAL AND ORAL DISORDERS": {
+            "ORAL EXAMINATION":[
 
+            ],
+            "DISORDERS OF THE ORAL REGION": [
+
+            ],
+            "TEETH AND PERIODONTIUM": [
+
+            ],
+            "DENTAL EMERGENCIES": [
+
+            ],
+            "TEMPOROMANDIBULAR DISORDERS": [
+
+            ]
         },
         "DERMATOLOGIC DISORDERS": {
+            "DERMATITIS": [
 
+            ],
+            "BACTERIAL INFECTIONS OF THE SKIN": [
+
+            ],
+            "FUNGAL SKIN INFECTIONS": [
+
+            ],
+            "PARASITIC SKIN INFECTIONS": [
+
+            ],
+            "VIRAL SKIN INFECTIONS": [
+
+            ],
+            "DISORDERS OF HAIR FOLLICLES AND SEBACEOUS GLANDS": [
+
+            ],
+            "SCALING PAPULAR DISEASES": [
+
+            ],
+            "INFLAMMATORY REACTIONS": [
+
+            ],
+            "REACTIONS TO SUNLIGHT": [
+
+            ],
+            "BULLOUS DISEASES":[
+
+            ],
+            "DISORDERS OF CORNIFICATION":[
+
+            ],
+            "PRESSURE SORES": [
+
+            ],
+            "PIGMENTATION DISORDERS": [
+
+            ],
+            "DISORDERS OF SWEATING": [
+
+            ],
+            "BENIGN TUMORS": [
+
+            ],
+            "MALIGNANT TUMORS": [
+
+            ]
         },
         "HEMATOLOGY AND ONCOLOGY": {
+            "ANEMIAS": [
 
+            ],
+            "IRON OVERLOAD":[
+
+            ],
+            "MYELOPROLIFERATIVE DISORDERS": [
+
+            ],
+            "HEMOSTASIS AND COAGULATION DISORDERS": [
+
+            ],
+            "THROMBOTIC DISORDERS": [
+
+            ],
+            "PLATELET DISORDERS": [
+
+            ],
+            "VASCULAR BLEEDING DISORDERS": [
+
+            ],
+            "LEUKOPENIA AND LYMPHOCYTOPENIA": [
+
+            ],
+            "EOSINOPHILIC DISORDERS": [
+
+            ],
+            "HISTIOCYTIC SYNDROMES": [
+
+            ],
+            "LEUKEMIAS": [
+
+            ],
+            "LYMPHOMAS": [
+
+            ],
+            "PLASMA CELL DYSCRASIAS": [
+
+            ],
+            "DISORDERS OF THE SPLEEN": [
+
+            ],
+            "AIDS-ASSOCIATED HEMATOLOGIC DISORDERS AND MALIGNANCIES": [
+
+            ]
         },
         "IMMUNOLOGY; ALLERGIC DISORDERS": {
+            "IMMUNODEFICIENCY DISEASES": [
 
+            ],
+            "HYPERSENSITIVITY DISORDERS": [
+
+            ],
+            "TRANSPLANTATION": [
+
+            ]
         },
         "INFECTIOUS DISEASES": {
+            "INFECTIONS IN THE COMPROMISED HOST": [
 
+            ],
+            "IMMUNIZATION FOR ADULTS": [
+
+            ],
+            "ABSCESSES": [
+
+            ],
+            "BACTEREMIA AND SEPTIC SHOCK": [
+
+            ],
+            "BACTERIAL DISEASES": [
+
+            ],
+            "DYDTEMIC FUNGAL DISEASES": [
+
+            ],
+            "RICKETTSIAL DISEASES": [
+
+            ],
+            "CHLAMYDIAL DISEASES": [
+
+            ],
+            "PARASITIC INFECTIONS": [
+
+            ],
+            "VIRAL DISEASES": [
+
+            ],
+            "HUMAN IMMUNODEFICIENCY VIRUS INFECTION": [
+
+            ],
+            "SEXUALLY TRANSMITTED DISEASES": [
+
+            ]
         },
         "NEUROLOGIC DISORDERS": {
+            "PAIN": [
 
+            ],
+            "HEADACHE": [
+
+            ],
+            "FUNCTION AND DYSFUNCTION OF TH CERABRAL LOBES": [
+
+            ],
+            "STUPOR AND COMA": [
+
+            ],
+            "DELIRIUM AND DEMENTIA": [
+
+            ],
+            "SEIZURE DISORDERS": [
+
+            ],
+            "SLEEP DISORDERS": [
+
+            ],
+            "CEREBROVASCULAR DISEASE": [
+
+            ],
+            "TRAUMA OF THE HEAD": [
+
+            ],
+            "CNS INFECTIONS": [
+
+            ],
+            "CNS NEOPLASMS": [
+
+            ],
+            "NEURO-OPHTHALMOLOGIC AND CRANIAL NERVE DISORDERS": [
+
+            ],
+            "DISORDERS OF MOVEMENT": [
+
+            ],
+            "DEMYELINATING DISEASES": [
+
+            ],
+            "CRANIOCERVICAL JUNCTION ABNORMALITIES": [
+
+            ],
+            "SPINAL CORD DISORDERS": [
+
+            ],
+            "DISORDERS OF THE PERIPHERAL NERVOUS SYSTEM":[
+
+            ],
+            "MUSCULAR DISORDERS": [
+
+            ]
         },
         "PSYCHIATRIC DISORDERS": {
+            "SOMATOFORM DISORDERS": [
 
+            ],
+            "ANXIETY DISORDERS": [
+
+            ],
+            "DISSOCIATIVE DISORDERS": [
+
+            ],
+            "MOOD DISORDERS": [
+
+            ],
+            "SUICIDAL BEHAVIOR": [
+
+            ],
+            "PERSONALITY DISORDERS": [
+
+            ],
+            "PSYCHOSEXUAL DISORDERS": [
+
+            ],
+            "SCHIZOPHRENIA AND RELATED DISORDERS": [
+
+            ],
+            "PSYCHIATRIC IMMERGENCIES": [
+
+            ],
+            "DRUG USE AND DEPENDENCE": [
+
+            ],
+            "EATING DISORDERS": [
+
+            ]
         },
         "CARDIOVASCULAR DISORDERS": {
+            "ARTERIAL HYPERTENSION": [
 
+            ],
+            "ORTHOSTATIC HYPOTENSION AND SYNCOPE": [
+
+            ],
+            "ARTERIOSCLEROSIS": [
+
+            ],
+            "CORONARY ARTERY DISEASE": [
+
+            ],
+            "HEART FAILURE": [
+
+            ],
+            "SHOCK": [
+
+            ],
+            "ARRYTHMIAS": [
+
+            ],
+            "CARDIA AND RESPIRATORY ARREST AND CARDIOPULMONARY RESUSCITATION": [
+
+            ],
+            "VALVULAR HEART DISEASE": [
+
+            ],
+            "ENDOCARDITIS": [
+
+            ],
+            "PERICARDIAL DISEASE": [
+
+            ],
+            "CARDIAC TUMORS": [
+
+            ],
+            "DISEASES OF THE AORTA AND ITS BRANCHES": [
+
+            ],
+            "PERIPHERAL VASCULAR DISORDERS": [
+
+            ],
+            "ATHLETIC HEART SYNDROME": [
+
+            ]
         },
         "GENITOURINARY DISORDERS": {
+            "URINARY INCONTINENCE": [
 
+            ],
+            "MYONEUROGENIC DISORDERS": [
+
+            ],
+            "OBSTRUCTIVE UROPATHY": [
+
+            ],
+            "PROSTATE DISEASE": [
+
+            ],
+            "DISORDERS OF THE PENIS AND SCROTUM": [
+
+            ],
+            "ERECTILE DYSFUNCTION": [
+
+            ],
+            "URINARY CALCULI": [
+
+            ],
+            "RENAL FAILURE": [
+
+            ],
+            "DIALYSIS": [
+
+            ],
+            "GLOMERULAR DISEASES": [
+
+            ],
+            "TUBULOINTERSTITIAL DISEASE": [
+
+            ],
+            "TOXIC NEPHROPATHY": [
+
+            ],
+            "URINARY TRACT INFECTIONS": [
+
+            ],
+            "RENOVASCULAR DISEASE": [
+
+            ],
+            "ABNORMAL RENAL TRANSPORT SYNDROMES": [
+
+            ],
+            "INHERITED AND CONGENITAL RENAL DISORDERS": [
+
+            ],
+            "IMMUNOLOGICALLY MEDIATED RENAL DISEASE": [
+
+            ],
+            "TRAUMA TO THE URINARY TRACT": [
+
+            ],
+            "GENITOURINARY CANCER": [
+
+            ]
         },
         "GYNECOLOGY AND OBSTETRICS": {
+            "MENSTRUAL ABNORMALITIES AND ABNORMAL UTERINE BLEEDING": [
 
+            ],
+            "MENOPAUSE": [
+
+            ],
+            "PELVIC PAIN": [
+
+            ],
+            "GYNECOLOGIC INFLAMMATION AND INFECTIONS": [
+
+            ],
+            "ENDOMETRIOSIS": [
+
+            ],
+            "UTERINE FIBROIDS": [
+
+            ],
+            "GYNECOLOGIC NEOPLASMS": [
+
+            ],
+            "BREAST DISORDERS": [
+
+            ],
+            "SEXUAL DYSFUNCTION IN WOMEN": [
+
+            ],
+            "MEDICAL EXAMINATION OF THE RAPE VICTIM": [
+
+            ],
+            "INFERTILITY": [
+
+            ],
+            "FAMILY PLANNING": [
+
+            ],
+            "PRENATAL GENETIC EVALUATION AND COUNSELING": [
+
+            ],
+            "CONCEPTION AND PRENATAL DEVELOPMENT": [
+
+            ],
+            "NORMAL PREGNANCY, LABOR, AND DELIVERY": [
+
+            ],
+            "HIGH-RISK PREGNANCY": [
+
+            ],
+            "PREGNANCY COMPLICATED BY DISEASE": [
+
+            ],
+            "ABNORMALITIES OF PREGNANCY": [
+
+            ],
+            "ABNORMALITIES AND COMPLICATIONS OF LABOR AND DELIVERY": [
+
+            ],
+            "POSTPARTUM CARE": [
+
+            ]
         },
         "PEDIATRICS": {
+            "HEALTH MANAGEMENT IN NORMAL NEWBORNS, INFANTS, AND CHILDREN": [
 
+            ],
+            "CARING FOR SICK CHILDREN AND THEIR FAMILIES": [
+
+            ],
+            "FLUID AND ELECTROLYTE DISORDERS IN INFANTS AND CHILDREN": [
+
+            ],
+            "DISTURBANCES IN NEWBORNS AND INFANTS": [
+
+            ],
+            "DEVELOPMENTAL PROBLEMS": [
+
+            ],
+            "INJURIES, POISONING, AND CARDIOPULMONARY RESUSCITATION": [
+
+            ],
+            "CHILD ABUSE AND NEGLECT": [
+
+            ],
+            "CHILDHOOD INFECTIONS": [
+
+            ],
+            "NEOPLASMS": [
+
+            ],
+            "CYSTIC FIBROSIS": [
+
+            ],
+            "GASTROINTESTINAL DISORDERS": [
+
+            ],
+            "ENDOCRINE AND METABOLIC DISORDERS": [
+
+            ],
+            "MUSCULOSKELETAL AND CONNECTIVE TISSUE DISORDERS": [
+
+            ],
+            "NEUROLOGIC DISORDERS": [
+
+            ],
+            "NOSE AND THROAT DISORDERS": [
+
+            ],
+            "STRABISMUS": [
+
+            ],
+            "PSYCHIATRIC CONDITIONS IN CHILDHOOD AND ADOLESCENCE": [
+
+            ],
+            "PHYSICAL CONDITION IN ADOLESCENCE": [
+
+            ]
         },
         "DISORDERS DUE TO PHYSICAL AGENTS": {
+            "ELECTRIC INJURY": [
 
+            ],
+            "RADIATION REACTIONS AND INJURIES": [
+
+            ],
+            "HEAT DISORDERS": [
+
+            ],
+            "COLD INJURY": [
+
+            ],
+            "ALTITUDE SICKNESS": [
+
+            ],
+            "MOTION SICKNESS": [
+
+            ],
+            "MEDICAL ASPECTS OF AIR AND FOREIGN TRAVEL": [
+
+            ],
+            "NEAR DROWNING": [
+
+            ],
+            "INJURY DURING DRIVING OR WORK IN COMPRESSED AIR": [
+
+            ]
         },
         "SPECIAL SUBJECTS": {
+            "SYNDROMES OF UNCERTAIN ORIGIN": [
 
+            ],
+            "SARCOIDOSIS": [
+
+            ],
+            "FAMILIAL MEDITERRANEAN FEVER": [
+
+            ],
+            "SMOKING CESSATION": [
+
+            ],
+            "REHABILITATION": [
+
+            ],
+            "HYPERBARIC OXYGEN THERAPY": [
+
+            ],
+            "GERIATRIC MEDICINE": [
+
+            ],
+            "CARE OF THE DYING PATIENT": [
+
+            ]
         },
         "POISONING": {
+            "POISONING":[
 
+            ],
+            "BITES AND STINGS": [
+
+            ]
         }
     }
 }
