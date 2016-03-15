@@ -32,7 +32,7 @@
 			</p>
 			<ul>
 	        	<li>
-	        		<a href="#">
+	        		<a href="diagnosis.php">
 						<button type="button" class="services">
 							Medical Diagnosis
 						</button>
