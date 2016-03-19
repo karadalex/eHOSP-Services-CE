@@ -2,31 +2,39 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin');
 
+var services = ['medical-diagnosis', 'patient-med-profile', 'research-platform', 'surgery-printing'];
+
 // Javascript minification task
 // Minify javascript files and put the minified version in the dist folder
 gulp.task('js-minify', function(){
-    gulp.src('src/js/*.js')
+    gulp.src('src/js/**')
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
-    gulp.src('src/js/foundation/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js/foundation'));
-    gulp.src('src/js/vendor/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js/vendor'));
+    // Dive also into services
+    for (var i=0; i<services.length; i++) {
+        gulp.src('src/services/'+services[i]+'/js/**')
+            .pipe(uglify())
+            .pipe(gulp.dest('dist/services/'+services[i]+'/js'));
+    }
 });
 
 // Image task
 // Compress images files
 gulp.task('img-minify', function(){
-    gulp.src('src/media/img/*')
+    gulp.src('src/media/img/**')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/media/img'));
+    // Dive also into services
+    for (var i=0; i<services.length; i++) {
+        gulp.src('src/services/'+services[i]+'/media/img/**')
+            .pipe(imagemin())
+            .pipe(gulp.dest('dist/services/'+services[i]+'/media/img'));
+    }
 });
 
 // Copying task
 // Simple copy content to dist
-gulp.task('simple-move', function(){
+gulp.task('simply-copy', function(){
     gulp.src('src/css/**')
         .pipe(gulp.dest('dist/css'));
     gulp.src('src/includes/**')
@@ -42,4 +50,4 @@ gulp.task('simple-move', function(){
 });
 
 // Default task to run all of the above tasks
-gulp.task('default', ['js-minify', 'simple-move', 'img-minify']);
+gulp.task('default', ['js-minify', 'simply-copy', 'img-minify']);
