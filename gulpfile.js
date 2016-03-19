@@ -41,5 +41,5 @@ gulp.task('simple-move', function(){
         .pipe(gulp.dest('dist'));
 });
 
-// Deafult task to run all of the above tasks
+// Default task to run all of the above tasks
 gulp.task('default', ['js-minify', 'simple-move', 'img-minify']);
