@@ -10,8 +10,9 @@
 </head>
 <body>
 	<div id="container">
-		<div w3-include-HTML="includes/html/header.html"></div>
-		<script src="js/w3-include-HTML.js"></script>
+		<?php
+			include 'includes/html/header.html';
+		?>
 
 		<div>
 	        <h1> Create an account</h1>
@@ -77,7 +78,5 @@
     <script>
     	$(document).foundation();
     </script>
-
-    <script type="text/javascript" src="js/dynamic.js"></script>
 </body>
 </html>
