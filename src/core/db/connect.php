@@ -1,7 +1,11 @@
 <?php
-    $MYSQL_ROOT_PASSWORD = 'rootpsswd'
+    $MYSQL_DATABASE_NAME = "ehosp";
+    $MYSQL_HOSTNAME = "localhost";
+    $MYSQL_USERNAME = "root";
+    $MYSQL_ROOT_PASSWORD = "rootpsswd";
+
     // For debugging purposes, not to be used in production:
-    // mysql_connect('localhost', 'root', $MYSQL_ROOT_PASSWORD) or die(mysql_error());
-    mysql_connect('localhost', 'root', $MYSQL_ROOT_PASSWORD);
-    mysql_select_db();
+    // mysqli_connect($MYSQL_HOSTNAME, $MYSQL_USERNAME, $MYSQL_ROOT_PASSWORD) or die(mysqli_error());
+    mysqli_connect($MYSQL_HOSTNAME, $MYSQL_USERNAME, $MYSQL_ROOT_PASSWORD);
+    mysqli_select_db($MYSQL_DATABASE_NAME);
 ?>
