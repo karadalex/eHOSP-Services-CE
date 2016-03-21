@@ -107,7 +107,12 @@ h1 {
 @media only screen and (max-width: 40.063em) {
 
 	header ul li ul {
-		display:none;
+		background: #2bb673;
+    	display: none;
+		height: 100%;
+		position: absolute;
+		top: -30px;
+		right: -20px;
 	}
 
 	#toggleMenu {
@@ -132,6 +137,7 @@ h1 {
 
 	.row {
 		width: 80%;
+		height:100%;
 	}
 
 	h1 {
@@ -148,29 +154,14 @@ h1 {
 		box-shadow: none;
 	}
 
-	#menuOut {
-		display: block;
-		cursor: pointer;
-		margin: 30px 0 40px 30px;
-		background-color: #2bb673;
-	}
-
-	header ul li ul {
-		background: #2bb673;
-    	display: none;
-		height: 100%;
-		position: absolute;
-		top: -30px;
-		right: -20px;
-	}
-
 	header ul li ul li#menuOut {
 		display: block !important;
+		cursor: pointer;
 		clear: both;
+		margin: 30px 0 40px 30px;
 		background: none;
 		width: 80%;
 	}
-
 
 	header ul li ul li a {
         color: #fff;
