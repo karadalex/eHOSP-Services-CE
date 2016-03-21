@@ -6,7 +6,7 @@
 #
 # ------------------------------------------------------
 
-FROM phpmyadmin/phpmyadmin:latest
+FROM bitnami/nginx
 MAINTAINER Alex Karadimos
 
-EXPOSE 80 443
+COPY dist /app

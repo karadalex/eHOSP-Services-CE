@@ -27,7 +27,7 @@ RUN apt-get -y install sqlite curl
 #ADD nginx.conf /etc/nginx
 
 # Copy the web application's content on nginx server root directory:
-COPY ../src /usr/share/nginx/html
+COPY dist /usr/share/nginx/html
 # Create also a mount point for the directory above:
 VOLUME ["/usr/share/nginx/html"]
 

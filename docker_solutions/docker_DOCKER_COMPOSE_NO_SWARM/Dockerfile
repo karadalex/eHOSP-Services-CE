@@ -10,4 +10,4 @@ FROM nginx
 MAINTAINER Alex Karadimos
 
 # Copy the web application's content on nginx server root directory:
-COPY src /usr/share/nginx/html
+COPY dist /usr/share/nginx/html
