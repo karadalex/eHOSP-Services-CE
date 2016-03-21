@@ -47,7 +47,7 @@
 					</li>
 					<li>
 						<select>
-							<option value="null">User-type</option>
+							<option value="null">User Type</option>
 							<option value="male">Doctor</option>
 							<option value="female">Patient</option>
 						</select>
