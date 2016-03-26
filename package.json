@@ -8,6 +8,7 @@
     "gulp": "^3.9.1",
     "gulp-imagemin": "^2.4.0",
     "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.1",
     "mysql": "^2.10.2",
     "php-js": "0.0.5",
     "sqlite3": "^3.1.1"
