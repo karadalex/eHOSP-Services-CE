@@ -5,6 +5,7 @@
 	<?php
 		include '../includes/html/head.html';
 	?>
+	<link rel="stylesheet" type="text/css" href="../../css/forms.css">
 </head>
 <body>
 	<div id="container">
@@ -14,6 +15,8 @@
 
 		<div class="row">
 	        <h1>Medical Diagnosis</h1>
+
+			<div id="diagnosis-form" class="input-list style-1 clearfix"></div>
 
             <script type="text/javascript" src="js/diagnosis-form.js"></script>
     	</div>
