@@ -6,7 +6,7 @@
 		include 'includes/html/head.html';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/sign.css">
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
 </head>
 <body>
 	<div id="container">
