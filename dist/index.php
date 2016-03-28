@@ -4,6 +4,7 @@
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
 		include 'includes/html/head.html';
+		include 'core/init.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>

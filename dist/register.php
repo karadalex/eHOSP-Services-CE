@@ -6,7 +6,7 @@
 		include 'includes/html/head.html';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/sign.css">
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
 </head>
 <body>
 	<div id="container">
@@ -47,7 +47,7 @@
 					</li>
 					<li>
 						<select>
-							<option value="null">User-type</option>
+							<option value="null">User Type</option>
 							<option value="male">Doctor</option>
 							<option value="female">Patient</option>
 						</select>
