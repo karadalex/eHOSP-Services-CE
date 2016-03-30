@@ -15,8 +15,34 @@
 		<div class="row">
 	        <h1>Remote Surgery & 3D Bioprinting</h1>
 	        <p>
-
+				Use this service to design surgery procedures which
+				use robotic surgery and 3D bioprinting in parallel.
 			</p>
+			<div id="buttons">
+				<ul>
+		        	<li>
+		        		<a href="#">
+							<button type="button" class="services">
+								Surgery Procedure Design
+							</button>
+						</a>
+		        	</li>
+		        	<li>
+		        		<a href="#">
+							<button type="button" class="services">
+								3D Bioprinting Design
+							</button>
+						</a>
+		        	</li>
+					<li>
+		        		<a href="links.php">
+							<button type="button" class="services">
+								Useful Links
+							</button>
+						</a>
+		        	</li>
+		        </ul>
+			</div>
       	</div>
 	</div>
 
