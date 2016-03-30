@@ -33,6 +33,13 @@
 						</button>
 					</a>
 	        	</li>
+				<li>
+	        		<a href="services/genetic-code">
+						<button type="button" class="services">
+							Genetic Code Service
+						</button>
+					</a>
+	        	</li>
 	        	<li>
 	        		<a href="services/surgery-printing">
 						<button type="button" class="services">
