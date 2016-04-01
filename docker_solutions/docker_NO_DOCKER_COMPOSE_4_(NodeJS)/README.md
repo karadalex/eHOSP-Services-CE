@@ -1,2 +1,0 @@
-Docker application with NodeJS
-==============================
