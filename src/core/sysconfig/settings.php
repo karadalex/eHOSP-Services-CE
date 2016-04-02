@@ -30,7 +30,17 @@
                         <br>
                         <li>
                             <p>Administrator Username</p>
-							<input type="text" placeholder="Username" name="APP_USERNAME">
+							<input type="text" placeholder="Username" name="APP_ADMIN_USERNAME">
+						</li>
+                        <br>
+						<li>
+                            <p>Administrator Password</p>
+							<input type="text" placeholder="Password" name="APP_ADMIN_PASSWORD">
+						</li>
+                        <br>
+						<li>
+                            <p>Administrator Password Again</p>
+							<input type="text" placeholder="Password" name="APP_ADMIN_PASSWORD_verification">
 						</li>
                         <br>
                         <li>
@@ -45,7 +55,7 @@
                         <br>
                         <li>
                             <p>Database Root Username (e.g. "root")</p>
-							<input type="text" placeholder="Database Root User" name="DB_USERNAME">
+							<input type="text" placeholder="Database Root User" name="DB_ROOT_USERNAME">
 						</li>
                         <br>
                         <li>
