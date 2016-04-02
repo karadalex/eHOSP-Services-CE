@@ -58,7 +58,7 @@
 				<!-- Settings Section -->
 				<hr>
 				<li>
-	        		<a href="core/sysconfig/settings.php">
+	        		<a href="settings.php">
 						<button type="button" class="services">
 							Settings
 						</button>
