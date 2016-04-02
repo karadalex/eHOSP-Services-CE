@@ -9,8 +9,7 @@
     * $config = include('config.php');
     *
     ***************************************************************************/
-
-    return array(
+    $CONFIG = array(
         // Application's Info
         'APP_NAME' => 'eHosp',
         'APP_HOSTNAME' => 'localhost',
@@ -28,4 +27,6 @@
         'RASPBERRYPI_HOSTNAME' => '192.168.x.x',
         'RASPBERRYPI_PORT' => 49153
     );
+
+    return $CONFIG;
 ?>
