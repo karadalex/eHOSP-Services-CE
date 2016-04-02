@@ -25,47 +25,47 @@
 					<ul class="input-list style-1 clearfix">
 						<li>
                             <p>Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Hostname" name="hostname">
+							<input type="text" placeholder="Hostname" name="APP_HOSTNAME">
 						</li>
                         <br>
                         <li>
                             <p>Administrator Username</p>
-							<input type="text" placeholder="Username" name="username">
+							<input type="text" placeholder="Username" name="APP_USERNAME">
 						</li>
                         <br>
                         <li>
                             <p>Database Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Database Hostname" name="db_hostname">
+							<input type="text" placeholder="Database Hostname" name="DB_HOSTNAME">
 						</li>
                         <br>
                         <li>
                             <p>Database Listening Port (e.g. 3306)</p>
-							<input type="number" placeholder="Database Port" name="db_port">
+							<input type="number" placeholder="Database Port" name="DB_PORT">
 						</li>
                         <br>
                         <li>
                             <p>Database Root Username (e.g. "root")</p>
-							<input type="text" placeholder="Database Root User" name="db_username">
+							<input type="text" placeholder="Database Root User" name="DB_USERNAME">
 						</li>
                         <br>
                         <li>
                             <p>Database Root Password</p>
-							<input type="password" placeholder="Database Root Password" name="db_password">
+							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD">
 						</li>
                         <br>
                         <li>
                             <p>Database Root Password Again</p>
-							<input type="password" placeholder="Database Root Password" name="db_password_verification">
+							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD_verification">
 						</li>
                         <br>
 						<li>
                             <p>Raspberry PI Hostname</p>
-							<input type="text" placeholder="Hostname" name="rasp_hostname">
+							<input type="text" placeholder="Hostname" name="RASPBERRYPI_HOSTNAME">
 						</li>
                         <br>
 						<li>
                             <p>Raspberry PI Listening Port</p>
-							<input type="number" placeholder="Port" name="rasp_port">
+							<input type="number" placeholder="Port" name="RASPBERRYPI_PORT">
 						</li>
                         <br>
 					</ul>
