@@ -54,6 +54,16 @@
 						</button>
 					</a>
 	        	</li>
+
+				<!-- Settings Section -->
+				<hr>
+				<li>
+	        		<a href="core/sysconfig/settings.php">
+						<button type="button" class="services">
+							Settings
+						</button>
+					</a>
+	        	</li>
 	        </ul>
       	</div>
 	</div>
