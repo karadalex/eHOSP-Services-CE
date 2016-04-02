@@ -15,10 +15,13 @@
         'APP_HOSTNAME' => 'localhost',
         'APP_USERNAME' => 'root',
 
-        'DB_NAME' => 'eHosp',
+        'DB_NAME' => 'ehosp',
         'DB_HOSTNAME' => 'localhost',
         'DB_PORT' => 3306,
         'DB_USERNAME' => 'root',
-        'DB_ROOT_PASSWORD' => 'rootpsswd'
+        'DB_ROOT_PASSWORD' => 'rootpsswd',
+
+        'RASPBERRYPI_HOSTNAME' => '192.168.x.x',
+        'RASPBERRYPI_PORT' => 49153
     );
 ?>
