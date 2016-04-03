@@ -35,6 +35,8 @@ gulp.task('img-minify', function(){
 // Copying task
 // Simple copy content to dist
 gulp.task('simply-copy', function(){
+    gulp.src('src/core/**')
+        .pipe(gulp.dest('dist/core'));
     gulp.src('src/css/**')
         .pipe(gulp.dest('dist/css'));
     gulp.src('src/includes/**')
