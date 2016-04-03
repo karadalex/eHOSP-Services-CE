@@ -7,8 +7,13 @@ section:last-child {
   margin-bottom: 0;
 }
 
+div {
+    margin-bottom: 10px;
+}
+
 /* form elements */
 input[type="text"], input[type="password"], input[type="email"], select {
+    background-color: white;
   display: block;
   margin: 0;
   width: 100%;
@@ -76,6 +81,8 @@ ul.input-list li {
     margin-bottom: 10px;
   }
 }
+
+
 /* ============================================================
   STYLE 1
 ============================================================ */

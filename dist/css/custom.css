@@ -72,6 +72,11 @@ h1 {
 	color: #2bb673;
 }
 
+h2, h3, h4, h5, h6 {
+	margin-top: 50px;
+	color: #2bb673;
+}
+
 .selected {
 	background-color: rgba(43, 181, 114, 0.72);
 }

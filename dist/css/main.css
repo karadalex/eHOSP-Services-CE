@@ -3,6 +3,18 @@ body {
 	text-align: center;
 }
 
+p.Paragraph-Left-Aligned {
+	text-align: left;
+}
+
+ul.input-list li.List-Left-Aligned {
+	width: 51%;
+}
+
+ul.input-list:nth-child(n-1) {
+	padding-bottom: 3em;
+}
+
 button.services {
     background-color: #2bb673;
     border: none;
@@ -24,4 +36,26 @@ button.services:hover {
 	color: #fff;
 	background: #8ad5e4;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/*------------------Displaying for Smartphones--------------------------------*/
+@media only screen and (max-width: 40.063em) {
+
+	ul.input-list li.List-Left-Aligned {
+		width: 100%;
+	}
+
+	div.main {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	button.services {
+		width: 100%;
+	}
+
+	ul.input-list:last-child {
+		width: 100%;
+	}
 }

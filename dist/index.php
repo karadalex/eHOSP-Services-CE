@@ -14,7 +14,7 @@
 			include 'includes/html/header.html';
 		?>
 
-		<div>
+		<div class="main">
 	        <h1> Welcome to eHOSP</h1>
 	        <p>
 				Welcome to eHOSP, the hospital on the cloud,
