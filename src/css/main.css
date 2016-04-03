@@ -46,6 +46,11 @@ button.services:hover {
 		width: 100%;
 	}
 
+	div.main {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
 	button.services {
 		width: 100%;
 	}
