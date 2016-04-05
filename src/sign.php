@@ -30,8 +30,8 @@
 					</ul>
 					<input type="submit" value="Sign in">
 				</form>
-
 			</section>
+
 			<p>Don't you have an account? Click <a href="register.php"> here</a> to register<p>
 
       	</div>
