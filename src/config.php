@@ -6,7 +6,7 @@
     * Use this file to installand configure the application
     * @return : array with application's configuration information
     *
-    * Last modified: Tue Apr  5 20:02:04 2016
+    * Last modified: Tue Apr  5 21:17:14 2016
     *
     * How to use it in project:
     * $config = include('config.php');

@@ -34,7 +34,12 @@
         **************************************************************************/
 
         if ($APP_ADMIN_PASSWORD === $APP_ADMIN_PASSWORD_verification && $DB_ROOT_PASSWORD === $DB_ROOT_PASSWORD_verification) {
+            // create configuration file
             exec("python config_generator.py $APP_HOSTNAME $APP_ADMIN_USERNAME $APP_ADMIN_PASSWORD $DB_HOSTNAME $DB_PORT $DB_ROOT_USERNAME $DB_ROOT_PASSWORD $RASPBERRYPI_HOSTNAME $RASPBERRYPI_PORT");
+            // display configurationinfo in settings page
+            exec("python load_config.py $APP_HOSTNAME $APP_ADMIN_USERNAME $APP_ADMIN_PASSWORD $APP_ADMIN_PASSWORD_verification $DB_HOSTNAME $DB_PORT $DB_ROOT_USERNAME $DB_ROOT_PASSWORD $DB_ROOT_PASSWORD_verification $RASPBERRYPI_HOSTNAME $RASPBERRYPI_PORT");
         }
     }
+
+    header('Location: ../../services.php');
 ?>
