@@ -22,69 +22,69 @@
 
 		<div>
             <section>
-                <form action="setup_config.php" method="post">
+                <form action="core/sysconfig/setup_config.php" method="post">
 					<ul class="input-list style-1 clearfix">
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Hostname" name="APP_HOSTNAME">
+							<input type="text" placeholder="Hostname" name="APP_HOSTNAME" value="">
 						</li>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Administrator Username</p>
-							<input type="text" placeholder="Username" name="APP_ADMIN_USERNAME">
+							<input type="text" placeholder="Username" name="APP_ADMIN_USERNAME" value="">
 						</li>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Administrator Password</p>
-							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD">
+							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD" value="">
 						</li>
                         <br>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Administrator Password Again</p>
-							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD_verification">
+							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD_verification" value="">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Database Hostname" name="DB_HOSTNAME">
+							<input type="text" placeholder="Database Hostname" name="DB_HOSTNAME" value="">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Listening Port (e.g. 3306)</p>
-							<input type="text" placeholder="Database Port" name="DB_PORT">
+							<input type="text" placeholder="Database Port" name="DB_PORT" value="">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Root Username (e.g. "root")</p>
-							<input type="text" placeholder="Database Root User" name="DB_ROOT_USERNAME">
+							<input type="text" placeholder="Database Root User" name="DB_ROOT_USERNAME" value="">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Root Password</p>
-							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD">
+							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD" value="">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Root Password Again</p>
-							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD_verification">
+							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD_verification" value="">
 						</li>
                         <br>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Raspberry PI Hostname</p>
-							<input type="text" placeholder="Hostname" name="RASPBERRYPI_HOSTNAME">
+							<input type="text" placeholder="Hostname" name="RASPBERRYPI_HOSTNAME" value="">
 						</li>
                         <br>
 
 						<li class="List-Left-Aligned">
-							<p class="Paragraph-Left-Aligned">Raspberry PI Listening Port</p>
-							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT">
+							<p class="Paragraph-Left-Aligned">Raspberry PI Listening Port (Default: 49153)</p>
+							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT" value="">
 						</li>
                         <br>
 					</ul>
