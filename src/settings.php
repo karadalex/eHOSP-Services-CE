@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -26,65 +27,65 @@
 					<ul class="input-list style-1 clearfix">
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Hostname" name="APP_HOSTNAME" value="">
+							<input type="text" placeholder="Hostname" name="APP_HOSTNAME" value="192.168.1.2">
 						</li>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Administrator Username</p>
-							<input type="text" placeholder="Username" name="APP_ADMIN_USERNAME" value="">
+							<input type="text" placeholder="Username" name="APP_ADMIN_USERNAME" value="admin">
 						</li>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Administrator Password</p>
-							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD" value="">
+							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD" value="adminpsswd">
 						</li>
                         <br>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Administrator Password Again</p>
-							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD_verification" value="">
+							<input type="password" placeholder="Password" name="APP_ADMIN_PASSWORD_verification" value="adminpsswd">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Database Hostname" name="DB_HOSTNAME" value="">
+							<input type="text" placeholder="Database Hostname" name="DB_HOSTNAME" value="localhost">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Listening Port (e.g. 3306)</p>
-							<input type="text" placeholder="Database Port" name="DB_PORT" value="">
+							<input type="text" placeholder="Database Port" name="DB_PORT" value="3306">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Root Username (e.g. "root")</p>
-							<input type="text" placeholder="Database Root User" name="DB_ROOT_USERNAME" value="">
+							<input type="text" placeholder="Database Root User" name="DB_ROOT_USERNAME" value="root">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Root Password</p>
-							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD" value="">
+							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD" value="rootpsswd">
 						</li>
                         <br>
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Root Password Again</p>
-							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD_verification" value="">
+							<input type="password" placeholder="Database Root Password" name="DB_ROOT_PASSWORD_verification" value="rootpsswd">
 						</li>
                         <br>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Raspberry PI Hostname</p>
-							<input type="text" placeholder="Hostname" name="RASPBERRYPI_HOSTNAME" value="">
+							<input type="text" placeholder="Hostname" name="RASPBERRYPI_HOSTNAME" value="localhost">
 						</li>
                         <br>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Raspberry PI Listening Port (Default: 49153)</p>
-							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT" value="">
+							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT" value="49153">
 						</li>
                         <br>
 					</ul>

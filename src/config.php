@@ -6,7 +6,7 @@
     * Use this file to installand configure the application
     * @return : array with application's configuration information
     *
-    * Last modified: 04/05/16 18:35:09
+    * Last modified: Tue Apr  5 20:02:04 2016
     *
     * How to use it in project:
     * $config = include('config.php');
@@ -15,7 +15,7 @@
     $CONFIG = array(
         // Application's Info
         'APP_NAME' => 'eHosp',
-        'APP_HOSTNAME' => 'localhost',
+        'APP_HOSTNAME' => '192.168.1.2',
         'APP_ADMIN_USERNAME' => 'admin',
         'APP_ADMIN_PASSWORD' => 'adminpsswd',
 
