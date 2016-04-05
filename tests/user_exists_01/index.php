@@ -6,9 +6,9 @@
  * Time: 10:29 μμ
  */
 
-include '../src/core/methods/users.php';
-include '../src/core/methods/general.php';
+include '../../src/core/methods/users.php';
+include '../../src/core/methods/general.php';
 
-if (user_exists("user") === true) {
+if (user_exists("username-test-1") === true) {
     echo 'exists';
 }
