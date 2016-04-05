@@ -6,6 +6,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
+
         if (empty($username) || empty($password)) {
             $errors[] = 'You must enter username and password';
         } elseif (user_exists($username) === false) {
@@ -15,4 +16,5 @@
 
     // Check that we got info above right
     // echo $username, ' ', $password;
+    // var_dump($_POST);
 ?>
