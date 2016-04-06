@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Mar 31, 2016 at 04:37 PM
+-- Generation Time: Apr 06, 2016 at 12:45 PM
 -- Server version: 5.5.47
 -- PHP Version: 5.5.31
 
@@ -76,6 +76,37 @@ CREATE TABLE `bot_doctor_log` (
 
 CREATE TABLE `bot_doctor_registry` (
   `bot_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `code_history`
+--
+
+CREATE TABLE `code_history` (
+  `code_id` int(11) NOT NULL,
+  `doctor_id` int(11) NOT NULL,
+  `bot_id` int(11) NOT NULL,
+  `surgery_id` int(11) NOT NULL,
+  `3d_task_id` int(11) NOT NULL,
+  `nxt_id` int(11) NOT NULL,
+  `arduino_id` int(11) NOT NULL,
+  `raspberrypi_id` int(11) NOT NULL,
+  `code_file` longtext NOT NULL,
+  `code_errors` longtext NOT NULL,
+  `code_date` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `code_snippets`
+--
+
+CREATE TABLE `code_snippets` (
+  `snippet_id` int(11) NOT NULL,
+  `code` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -319,6 +350,25 @@ ALTER TABLE `bot_doctor_registry`
   ADD PRIMARY KEY (`bot_id`);
 
 --
+-- Indexes for table `code_history`
+--
+ALTER TABLE `code_history`
+  ADD PRIMARY KEY (`code_id`),
+  ADD KEY `doctor_id` (`doctor_id`),
+  ADD KEY `bot_id` (`bot_id`),
+  ADD KEY `surgery_id` (`surgery_id`),
+  ADD KEY `3d_task_id` (`3d_task_id`),
+  ADD KEY `arduino_id` (`arduino_id`),
+  ADD KEY `nxt_id` (`nxt_id`),
+  ADD KEY `raspberrypi_id` (`raspberrypi_id`);
+
+--
+-- Indexes for table `code_snippets`
+--
+ALTER TABLE `code_snippets`
+  ADD PRIMARY KEY (`snippet_id`);
+
+--
 -- Indexes for table `doctors_registry`
 --
 ALTER TABLE `doctors_registry`
@@ -454,6 +504,16 @@ ALTER TABLE `bot_doctor_log`
 ALTER TABLE `bot_doctor_registry`
   MODIFY `bot_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `code_history`
+--
+ALTER TABLE `code_history`
+  MODIFY `code_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `code_snippets`
+--
+ALTER TABLE `code_snippets`
+  MODIFY `snippet_id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `doctors_registry`
 --
 ALTER TABLE `doctors_registry`
@@ -526,8 +586,8 @@ ALTER TABLE `user_vital_signs`
 -- Constraints for table `3d_bioprinting`
 --
 ALTER TABLE `3d_bioprinting`
-  ADD CONSTRAINT `3d_bioprinting_ibfk_2` FOREIGN KEY (`genetic_code_id`) REFERENCES `user_genetic_code` (`genetic_code_id`),
-  ADD CONSTRAINT `3d_bioprinting_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`);
+  ADD CONSTRAINT `3d_bioprinting_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`),
+  ADD CONSTRAINT `3d_bioprinting_ibfk_2` FOREIGN KEY (`genetic_code_id`) REFERENCES `user_genetic_code` (`genetic_code_id`);
 
 --
 -- Constraints for table `arduino_log`
@@ -540,6 +600,18 @@ ALTER TABLE `arduino_log`
 --
 ALTER TABLE `bot_doctor_log`
   ADD CONSTRAINT `bot_doctor_log_ibfk_1` FOREIGN KEY (`bot_id`) REFERENCES `bot_doctor_registry` (`bot_id`);
+
+--
+-- Constraints for table `code_history`
+--
+ALTER TABLE `code_history`
+  ADD CONSTRAINT `code_history_ibfk_1` FOREIGN KEY (`doctor_id`) REFERENCES `doctors_registry` (`doctor_id`),
+  ADD CONSTRAINT `code_history_ibfk_2` FOREIGN KEY (`bot_id`) REFERENCES `bot_doctor_registry` (`bot_id`),
+  ADD CONSTRAINT `code_history_ibfk_3` FOREIGN KEY (`surgery_id`) REFERENCES `surgeries` (`surgery_id`),
+  ADD CONSTRAINT `code_history_ibfk_4` FOREIGN KEY (`3d_task_id`) REFERENCES `3d_bioprinting` (`3d_task_id`),
+  ADD CONSTRAINT `code_history_ibfk_5` FOREIGN KEY (`nxt_id`) REFERENCES `nxt_registry` (`nxt_id`),
+  ADD CONSTRAINT `code_history_ibfk_6` FOREIGN KEY (`arduino_id`) REFERENCES `arduino_registry` (`arduino_id`),
+  ADD CONSTRAINT `code_history_ibfk_7` FOREIGN KEY (`raspberrypi_id`) REFERENCES `raspberrypi_registry` (`raspberrypi_id`);
 
 --
 -- Constraints for table `doctor_log`
@@ -563,27 +635,27 @@ ALTER TABLE `raspberrypi_log`
 -- Constraints for table `surgeries`
 --
 ALTER TABLE `surgeries`
-  ADD CONSTRAINT `surgeries_ibfk_4` FOREIGN KEY (`diagnosis_id`) REFERENCES `user_diagnosis` (`diagnosis_id`),
   ADD CONSTRAINT `surgeries_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`),
   ADD CONSTRAINT `surgeries_ibfk_2` FOREIGN KEY (`doctor_id`) REFERENCES `doctors_registry` (`doctor_id`),
-  ADD CONSTRAINT `surgeries_ibfk_3` FOREIGN KEY (`3d_task_id`) REFERENCES `3d_bioprinting` (`3d_task_id`);
+  ADD CONSTRAINT `surgeries_ibfk_3` FOREIGN KEY (`3d_task_id`) REFERENCES `3d_bioprinting` (`3d_task_id`),
+  ADD CONSTRAINT `surgeries_ibfk_4` FOREIGN KEY (`diagnosis_id`) REFERENCES `user_diagnosis` (`diagnosis_id`);
 
 --
 -- Constraints for table `user_diagnosis`
 --
 ALTER TABLE `user_diagnosis`
-  ADD CONSTRAINT `user_diagnosis_ibfk_5` FOREIGN KEY (`medical_history_id`) REFERENCES `user_medical_history` (`user_id`),
   ADD CONSTRAINT `user_diagnosis_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`),
   ADD CONSTRAINT `user_diagnosis_ibfk_2` FOREIGN KEY (`doctor_id`) REFERENCES `doctors_registry` (`doctor_id`),
   ADD CONSTRAINT `user_diagnosis_ibfk_3` FOREIGN KEY (`symptoms_id`) REFERENCES `user_symptoms` (`symptoms_id`),
-  ADD CONSTRAINT `user_diagnosis_ibfk_4` FOREIGN KEY (`genetic_code_id`) REFERENCES `user_genetic_code` (`genetic_code_id`);
+  ADD CONSTRAINT `user_diagnosis_ibfk_4` FOREIGN KEY (`genetic_code_id`) REFERENCES `user_genetic_code` (`genetic_code_id`),
+  ADD CONSTRAINT `user_diagnosis_ibfk_5` FOREIGN KEY (`medical_history_id`) REFERENCES `user_medical_history` (`user_id`);
 
 --
 -- Constraints for table `user_genetic_code`
 --
 ALTER TABLE `user_genetic_code`
-  ADD CONSTRAINT `user_genetic_code_ibfk_2` FOREIGN KEY (`medical_history_id`) REFERENCES `user_medical_history` (`user_id`),
-  ADD CONSTRAINT `user_genetic_code_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`);
+  ADD CONSTRAINT `user_genetic_code_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`),
+  ADD CONSTRAINT `user_genetic_code_ibfk_2` FOREIGN KEY (`medical_history_id`) REFERENCES `user_medical_history` (`user_id`);
 
 --
 -- Constraints for table `user_log`
