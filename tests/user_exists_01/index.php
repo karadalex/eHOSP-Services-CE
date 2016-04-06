@@ -12,3 +12,4 @@ include '../../src/core/methods/general.php';
 if (user_exists("username-test-1") === true) {
     echo 'exists';
 }
+?>
