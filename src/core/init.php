@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    error_reporting(0);
+    // session_start();
+    // error_reporting(0);
 
     include 'db/connect.php';
     include 'methods/general.php';
