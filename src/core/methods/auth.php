@@ -1,6 +1,10 @@
 <?php
     include '../init.php';
 
+    if (user_exits("username-test-1") === true) {
+        echo 'exists';
+    }
+
     // Get username, password from sign in form in src/sign.php:
     if (empty($_POST) === false) {
         $username = $_POST['username'];
@@ -14,7 +18,4 @@
         }
     }
 
-    // Check that we got info above right
-    // echo $username, ' ', $password;
-    // var_dump($_POST);
 ?>
