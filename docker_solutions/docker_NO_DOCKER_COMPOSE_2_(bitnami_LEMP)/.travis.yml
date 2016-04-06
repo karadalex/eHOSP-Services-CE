@@ -1,0 +1,36 @@
+# -----------------------------------------------------------------------------
+# Build test for PHP
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
+
+# language: php
+# php:
+#   - '5.4'
+#   - '5.5'
+#   - '5.6'
+#   - '7.0'
+#   - hhvm
+#   - nightly
+# script: phpunit src/index.php
+
+
+# -----------------------------------------------------------------------------
+# Build test for JAVASCRIPT
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
+# Build test for DOCKER
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
+
+# sudo: required
+#
+# services:
+#     - docker
+
+# -----------------------------------------------------------------------------
+# Build test for DOCKER-COMPOSE
+# (uncomment the following and comment the lines which correspond to other languages).
+# ------------------------------------------------------------------------------
