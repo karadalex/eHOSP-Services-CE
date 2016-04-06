@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `3d_bioprinting`
 --
 
+USE ehosp;
+
 CREATE TABLE `3d_bioprinting` (
   `3d_task_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
