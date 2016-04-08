@@ -21,14 +21,14 @@
 			<div id="buttons">
 				<ul>
 		        	<li>
-		        		<a href="#">
+		        		<a href="SurgeryDesign.php">
 							<button type="button" class="services">
 								Surgery Procedure Design
 							</button>
 						</a>
 		        	</li>
 		        	<li>
-		        		<a href="#">
+		        		<a href="3DBioprintDesign.php">
 							<button type="button" class="services">
 								3D Bioprinting Design
 							</button>
