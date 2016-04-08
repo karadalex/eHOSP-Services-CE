@@ -1,0 +1,4 @@
+// Main Task
+task {TASK_NAME}() {
+    {TASK_BODY}
+}

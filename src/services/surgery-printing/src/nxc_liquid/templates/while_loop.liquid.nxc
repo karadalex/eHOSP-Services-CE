@@ -1,0 +1,5 @@
+// While Loop
+while ({WHILE_LOOP_CONDITION})
+{
+    {WHILE_LOOP_BODY}
+}
