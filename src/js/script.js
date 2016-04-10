@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-	$("#toggleMenu").click(function() {
-		$(".row ul li ul").slideToggle('slide', {direction: 'right'}, 500);
+	$("#toggleMenu").on('click', function() {
+		$(".row ul li ul").toggle('slide', {direction: "right"}, 400);
 	});
 
-	$("#menuOut").click(function() {
-		$(".row ul li ul").slideToggle('slide', {direction: 'left'}, 500);
+	$("#menuOut").on('click', function() {
+		$(".row ul li ul").toggle('slide', {direction: "right"}, 400);
 	});
 
 });
