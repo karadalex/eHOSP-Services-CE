@@ -1,0 +1,5 @@
+// For Loop
+for ({FOR_LOOP_INIT};{FOR_LOOP_CONDITION};{FOR_LOOP_INCREMENT})
+{
+    {FOR_LOOP_BODY}
+}
