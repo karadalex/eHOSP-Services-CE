@@ -4,6 +4,7 @@
 	<title>Remote Surgery & 3D Bioprinting</title>
 	<?php
 		include '../includes/html/head.html';
+		$config = include('../../config.php');
 	?>
 </head>
 <body>
@@ -35,6 +36,14 @@
 						</a>
 		        	</li>
 					<li>
+						<?php $rasp_path = $config["RASPBERRYPI_HOSTNAME"].":".$config["RASPBERRYPI_PORT"]."/"; ?>
+		        		<a href="<?php echo "http://".$rasp_path; ?>">
+							<button type="button" class="services">
+								Chack Surgery Robot Status
+							</button>
+						</a>
+		        	</li>
+					<li>
 		        		<a href="links.php">
 							<button type="button" class="services">
 								Useful Links
@@ -49,6 +58,10 @@
 	<script src="../../js/foundation.min.js"></script>
     <script>
     	$(document).foundation();
+    </script>
+</body>
+</html>
+
     </script>
 </body>
 </html>
