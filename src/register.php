@@ -18,7 +18,7 @@
 	        <h1> Create an account</h1>
 
 	        <section>
-				<form action="" method="post">
+				<form action="services.php" method="post">
 					<ul class="input-list style-1 clearfix">
 						<li>
 							<input type="text" placeholder="First Name">

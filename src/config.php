@@ -6,7 +6,7 @@
     * Use this file to installand configure the application
     * @return : array with application's configuration information
     *
-    * Last modified: Tue Apr  5 21:17:14 2016
+    * Last modified: Sun Apr 10 18:46:54 2016
     *
     * How to use it in project:
     * $config = include('config.php');
@@ -27,8 +27,8 @@
         'DB_ROOT_PASSWORD' => 'rootpsswd',
 
         // Raspberry Pi's Info
-        'RASPBERRYPI_HOSTNAME' => 'localhost',
-        'RASPBERRYPI_PORT' => 49153
+        'RASPBERRYPI_HOSTNAME' => '192.168.1.2',
+        'RASPBERRYPI_PORT' => '80/ehosp-rasp/src'
     );
 
     return $CONFIG;

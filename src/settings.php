@@ -85,7 +85,7 @@
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Raspberry PI Listening Port (Default: 49153)</p>
-							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT" value="49153">
+							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT" value="8080/hardware/src/">
 						</li>
                         <br>
 					</ul>
