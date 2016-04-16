@@ -115,9 +115,12 @@ h2, h3, h4, h5, h6 {
 		background: #2bb673;
     	display: none;
 		height: 100%;
-		position: absolute;
-		top: -30px;
-		right: -20px;
+		position: fixed;;
+		top: 0px;
+		right: 0px;
+		margin-left: 35%;
+		z-index: 10;
+		box-shadow: -10px 0px 300px #000;
 	}
 
 	#toggleMenu {
@@ -126,13 +129,15 @@ h2, h3, h4, h5, h6 {
 		float: right;
 	}
 
+	#toggleMenu img {
+	    max-width: 85%;
+	    height: auto;
+	}
+
 	header ul li img {
 		display: inline-block;
-		background: #ebebeb;
 		max-width: 145px;
 		max-height: 116px;
-		margin-left: 3em;
-		/*margin-top: 3em;*/
 		float: left;
 	}
 
@@ -159,23 +164,34 @@ h2, h3, h4, h5, h6 {
 		box-shadow: none;
 	}
 
+	header ul li ul li {
+		width: 100%;
+	}
+
 	header ul li ul li#menuOut {
 		display: block !important;
 		cursor: pointer;
 		clear: both;
-		margin: 30px 0 40px 30px;
+		margin: 30px 100% 40px 30px;
 		background: none;
-		width: 80%;
+		width: 57px;
 	}
 
 	header ul li ul li a {
         color: #fff;
 		padding: 10px 38px;
-		width: 90%;
+		width: 100%;
+		text-align: left;
 	}
 
 	header ul li a:hover {
 		background: #076b3c;
 	}
 
+}
+
+@media only screen and (max-height: 360px) {
+	header ul li ul li {
+	    width: 50%;
+	}
 }

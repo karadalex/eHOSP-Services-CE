@@ -1,0 +1,6 @@
+// Integer Function
+int {INT_FUNC_NAME}({INT_FUNC_ARG})
+{
+    {INT_FUNC_BODY}
+    return {INT_FUNC_VALUE};
+}

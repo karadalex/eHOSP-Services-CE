@@ -1,11 +1,11 @@
 <?php
-    $MYSQL_DATABASE_NAME = "ehosp";
-    $MYSQL_HOSTNAME = "localhost";
-    $MYSQL_USERNAME = "root";
-    $MYSQL_ROOT_PASSWORD = "rootpsswd";
+    $config = include('../../config.php');
 
-    // For debugging purposes, not to be used in production:
-    // mysqli_connect($MYSQL_HOSTNAME, $MYSQL_USERNAME, $MYSQL_ROOT_PASSWORD) or die(mysqli_error());
-    mysqli_connect($MYSQL_HOSTNAME, $MYSQL_USERNAME, $MYSQL_ROOT_PASSWORD);
-    mysqli_select_db($MYSQL_DATABASE_NAME);
+    // Procedural:
+    // mysqli_connect($config['DB_HOSTNAME'], $config['DB_ROOT_USERNAME'], $config['DB_ROOT_PASSWORD']);
+    // mysqli_select_db($MYSQL_DATABASE_NAME);
+
+    // Object-Oriented:
+    $mysql_connect = new mysqli($config['DB_HOSTNAME'], $config['DB_ROOT_USERNAME'], $config['DB_ROOT_PASSWORD']);
+    $mysql_connect->select_db($config['DB_NAME']);
 ?>
