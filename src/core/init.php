@@ -1,10 +1,11 @@
 <?php
-    // session_start();
-    // error_reporting(0);
+    $app_config = include('../config.php');
+    $GLOBALS['errors'] = array();
+    $GLOBALS['config'] = $app_config;
 
-    include 'db/connect.php';
-    include 'methods/general.php';
-    include 'methods/users.php';
+    // Autoload required php files
+    spl_autoload_register(function($class) {
+        require_once 'classes/' . $class . '.php';
+    });
 
-    $errors = array();
-?>
+    require_once 'methods/sanitize.php';
