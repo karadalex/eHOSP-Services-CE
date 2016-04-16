@@ -19,6 +19,11 @@
                 task.
 			</p>
 			<div id="tasks">
+				<a href="surgery_sample_tasks/robotic_arm_test">
+					<button type="button" class="services">
+						Robotic Arm Test
+					</button>
+				</a>
 				<a href="surgery_sample_tasks/simple_incision_01">
 					<button type="button" class="services">
 						Simple Incision 1
