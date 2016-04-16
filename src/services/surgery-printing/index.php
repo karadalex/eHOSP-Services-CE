@@ -39,7 +39,7 @@
 						<?php $rasp_path = $config["RASPBERRYPI_HOSTNAME"].":".$config["RASPBERRYPI_PORT"]."/"; ?>
 		        		<a href="<?php echo "http://".$rasp_path; ?>">
 							<button type="button" class="services">
-								Chack Surgery Robot Status
+								Check Surgery Robot Status
 							</button>
 						</a>
 		        	</li>
