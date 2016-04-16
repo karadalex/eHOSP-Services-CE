@@ -188,10 +188,10 @@ h2, h3, h4, h5, h6 {
 		background: #076b3c;
 	}
 
-	@media only screen and (max-height: 360px) {
-		header ul li ul li {
-		    width: 50%;
-		}
-	}
+}
 
+@media only screen and (max-height: 360px) {
+	header ul li ul li {
+	    width: 50%;
+	}
 }
