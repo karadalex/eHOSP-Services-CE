@@ -79,13 +79,13 @@
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Raspberry PI Hostname</p>
-							<input type="text" placeholder="Hostname" name="RASPBERRYPI_HOSTNAME" value="localhost">
+							<input type="text" placeholder="Hostname" name="RASPBERRYPI_HOSTNAME" value="192.168.1.2">
 						</li>
                         <br>
 
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Raspberry PI Listening Port (Default: 49153)</p>
-							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT" value="8080/hardware/src/">
+							<input type="text" placeholder="Port" name="RASPBERRYPI_PORT" value="8080/hardware/src">
 						</li>
                         <br>
 					</ul>
