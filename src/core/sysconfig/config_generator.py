@@ -27,13 +27,22 @@ config_file_content = '''
         // Database's Info
         'DB_NAME' => 'ehosp',
         'DB_HOSTNAME' => '{DB_HOSTNAME}',
-        'DB_PORT' => {DB_PORT},
+        'DB_PORT' => '{DB_PORT}',
         'DB_ROOT_USERNAME' => '{DB_ROOT_USERNAME}',
         'DB_ROOT_PASSWORD' => '{DB_ROOT_PASSWORD}',
 
         // Raspberry Pi's Info
         'RASPBERRYPI_HOSTNAME' => '{RASPBERRYPI_HOSTNAME}',
-        'RASPBERRYPI_PORT' => {RASPBERRYPI_PORT}
+        'RASPBERRYPI_PORT' => '{RASPBERRYPI_PORT}',
+
+        // Technical details
+        'remember' => array(
+            'cookie_name' => 'hash',
+            'cookie_expiry' => 604800
+        ),
+        'session' => array(
+            'session_name' = 'user'
+        )
     );
 
     return $CONFIG;
