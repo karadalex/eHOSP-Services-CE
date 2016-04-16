@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <title>Simple Incision 1</title>
+    <title>Install eHOSP Web Application</title>
     <link rel="stylesheet" href="../../css/simple_page.css" />
     <?php $config = include('../../config.php'); ?>
 </head>
