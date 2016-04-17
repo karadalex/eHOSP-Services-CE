@@ -48,6 +48,13 @@
 					</a>
 	        	</li>
 	        	<li>
+	        		<a href="services/med-gis">
+						<button type="button" class="services">
+							Medical Geographic Information System
+						</button>
+					</a>
+	        	</li>
+	        	<li>
 	        		<a href="services/research-platform">
 						<button type="button" class="services">
 							Research Platform

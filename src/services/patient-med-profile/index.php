@@ -5,6 +5,7 @@
 	<?php
 		include '../includes/html/head.html';
 	?>
+	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
@@ -18,6 +19,9 @@
 				Welcome to eHOSP, the hospital on the cloud,
 				a platform for e-health and e-medicine!
 			</p>
+			<ul id="buttons">
+				
+			</ul>
       	</div>
 	</div>
 

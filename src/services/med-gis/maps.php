@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<title>Research Platform</title>
+	<title>Medical GIS - Maps</title>
 	<?php
 		include '../includes/html/head.html';
 	?>
-	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
+	<link rel="stylesheet" href="leaflet/leaflet.css" />
 </head>
 <body>
 	<div id="container">
@@ -14,15 +14,16 @@
 		?>
 
 		<div class="row">
-	        <h1>Genetic Code Service</h1>
+	        <h1>Medical GIS Maps</h1>
 	        <p>
-				A service for analyzing genetic code and use it for customized treatments
+
 			</p>
-			<ul id="buttons">
-				
-			</ul>
       	</div>
 	</div>
+
+	<div id="map" style="width: 90%; height: 500px; margin-left:5%; margin-bottom: 30px"></div>
+	<script src="leaflet/leaflet.js"></script>
+	<script src="js/main.js"></script>
 
 	<script src="../../js/foundation.min.js"></script>
     <script>

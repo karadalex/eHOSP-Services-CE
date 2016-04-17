@@ -27,7 +27,7 @@
 					<ul class="input-list style-1 clearfix">
 						<li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Hostname" name="APP_HOSTNAME" value="192.168.1.2">
+							<input type="text" placeholder="Hostname" name="APP_HOSTNAME" value="127.0.0.1">
 						</li>
 
                         <li class="List-Left-Aligned">
@@ -49,7 +49,7 @@
 
                         <li class="List-Left-Aligned">
 							<p class="Paragraph-Left-Aligned">Database Hostname (e.g. "localhost")</p>
-							<input type="text" placeholder="Database Hostname" name="DB_HOSTNAME" value="localhost">
+							<input type="text" placeholder="Database Hostname" name="DB_HOSTNAME" value="127.0.0.1">
 						</li>
                         <br>
 

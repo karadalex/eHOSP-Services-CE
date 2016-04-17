@@ -5,6 +5,7 @@
 	<?php
 		include '../includes/html/head.html';
 	?>
+	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
@@ -18,18 +19,18 @@
 	        	Design a surgical procedure to be executed remotely with a surgical robotical
 	        	mechanism
 			</p>
-			<div id="tasks">
-				<a href="surgery_sample_tasks.php">
-					<button type="button" class="services">
+			<ul id="buttons">
+				<li>
+					<button type="button" class="services" onclick="location.href='surgery_sample_tasks.php';">
 						Sample Tasks
 					</button>
-				</a>
-				<a href="custom_surgery.php">
-					<button type="button" class="services">
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='custom_surgery.php';">
 						Design your own Task
 					</button>
-				</a>
-			</div>
+				</li>
+			</ul>
       	</div>
 	</div>
 
