@@ -5,6 +5,7 @@
 	<?php
 		include '../includes/html/head.html';
 	?>
+	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
@@ -18,6 +19,9 @@
 	        	Design your own surgical task or procedure
 			</p>
 			<div id="interface">
+				<ul id="buttons">
+					
+				</ul>
 				
 			</div>
       	</div>

@@ -6,6 +6,7 @@
 		include '../includes/html/head.html';
 		$config = include('../../config.php');
 	?>
+	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
@@ -22,33 +23,25 @@
 			<div id="buttons">
 				<ul>
 		        	<li>
-		        		<a href="SurgeryDesign.php">
-							<button type="button" class="services">
-								Surgery Procedure Design
-							</button>
-						</a>
+						<button type="button" class="services" onclick="location.href='SurgeryDesign.php';">
+							Surgery Procedure Design
+						</button>
 		        	</li>
 		        	<li>
-		        		<a href="3DBioprintDesign.php">
-							<button type="button" class="services">
-								3D Bioprinting Design
-							</button>
-						</a>
+						<button type="button" class="services" onclick="location.href='3DBioprintDesign.php';">
+							3D Bioprinting Design
+						</button>
 		        	</li>
 					<li>
 						<?php $rasp_path = $config["RASPBERRYPI_HOSTNAME"].":".$config["RASPBERRYPI_PORT"]."/"; ?>
-		        		<a href="<?php echo "http://".$rasp_path; ?>">
-							<button type="button" class="services">
-								Check Surgery Robot Status
-							</button>
-						</a>
+						<button type="button" class="services" onclick="location.href='<?php echo "http://".$rasp_path; ?>';">
+							Check Surgery Robot Status
+						</button>
 		        	</li>
 					<li>
-		        		<a href="links.php">
-							<button type="button" class="services">
-								Useful Links
-							</button>
-						</a>
+						<button type="button" class="services" onclick="location.href='links.php';">
+							Useful Links
+						</button>
 		        	</li>
 		        </ul>
 			</div>
