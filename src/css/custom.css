@@ -152,7 +152,7 @@ h2, h3, h4, h5, h6 {
 
 	h1 {
 		font-size: 2.5em;
-		margin-top: 5em;
+		margin-top: 3em;
 	}
 
 	p {
@@ -186,6 +186,10 @@ h2, h3, h4, h5, h6 {
 
 	header ul li a:hover {
 		background: #076b3c;
+	}
+
+	.logo {
+		width: 120px;
 	}
 
 }
