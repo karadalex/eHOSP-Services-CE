@@ -24,6 +24,7 @@
 	<div id="map" style="width: 90%; height: 500px; margin-left:5%; margin-bottom: 30px"></div>
 	<script src="leaflet/leaflet.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/gis_remote_nodes.js"></script>
 
 	<script src="../../js/foundation.min.js"></script>
     <script>
