@@ -8,7 +8,7 @@ class DB {
 	        $_results,
 	        $_count = 0;
 
-	// constructor
+	// Class constructor
 	private function __construct() {
 		try {
 			// Connect to MySQL Server with info as specified in configuration file
@@ -21,6 +21,7 @@ class DB {
 		}
 	}
 
+	// Create an instance of this class and only once (singleton)
 	public static function getInstance() {
 		if (!isset(self::$_instance)) {
 			self::$_instance = new DB();
@@ -29,6 +30,7 @@ class DB {
 		return self::$_instance;
 	}
 
+	// Run a query on the database
 	public function query($sql, $params = array()) {
 		$this->_error = false;
 		if ($this->_query = $this->_pdo->prepare($sql)) {
@@ -41,7 +43,7 @@ class DB {
 				}
 			}
 			if ($this->_query->execute()) {
-				echo "Query ran successfully!";
+				//echo "Query ran successfully!";
 				$this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ);
 				$this->_count = $this->_query->rowCount();
 			} else {
@@ -51,7 +53,42 @@ class DB {
 		return $this;
 	}
 
+	// Run a task on the database instead of passing raw queries 
+	public function action($action, $table, $where = array()) {
+		if (count($where) === 3) {
+			$operators = array('=', '>', '<', '<=');
+
+			$field    = $where[0];
+			$operator = $where[1];
+			$value    = $where[2];
+
+			if (in_array($operator, $operators)) {
+				$sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+				if (!$this->query($sql, array($value))->error()) {
+					return $this;
+				}
+			}
+		}
+		return false;
+	}
+
+	public function get($table, $where) {
+		return $this->action('SELECT *', $table, $where);
+	}
+
+	public function delete($table, $where) {
+		return $this->action('DELETE *', $table, $where);
+	}
+
+	public function results() {
+		return $this->_results;
+	}
+
 	public function error() {
 		return $this->_error;
+	}
+
+	public function count() {
+		return $this->_count;
 	}
 }
