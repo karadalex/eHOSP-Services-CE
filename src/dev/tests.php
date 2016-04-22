@@ -14,6 +14,9 @@ require_once '../core/init.php';
 *********************************************************************************/
 echo "Testing Global variables<br>";
 var_dump($GLOBALS['config']);
+echo "<br>";
+echo "<br>";
+
 echo config_get::get('DB_ROOT_PASSWORD');
 echo "<br>";
 var_dump(config_get::get('DB_HOSTNAME'));
@@ -56,6 +59,8 @@ if ($user1->error()) {
 } else {
 	echo 'Users were found!<br>';
 }
+echo "<br>";
+echo "<br>";
 
 
 /*********************************************************************************
@@ -76,6 +81,8 @@ if (!$user3->count()) {
 } else {
 	echo 'Users were found!<br>';
 }
+echo "<br>";
+echo "<br>";
 
 
 
@@ -91,4 +98,31 @@ if (!$user4->count()) {
 		echo $user->username, " ", $user->password, "<br>";
 	}
 }
-echo "hi6";
+echo "<br>";
+echo "<br>";
+
+
+
+/*********************************************************************************
+* Testing insert method
+*
+*********************************************************************************/
+// $user5 = DB::getInstance()->insert('user_registry', array(
+// 	'username' => 'Dale',
+// 	'password' => 'password',
+// 	'salt' => 'salt'
+// ));
+// echo "<br>";
+// echo "<br>";
+
+
+
+/*********************************************************************************
+* Testing update method
+*
+*********************************************************************************/
+$user6 = DB::getInstance()->update('user_registry', 14, array(
+	'password' => 'newnewnewnewpassword'
+));
+echo "<br>";
+echo "<br>";
