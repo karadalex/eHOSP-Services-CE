@@ -3,7 +3,7 @@
     $GLOBALS['errors'] = array();
     $GLOBALS['config'] = $app_config;
 
-    // Autoload required php files
+    // Autoload required php files from classes folder
     spl_autoload_register(function($class) {
         require_once 'classes/' . $class . '.php';
     });
