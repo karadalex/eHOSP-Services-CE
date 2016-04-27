@@ -127,5 +127,3 @@ $user6 = DB::getInstance()->update('user_registry', 14, array(
 ));
 echo "<br>";
 echo "<br>";
-
-
