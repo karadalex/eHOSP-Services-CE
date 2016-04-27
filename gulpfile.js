@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    css_minify = require('gulp-clean-css');
 
 var services = ['medical-diagnosis', 'patient-med-profile', 'research-platform', 'surgery-printing'];
 
