@@ -6,6 +6,7 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.6",
     "gulp-imagemin": "^2.4.0",
     "gulp-uglify": "^1.5.3",
     "jshint": "^2.9.1",
