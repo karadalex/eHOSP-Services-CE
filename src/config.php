@@ -6,7 +6,7 @@
     * Use this file to installand configure the application
     * @return : array with application's configuration information
     *
-    * Last modified: Sat Apr 16 22:44:10 2016
+    * Last modified: 04/27/16 14:09:50
     *
     * How to use it in project:
     * $config = include('config.php');
@@ -36,7 +36,8 @@
             'cookie_expiry' => 604800
         ),
         'session' => array(
-            'session_name' => 'user'
+            'session_name' => 'user',
+            'token_name' => 'token'
         )
     );
 
