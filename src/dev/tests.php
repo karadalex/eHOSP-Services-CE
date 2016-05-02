@@ -108,13 +108,13 @@ echo "<br>";
 * Testing insert method
 *
 *********************************************************************************/
-// $user5 = DB::getInstance()->insert('user_registry', array(
-// 	'username' => 'Dale',
-// 	'password' => 'password',
-// 	'salt' => 'salt'
-// ));
-// echo "<br>";
-// echo "<br>";
+$user5 = DB::getInstance()->insert('user_registry', array(
+	'username' => 'Dale',
+	'password' => 'password',
+	'salt' => 'salt'
+));
+echo "<br>";
+echo "<br>";
 
 
 
@@ -127,3 +127,12 @@ $user6 = DB::getInstance()->update('user_registry', 14, array(
 ));
 echo "<br>";
 echo "<br>";
+
+
+/*********************************************************************************
+* Testing flashing by redirecting from test-form-input.php
+*
+*********************************************************************************/
+if (Session::exists('success')) {
+	echo Session::flash('success');
+}
