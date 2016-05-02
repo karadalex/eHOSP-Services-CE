@@ -42,8 +42,23 @@ if(Input::exists()) {
 		));
 
 		if ($validation->passed()) {
-			Session::flash('success', 'You successfully registered');
-			header('Location: tests.php');
+			$user = new User();
+
+			$salt = Hash::salt(32);
+
+			try {
+				// TODO: Add more registration fields
+				$user->create(array(
+					'username' => Input::get('username'),
+					'password' => Hash::make(Input::get('password'), $salt),
+					'salt' => $salt,
+					'date' => date('Y-m-d H:i:s')
+				));
+			} catch (Exception $e) {
+				// TODO: Redirect to specific error page instead of die
+				die($e->getMessage());
+			}
+
 		} else {
 			foreach($validation->errors() as $error) {
 				$error_msg .= $error . '\n';
