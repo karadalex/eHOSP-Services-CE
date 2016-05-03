@@ -4,9 +4,7 @@ require_once '../core/init.php';
 $error_msg = '';
 
 if (Input::exists()) {
-    // echo 'Test1<br>';
     if (Token::check(Input::get('token'))) {
-        // echo 'Test2<br>';
 
         $validate = new Validation();
         $validation = $validate->check($_POST, array(
@@ -19,7 +17,14 @@ if (Input::exists()) {
         ));
 
         if ($validation->passed()) {
-            // log user in
+            $user = new User();
+            $login = $user->login(Input::get('username'), Input::get('password'));
+
+            if ($login) {
+                echo "You are logged in";
+            } else {
+                echo "You can't login";
+            }
         } else {
             foreach($validation->errors() as $error) {
 				$error_msg .= $error . '\n';
@@ -39,11 +44,8 @@ if (Input::exists()) {
 
 
 <?php
-// Output error Message when page is loaded
-// echo "Test3";
-var_dump($error_msg);
+// var_dump($error_msg);
 if (strlen($error_msg) > 0) {
-    // echo "Test4";
 	echo '<script type="text/javascript">alert("' . $error_msg . '");</script>';
 }
 ?>
