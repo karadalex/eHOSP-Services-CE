@@ -44,7 +44,9 @@ class DB {
 			}
 			if ($this->_query->execute()) {
 				//echo "Query ran successfully!";
-				$this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ);
+				try {
+					$this->_results = $this->_query->fetchAll(PDO::FETCH_OBJ);
+				} catch (Exception $e) {}
 				$this->_count = $this->_query->rowCount();
 			} else {
 				$this->_error = true;
@@ -53,7 +55,7 @@ class DB {
 		return $this;
 	}
 
-	// Run a task on the database instead of passing raw queries 
+	// Run a task on the database instead of passing raw queries
 	public function action($action, $table, $where = array()) {
 		if (count($where) === 3) {
 			$operators = array('=', '>', '<', '<=');
