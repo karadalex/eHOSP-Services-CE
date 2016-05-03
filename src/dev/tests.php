@@ -133,6 +133,6 @@ echo "<br>";
 * Testing flashing by redirecting from test-form-input.php
 *
 *********************************************************************************/
-if (Session::exists('success')) {
-	echo Session::flash('success');
+if (Session::exists('home')) {
+	echo Session::flash('home');
 }
