@@ -20,7 +20,7 @@ class Session {
     }
 
     // Method to output a message only once (e.g. "You have successfully logged in")
-    public static function flash($name, $strin = '') {
+    public static function flash($name, $string = '') {
         if (self::exists($name)) {
             $session = self::get($name);
             self::delete($name);
