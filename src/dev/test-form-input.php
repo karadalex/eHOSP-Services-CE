@@ -56,7 +56,8 @@ if(Input::exists()) {
 				));
 
 				Session::flash('home', 'You have successfully registered! You can now log in');
-				header('Location: tests.php');
+				Redirect::to('tests.php');
+				// Redirect::to(404);
 			} catch (Exception $e) {
 				// TODO: Redirect to specific error page instead of die
 				die($e->getMessage());
