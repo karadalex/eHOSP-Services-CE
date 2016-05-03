@@ -136,6 +136,11 @@ class DB {
 		return $this->_results;
 	}
 
+	public function first() {
+		$data = $this->results();
+		return $data[0];
+	}
+
 	public function error() {
 		return $this->_error;
 	}
