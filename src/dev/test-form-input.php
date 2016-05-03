@@ -54,6 +54,9 @@ if(Input::exists()) {
 					'salt' => $salt,
 					'date' => date('Y-m-d H:i:s')
 				));
+
+				Session::flash('home', 'You have successfully registered! You can now log in');
+				header('Location: tests.php');
 			} catch (Exception $e) {
 				// TODO: Redirect to specific error page instead of die
 				die($e->getMessage());
