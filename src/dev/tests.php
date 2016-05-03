@@ -136,3 +136,17 @@ echo "<br>";
 if (Session::exists('home')) {
 	echo Session::flash('home');
 }
+
+
+/*********************************************************************************
+* Testing salt
+*
+*********************************************************************************/
+var_dump(mcrypt_create_iv(32));
+echo "<br>";
+var_dump(utf8_decode(mcrypt_create_iv(32)));
+echo "<br>";
+echo "<br>";
+var_dump(Hash::salt(32));
+echo "<br>";
+var_dump(utf8_decode(Hash::salt(32)));
