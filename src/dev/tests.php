@@ -108,13 +108,13 @@ echo "<br>";
 * Testing insert method
 *
 *********************************************************************************/
-$user5 = DB::getInstance()->insert('user_registry', array(
-	'username' => 'Dale',
-	'password' => 'password',
-	'salt' => 'salt'
-));
-echo "<br>";
-echo "<br>";
+// $user5 = DB::getInstance()->insert('user_registry', array(
+// 	'username' => 'Dale',
+// 	'password' => 'password',
+// 	'salt' => 'salt'
+// ));
+// echo "<br>";
+// echo "<br>";
 
 
 
@@ -150,3 +150,17 @@ echo "<br>";
 var_dump(Hash::salt(32));
 echo "<br>";
 var_dump(utf8_decode(Hash::salt(32)));
+
+
+
+/*********************************************************************************
+* Testing user session - Saluting user
+*
+*********************************************************************************/
+$user = new User();
+if ($user->isLoggedIn()) {
+	echo 'You are logged in';
+}
+
+var_dump(Session::get(config_get::get('session/session_name')));
+var_dump($_SESSION);

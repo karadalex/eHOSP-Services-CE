@@ -16,9 +16,11 @@ if (Input::exists()) {
             )
         ));
 
-        if ($validation->passed()) {
+        if ($validate->passed()) {
             $user = new User();
-            $login = $user->login(Input::get('username'), Input::get('password'));
+
+            $remember = (Input::get('remember') === 'on') ? true :false;
+            $login = $user->login(Input::get('username'), Input::get('password'), $remember);
 
             if ($login) {
                 echo "You are logged in";
@@ -26,17 +28,20 @@ if (Input::exists()) {
                 echo "You can't login";
             }
         } else {
-            foreach($validation->errors() as $error) {
+            foreach($validate->errors() as $error) {
 				$error_msg .= $error . '\n';
 			}
         }
     }
 }
+
+var_dump($_SESSION);
 ?>
 
 <form action="" method="post">
 	<input type="text" name="username" value="<?php echo escape(Input::get('username')); ?>">
 	<input type="password" name="password" value="">
+    <input type="checkbox" name="remember"> Remember me
 
     <input type="hidden" name="token" value="<?php echo Token::generate();?>">
     <input type="submit" value="Log in">
