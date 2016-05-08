@@ -47,7 +47,7 @@ class User {
     }
 
     public function login($username = null, $password = null, $remember = false) {
-        var_dump($this->data());
+        // var_dump($this->data());
         // var_dump(Hash::make($password, $this->data()->salt));
 
         if (!$username && !$password && $this->exists()) {
