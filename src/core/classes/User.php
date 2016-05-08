@@ -47,33 +47,33 @@ class User {
     }
 
     public function login($username = null, $password = null, $remember = false) {
-        // var_dump($this->data());
+        var_dump($this->data());
         // var_dump(Hash::make($password, $this->data()->salt));
-        
-        if (!$username $$ !$password $$ $this->exists()) {
+
+        if (!$username && !$password && $this->exists()) {
             // TODO: Check whether session_id works. If not replace with id or user_id
-            Session::put($this->_sessionName, $this->data()->session_id);
+            Session::put($this->_sessionName, $this->data()->user_id);
         } else {
             $user = $this->find($username);
-            
+
             if ($user) {
                 if ($this->data()->password === Hash::make($password, $this->data()->salt)) {
                     Session::put($this->_sessionName, $this->data()->user_id);
 
                     if($remember) {
                         $hash = Hash::unique();
-                        $hashCheck = $this->_db->get('user_session', array('user_id', '=', $this->data()->session_id));
+                        $hashCheck = $this->_db->get('user_sessions', array('user_id', '=', $this->data()->user_id));
 
                         if (!$hashCheck->count()) {
-                            $this->_db->insert('user_session', array(
-                                'user_id' => $this->data()->session_id,
+                            $this->_db->insert('user_sessions', array(
+                                'user_id' => $this->data()->user_id,
                                 'hash' => $hash
                             ));
                         } else {
                             $hash = $hashCheck->first()->hash;
                         }
 
-                        Cookie::put($this->_cookieName, $hash, Config::get('remember/cookie_expiry') );
+                        Cookie::put($this->_cookieName, $hash, config_get::get('remember/cookie_expiry') );
                     }
 
                     return true;
@@ -83,14 +83,14 @@ class User {
 
         return false;
     }
-    
+
     public function exists() {
         return (!empty($this->_data)) ? true : false;
     }
 
     public function logout() {
-        $this->_db->delete('user_session', array('user_id', '=', $this->data()->session_id));
-        
+        $this->_db->delete('user_sessions ', array('user_id', '=', $this->data()->user_id));
+
         Session::delete($this->_sessionName);
         Cookie::delete($this->_cookieName);
     }
