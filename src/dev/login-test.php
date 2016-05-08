@@ -24,6 +24,7 @@ if (Input::exists()) {
 
             if ($login) {
                 echo "You are logged in";
+                Redirect::to('profile.php');
             } else {
                 echo "You can't login";
             }
@@ -36,6 +37,8 @@ if (Input::exists()) {
 }
 
 var_dump($_SESSION);
+echo "<br>";
+var_dump($_COOKIE);
 ?>
 
 <form action="" method="post">
