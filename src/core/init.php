@@ -18,10 +18,11 @@ require_once 'methods/sanitize.php';
 
 
 if (Cookie::exists(config_get::get('remember/cookie_name')) && !Session::exists(config_get::get('session/session_name'))) {
-    $hash = Cookie::get(Config::get('remember/cookie_name'));
-    $hashCheck = DB::getInstance()->get('user_session', array('hash', '=', $hash));
+    $hash = Cookie::get(config_get::get('remember/cookie_name'));
+    $hashCheck = DB::getInstance()->get('user_sessions', array('hash', '=', $hash));
     
     if ($hashCheck->count()) {
+        echo $hashCheck->first()->user_id;
         $user = new User($hashCheck->first()->user_id);
         $user->login();
     }
