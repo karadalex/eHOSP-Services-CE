@@ -1,3 +1,10 @@
+<?php
+require_once '../../core/init.php';
+chdir(dirname(__FILE__));
+?>
+
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -11,6 +18,16 @@
 		<?php
 			include '../includes/html/header.html';
 		?>
+
+
+		<?php
+        if(Session::exists('home')) {
+            echo '<p>' . Session::flash('home'). '</p>';
+        }
+        $user = new User(); //Current
+        if($user->isLoggedIn()) {
+        ?>
+
 
 		<div class="row">
 	        <h1>Medical Diagnosis - Useful links</h1>
@@ -29,6 +46,23 @@
             	</ul>
 			</p>
       	</div>
+
+      	<?php
+        } else {
+        ?>
+        <div class="row">
+        	<h1>
+	        	Error
+	        </h1>
+        	<p>
+        		You are currently not Signed In!<br>
+        		Please <a href='../../sign.php'>Sign In</a> or <a href='../../register.php'>Register</a>
+        	</p>
+        </div>
+        <?php
+        }
+        ?>
+        
 	</div>
 
 	<script src="../../js/foundation.min.js"></script>

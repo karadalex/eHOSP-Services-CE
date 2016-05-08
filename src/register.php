@@ -25,7 +25,6 @@ $error_msg = '';
 	        <h1> Create an account</h1>
 
             <?php
-            var_dump($_POST['ssn']);
             if(Input::exists()) {
                 if (Token::check(Input::get('token'))) {
                     $validate = new Validation();

@@ -98,8 +98,9 @@ require_once 'core/init.php';
         	<h1>
 	        	Error
 	        </h1>
-        	<p>You are currently not Signed In!<br>
-        		<a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
+        	<p>
+        		You are currently not Signed In!<br>
+        		Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
         	</p>
         </div>
         <?php
