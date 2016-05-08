@@ -79,7 +79,7 @@ class DB {
 	}
 
 	public function delete($table, $where) {
-		return $this->action('DELETE *', $table, $where);
+		return $this->action('DELETE', $table, $where);
 	}
 
 	public function insert($table, $fields = array()) {
