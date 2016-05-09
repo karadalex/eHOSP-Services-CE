@@ -16,7 +16,7 @@ require_once 'core/init.php';
 <body>
 	<div id="container">
 		<?php
-        include 'includes/html/header.html';
+        include 'includes/php/header.php';
 		?>
         
         
