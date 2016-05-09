@@ -17,7 +17,7 @@ chdir(dirname(__FILE__));
 <body>
 	<div id="container">
 		<?php
-			include '../includes/html/header.html';
+			include '../includes/php/header.php';
 		?>
 
 
