@@ -1,10 +1,3 @@
-<?php
-chdir(dirname(__FILE__));
-require_once '../../core/init.php';
-chdir(dirname(__FILE__));
-?>
-
-
 <style>
 .dropdown {
     position: relative;
@@ -28,6 +21,16 @@ chdir(dirname(__FILE__));
 .me_menu {
 	width: 100%;
 }
+
+.dropdown-mobile-content {
+	display: none;
+}
+
+@media only screen and (max-width: 40.063em) {
+	.dropdown-mobile-content {
+		display: block;
+	}
+}
 </style>
 
 
@@ -44,6 +47,7 @@ chdir(dirname(__FILE__));
 					<li><a class="menu" href="#">Doc</a></li>
 					<li><a class="menu" href="contact.php">Contact</a></li>
 
+
 					<?php
 			        if(Session::exists('home')) {
 			            echo '<p>' . Session::flash('home'). '</p>';
@@ -51,13 +55,19 @@ chdir(dirname(__FILE__));
 			        $user = new User(); //Current
 			        if($user->isLoggedIn()) {
 			        ?>
+
+					<hr class="dropdown-mobile-content">
+					<li class="dropdown-mobile-content"><a class="menu" href="">My Profile</a></li>
+					<li class="dropdown-mobile-content"><a class="menu" href="">Settings</a></li>
+					<li class="dropdown-mobile-content"><a class="menu" href="signout.php">Logout</a></li>
+
 					<li></li>
 					<div class="dropdown">
 						<a class="dropdown">Me</a>
 						<div class="dropdown-content">
 							<li class="me_menu"><a class="menu" href="">My Profile</a></li>
 							<li class="me_menu"><a class="menu" href="">Settings</a></li>
-							<li class="me_menu"><a class="menu" href="">Logout</a></li>
+							<li class="me_menu"><a class="menu" href="signout.php">Logout</a></li>
 						</div>
 					</div>
 					<?php } ?>
