@@ -30,6 +30,16 @@
 	.dropdown-mobile-content {
 		display: block;
 	}
+
+	.dropdown {
+		display: none;
+	}
+
+	@media only screen and (max-height: 360px) {
+		hr.dropdown-mobile-content {
+			display: none;
+		}
+	}
 }
 </style>
 
