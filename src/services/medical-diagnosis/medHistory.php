@@ -8,7 +8,7 @@ chdir(dirname(__FILE__));
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<title>Medical Diagnosis & Medical Database</title>
+	<title>Medical History</title>
 	<?php
 		include '../includes/html/head.html';
 	?>
@@ -32,36 +32,7 @@ chdir(dirname(__FILE__));
 
 
 		<div class="row">
-	        <h1>Medical Diagnosis & Medical Database</h1>
-	        <p>
-				Use the "Medical Diagnosis" service to diagnose accurately the disease or disorder of
-				the patient and do the necessary steps to cure it.
-			</p>
-			<p>
-				Use the "Medical Database" to find information about diseases, medication and other.
-			</p>
-			<ul id="buttons">
-	        	<li>
-					<button type="button" class="services" onclick="location.href='diagnosis.php';">
-						Medical Diagnosis
-					</button>
-	        	</li>
-	        	<li>
-					<button type="button" class="services" onclick="location.href='medHistory.php';">
-						Medical History
-					</button>
-	        	</li>
-	        	<li>
-					<button type="button" class="services" onclick="location.href='#';">
-						Medical Database
-					</button>
-	        	</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='links.php';">
-						Useful Links
-					</button>
-	        	</li>
-	        </ul>
+	        
     	</div>
 
     	<?php
