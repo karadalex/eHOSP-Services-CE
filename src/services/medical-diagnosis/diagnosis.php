@@ -12,6 +12,7 @@ chdir(dirname(__FILE__));
 	<?php
 		include '../includes/html/head.html';
 	?>
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../../css/forms.css">
 	<style type="text/css">
 		#SubmitDiagnosis {
@@ -42,19 +43,44 @@ chdir(dirname(__FILE__));
         }
         $user = new User(); //Current
         if($user->isLoggedIn()) {
+
+        	// Check if data has been passed to _POST
+        	var_dump($_POST);
+        	if (!empty($_POST)) {
+        		$db = DB::getInstance();
+        		$userData = $user->data();
+
+        		// Generate a JSON object to store in database containing diagnosis information
+        		$json = new Json();
+        		$jsonObj = $json->create($_POST);
+
+        		// Insert data in diagnosis
+        		// TODO: In future require all the of rest fields (now some are NULL)
+        		$db->insert('user_diagnosis', array(
+        			'user_id' => $userData->user_id,
+        			'json_diagnosis_result' => $jsonObj
+
+        		));
+        	}
+
         ?>
 
 
-		<div class="row">
-	        <h1>Medical Diagnosis</h1>
+        <form action="" method="post" id="form">
+			<div class="row">
+		        <h1>Medical Diagnosis</h1>
 
-	        <h5>Please select a category below:</h5><br>
-	        <div id="diagnosis_form_1" class="input-list style-1 clearfix"></div>
-			<div id="diagnosis_form_2" class="input-list style-1 clearfix"></div>
-			<div id="diagnosis_form_3" class="input-list style-1 clearfix"></div>
+		        <h5>Please select a category below:</h5><br>
+		        <div id="category" class="input-list style-1 clearfix"></div>
+				<div id="subcategory" class="input-list style-1 clearfix"></div>
+				<div id="diagnosis" class="input-list style-1 clearfix"></div>
 
-            <script type="text/javascript" src="js/diagnosis-form.js"></script>
-    	</div>
+	            <script type="text/javascript" src="js/diagnosis-form.js"></script>
+	    	</div>
+
+	    	<input type="hidden" name="token" value="<?php echo Token::generate();?>">
+	    	<div id="submit_form"></div>
+	    </form>
 
     	<?php
         } else {
