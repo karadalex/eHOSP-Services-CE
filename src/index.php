@@ -20,6 +20,18 @@ require_once 'core/init.php';
 		include 'includes/php/header.php';
 		?>
 
+
+		<?php
+        if(Session::exists('home')) {
+            echo '<p>' . Session::flash('home'). '</p>';
+        }
+        $user = new User();
+        if($user->isLoggedIn()) {
+			Redirect::to('services.php');
+		} else {
+        ?>
+
+
 		<div class="main">
 	        <h1> Welcome to eHOSP</h1>
 	        <p>
@@ -36,7 +48,9 @@ require_once 'core/init.php';
 					</button>
 				</a>
 			</p>
-    </div>
+    	</div>
+
+		<?php } ?>
 	</div>
 
 	<script src="js/foundation.min.js"></script>
