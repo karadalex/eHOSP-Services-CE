@@ -22,10 +22,28 @@ $error_msg = '';
 			include 'includes/html/header.html';
 		?>
 
+		<?php
+        if(Session::exists('home')) {
+            echo '<p>' . Session::flash('home'). '</p>';
+        }
+        $user = new User();
+        if($user->isLoggedIn()) {
+		?>
+
+		<div>
+			<h1> You are already Signed In! </h1>
+			<p>
+				You are signed in as <strong><?php echo $user->data()->username; ?></strong> <br>
+				You can <a href="signout.php">Sign Out</a> or go to <a href="index.php"> Home </a>
+			</p>
+		</div>
+
+
+		<?php } else { ?>
 		<div>
 	        <h1> Sign in or Create an account</h1>
-            
-            
+
+
             <?php
             if (Input::exists()) {
                 if (Token::check(Input::get('token'))) {
@@ -58,8 +76,8 @@ $error_msg = '';
                 }
             }
             ?>
-            
-            
+
+
 	        <section>
 				<form action="" method="post">
 					<ul class="input-list style-1 clearfix">
@@ -73,18 +91,18 @@ $error_msg = '';
                             <input type="checkbox" name="remember"> Remember me
                         </li>
 					</ul>
-                    
+
 
                     <input type="hidden" name="token" value="<?php echo Token::generate();?>">
 					<input type="submit" value="Sign in">
 				</form>
 			</section>
-
 			<p>Don't you have an account? Click <a href="register.php"> here</a> to register<p>
-
       	</div>
+
+		<?php } ?>
 	</div>
-    
+
     <?php
     if (strlen($error_msg) > 0) {
         echo '<script type="text/javascript">alert("' . $error_msg . '");</script>';
