@@ -45,7 +45,7 @@ chdir(dirname(__FILE__));
         if($user->isLoggedIn()) {
 
         	// Check if data has been passed to _POST
-        	var_dump($_POST);
+        	// var_dump($_POST);
         	if (!empty($_POST)) {
         		$db = DB::getInstance();
         		$userData = $user->data();
