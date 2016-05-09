@@ -37,7 +37,47 @@ chdir(dirname(__FILE__));
 				a platform for e-health and e-medicine!
 			</p>
 			<ul id="buttons">
-				
+				<li>
+					<button type="button" class="services" onclick="location.href='BodyMeasurements.php';">
+						Body Measurements
+					</button>
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='Fitness.php';">
+						Fitness
+					</button>
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='Me.php';">
+						Me
+					</button>
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='Nutrition.php';">
+						Nutrition
+					</button>
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='ReproductiveHealth.php';">
+						Reproductive Health
+					</button>
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='Results.php';">
+						Results
+					</button>
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='Sleep.php';">
+						Sleep
+					</button>
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='Vitals.php';">
+						Vitals
+					</button>
+				</li>
+					
 			</ul>
       	</div>
 
