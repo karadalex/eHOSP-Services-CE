@@ -33,35 +33,35 @@ chdir(dirname(__FILE__));
 		<div class="row">
 	        <h1>Body Measurements</h1>
 	        <p>
-				
+
 			</p>
 			<ul id="buttons">
 				<li>
-					<button type="button" class="services" onclick="location.href='Vitals.php';">
+					<button type="button" class="services" onclick="">
 						Body Fat Percentage
 					</button>
 				</li>
 				<li>
-					<button type="button" class="services" onclick="location.href='Vitals.php';">
+					<button type="button" class="services" onclick="">
 						Body Mass Index
 					</button>
 				</li>
 				<li>
-					<button type="button" class="services" onclick="location.href='Vitals.php';">
+					<button type="button" class="services" onclick="">
 						Height
 					</button>
 				</li>
 				<li>
-					<button type="button" class="services" onclick="location.href='Vitals.php';">
+					<button type="button" class="services" onclick="">
 						Lean Body Mass
 					</button>
 				</li>
 				<li>
-					<button type="button" class="services" onclick="location.href='Vitals.php';">
+					<button type="button" class="services" onclick="">
 						Weight
 					</button>
 				</li>
-					
+
 			</ul>
       	</div>
 
@@ -81,7 +81,7 @@ chdir(dirname(__FILE__));
         <?php
         }
         ?>
-        
+
 	</div>
 
 	<script src="../../js/foundation.min.js"></script>
