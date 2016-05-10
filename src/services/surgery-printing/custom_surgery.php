@@ -12,7 +12,8 @@ chdir(dirname(__FILE__));
 	<?php
 		include '../includes/html/head.html';
 	?>
-	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
+	<link rel="stylesheet" type="text/css" href="../../css/forms.css">
+	<link rel="stylesheet" type="text/css" href="../../css/surgDesign-interface.css">
 </head>
 <body>
 	<div id="container">
@@ -35,12 +36,56 @@ chdir(dirname(__FILE__));
 	        <p>
 	        	Design your own surgical task or procedure
 			</p>
-			<div id="interface">
-				<ul id="buttons">
-					
-				</ul>
-				
-			</div>
+
+			<form>
+				<div id="interface">
+					<div id="left-panel">
+						<ul id="tasks">
+							<li>
+								Action
+								<select class="" name="action">
+
+								</select>
+							</li>
+							<li>
+								Sensor
+								<select class="" name="sensor">
+
+								</select>
+							</li>
+							<li>
+								Flow
+								<select class="" name="flow">
+
+								</select>
+							</li>
+							<li>
+								Data
+								<select class="" name="data">
+
+								</select>
+							</li>
+							<li>
+								Advanced
+								<select class="" name="advanced">
+
+								</select>
+							</li>
+							<li>
+								<button type="button" name="add_task" id="add_task">Add Task</button>
+							</li>
+						</ul>
+					</div>
+
+					<div id="right-panel">
+						<div id="tasks-contents">
+							Test
+						</div>
+					</div>
+				</div>
+
+				<input type="submit" value="Submit Surgery Procedure">
+			</form>
       	</div>
 
 
@@ -59,7 +104,7 @@ chdir(dirname(__FILE__));
         <?php
         }
         ?>
-        
+
 	</div>
 
 	<script src="../../js/foundation.min.js"></script>
