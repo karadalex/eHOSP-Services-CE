@@ -1,0 +1,94 @@
+{
+    "Body Measurements": {
+        "Body Fata Percentage": "measurement_includes/BodyMeasurements/",
+        "Body Mass Index": "measurement_includes/BodyMeasurements/",
+        "Height": "measurement_includes/BodyMeasurements/",
+        "Lean Body Mass": "measurement_includes/BodyMeasurements/",
+        "Weight": "measurement_includes/BodyMeasurements/"
+    },
+    "Fitness": {
+        "Active Energy": "measurement_includes/Fitness/",
+        "Cycling Distance": "measurement_includes/Fitness/",
+        "Flights Climbed": "measurement_includes/Fitness/",
+        "Nike Plus": "measurement_includes/Fitness/",
+        "Resting Energy": "measurement_includes/Fitness/",
+        "Stand Hours": "measurement_includes/Fitness/",
+        "Steps": "measurement_includes/Fitness/",
+        "Working & Running Distance": "measurement_includes/Fitness/",
+        "Workouts": "measurement_includes/Fitness/"
+    },
+    "Me": {
+        "Blood Type": "measurement_includes/Me/",
+        "Fitzpatrick Skin Type": "measurement_includes/Me/",
+    },
+    "Nutrition": {
+        "Biotin": "measurement_includes/Nutrition/",
+        "Caffeine": "measurement_includes/Nutrition/",
+        "Calcium": "measurement_includes/Nutrition/",
+        "Carbohyfrates": "measurement_includes/Nutrition/",
+        "Chloride": "measurement_includes/Nutrition/",
+        "Chromium": "measurement_includes/Nutrition/",
+        "Copper": "measurement_includes/Nutrition/",
+        "Dietary Calories": "measurement_includes/Nutrition/",
+        "Dietary Cholesterol": "measurement_includes/Nutrition/",
+        "Dietary Sugar": "measurement_includes/Nutrition/",
+        "Fibre": "measurement_includes/Nutrition/",
+        "Folate": "measurement_includes/Nutrition/",
+        "Iodine": "measurement_includes/Nutrition/",
+        "Magnesium": "measurement_includes/Nutrition/",
+        "Manganese": "measurement_includes/Nutrition/",
+        "Molybdenum": "measurement_includes/Nutrition/",
+        "Monounsaturated Fat": "measurement_includes/Nutrition/",
+        "Niacin": "measurement_includes/Nutrition/",
+        "Pantothenic Acid": "measurement_includes/Nutrition/",
+        "Phosphorus": "measurement_includes/Nutrition/",
+        "Polyunsaturated Fat": "measurement_includes/Nutrition/",
+        "Potassium": "measurement_includes/Nutrition/",
+        "Protein": "measurement_includes/Nutrition/",
+        "Riboflavin": "measurement_includes/Nutrition/",
+        "Saturated Fat": "measurement_includes/Nutrition/",
+        "Selenium": "measurement_includes/Nutrition/",
+        "Sodium": "measurement_includes/Nutrition/",
+        "Thiamine": "measurement_includes/Nutrition/",
+        "Total Fat": "measurement_includes/Nutrition/",
+        "Vitamin A": "measurement_includes/Nutrition/",
+        "Vitamin B12": "measurement_includes/Nutrition/",
+        "Vitamin B6": "measurement_includes/Nutrition/",
+        "Vitamin C": "measurement_includes/Nutrition/",
+        "Vitamin D": "measurement_includes/Nutrition/",
+        "Vitamin E": "measurement_includes/Nutrition/",
+        "Vitamin K": "measurement_includes/Nutrition/",
+        "Water": "measurement_includes/Nutrition/",
+        "Zinc": "measurement_includes/Nutrition/"
+    },
+    "Reproductive Health": {
+        "Basal Body Temperature": "measurement_includes/ReproductiveHealth/",
+        "Cervical Mucus Quality": "measurement_includes/ReproductiveHealth/",
+        "Menstruation": "measurement_includes/ReproductiveHealth/",
+        "Ovulation Test Result": "measurement_includes/ReproductiveHealth/",
+        "Sexual Activity": "measurement_includes/ReproductiveHealth/",
+        "Spotting": "measurement_includes/ReproductiveHealth/"
+    },
+    "Results": {
+        "Blood Alcohol Content": "measurement_includes/Results/",
+        "Blood Glucose": "measurement_includes/Results/",
+        "Electrodermal Activity": "measurement_includes/Results/",
+        "Forced Expiratory Volume 1 second": "measurement_includes/Results/",
+        "Forced Vital Capacity": "measurement_includes/Results/",
+        "Inhaler Usage": "measurement_includes/Results/",
+        "Number of Times Fallen": "measurement_includes/Results/",
+        "Oxygen Saturation": "measurement_includes/Results/",
+        "Peak Expiratory Flow": "measurement_includes/Results/",
+        "Peripheral Perfusion Index": "measurement_includes/Results/",
+        "UV Index": "measurement_includes/Results/"
+    },
+    "Sleep": {
+        "Sleep Analysis": "measurement_includes/Sleep/"
+    },
+    "Vitals": {
+        "Blood Pressure": "measurement_includes/Vitals/",
+        "Body Temperature": "measurement_includes/Vitals/",
+        "Heart Rate": "measurement_includes/Vitals/",
+        "Respiratory Rate": "measurement_includes/Vitals/"
+    }
+}
