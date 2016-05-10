@@ -1,0 +1,62 @@
+#row {
+    width: 100%;
+}
+
+#interface {
+    margin-top: 3rem;
+}
+
+#left-panel {
+    width: 36%;
+    float: left;
+    margin-right: 2%;
+    border-style: solid;
+    border-color: #2bb673;
+}
+
+#right-panel {
+    width: 56%;
+    float: right;
+    margin-right: 2%;
+    border-style: solid;
+    border-color: #2bb673;
+}
+
+#tasks {
+    margin-right: 1.1rem;
+    margin-top: 1.25rem;
+}
+
+#add_task {
+    width: 70%;
+    margin: 1.25rem 15%;
+}
+
+#tasks-contents {
+    width: 80%;
+    margin: 1.25rem 10%;
+}
+
+input[type="submit"] {
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media only screen and (max-width: 40.063em) {
+    #left-panel {
+        width: 100%;
+        margin-right: 0rem;
+    }
+
+    #right-panel {
+        width: 100%;
+        margin-right: 0rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    input[type="submit"] {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
