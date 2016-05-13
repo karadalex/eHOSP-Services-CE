@@ -67,7 +67,7 @@
 			        ?>
 
 					<hr class="dropdown-mobile-content">
-					<li class="dropdown-mobile-content"><a class="menu" href="">My Profile</a></li>
+					<li class="dropdown-mobile-content"><a class="menu" href="profile.php">My Profile</a></li>
 					<li class="dropdown-mobile-content"><a class="menu" href="">Settings</a></li>
 					<li class="dropdown-mobile-content"><a class="menu" href="signout.php">Logout</a></li>
 
@@ -75,7 +75,7 @@
 					<div class="dropdown">
 						<a class="dropdown">Me</a>
 						<div class="dropdown-content">
-							<li class="me_menu"><a class="menu" href="">My Profile</a></li>
+							<li class="me_menu"><a class="menu" href="profile.php">My Profile</a></li>
 							<li class="me_menu"><a class="menu" href="">Settings</a></li>
 							<li class="me_menu"><a class="menu" href="signout.php">Logout</a></li>
 						</div>
