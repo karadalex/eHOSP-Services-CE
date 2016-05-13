@@ -10,14 +10,14 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Research Platform</title>
 	<?php
-		include '../includes/html/head.html';
+		include '../../includes/html/head.html';
 	?>
-	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
+	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
 		<?php
-			include '../includes/php/header.php';
+			include '../../includes/php/header.php';
 		?>
 
 
@@ -37,7 +37,7 @@ chdir(dirname(__FILE__));
 			</p>
 
 			<ul id="buttons">
-				
+
 			</ul>
       	</div>
 
@@ -51,16 +51,16 @@ chdir(dirname(__FILE__));
 	        </h1>
         	<p>
         		You are currently not Signed In!<br>
-        		Please <a href='../../sign.php'>Sign In</a> or <a href='../../register.php'>Register</a>
+        		Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
         	</p>
         </div>
         <?php
         }
         ?>
-        
+
 	</div>
 
-	<script src="../../js/foundation.min.js"></script>
+	<script src="js/foundation.min.js"></script>
     <script>
     	$(document).foundation();
     </script>

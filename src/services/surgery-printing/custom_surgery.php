@@ -10,15 +10,15 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Custom Surgery Design</title>
 	<?php
-		include '../includes/html/head.html';
+		include '../../includes/html/head.html';
 	?>
-	<link rel="stylesheet" type="text/css" href="../../css/forms.css">
-	<link rel="stylesheet" type="text/css" href="../../css/surgDesign-interface.css">
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
+	<link rel="stylesheet" type="text/css" href="css/surgDesign-interface.css">
 </head>
 <body>
 	<div id="container">
 		<?php
-			include '../includes/php/header.php';
+			include '../../includes/php/header.php';
 		?>
 
 
@@ -98,7 +98,7 @@ chdir(dirname(__FILE__));
 	        </h1>
         	<p>
         		You are currently not Signed In!<br>
-        		Please <a href='../../sign.php'>Sign In</a> or <a href='../../register.php'>Register</a>
+        		Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
         	</p>
         </div>
         <?php
@@ -107,7 +107,7 @@ chdir(dirname(__FILE__));
 
 	</div>
 
-	<script src="../../js/foundation.min.js"></script>
+	<script src="js/foundation.min.js"></script>
     <script>
     	$(document).foundation();
     </script>

@@ -10,15 +10,15 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Remote Surgery & 3D Bioprinting</title>
 	<?php
-		include '../includes/html/head.html';
+		include '../../includes/html/head.html';
 		$config = include('../../config.php');
 	?>
-	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
+	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
 		<?php
-			include '../includes/php/header.php';
+			include '../../includes/php/header.php';
 		?>
 
 
@@ -40,12 +40,12 @@ chdir(dirname(__FILE__));
 			<div id="buttons">
 				<ul>
 		        	<li>
-						<button type="button" class="services" onclick="location.href='SurgeryDesign.php';">
+						<button type="button" class="services" onclick="location.href='services/surgery-printing/SurgeryDesign.php';">
 							Surgery Procedure Design
 						</button>
 		        	</li>
 		        	<li>
-						<button type="button" class="services" onclick="location.href='3DBioprintDesign.php';">
+						<button type="button" class="services" onclick="location.href='services/surgery-printing/3DBioprintDesign.php';">
 							3D Bioprinting Design
 						</button>
 		        	</li>
@@ -56,7 +56,7 @@ chdir(dirname(__FILE__));
 						</button>
 		        	</li>
 					<li>
-						<button type="button" class="services" onclick="location.href='links.php';">
+						<button type="button" class="services" onclick="location.href='services/surgery-printing/links.php';">
 							Useful Links
 						</button>
 		        	</li>
@@ -74,16 +74,16 @@ chdir(dirname(__FILE__));
 	        </h1>
         	<p>
         		You are currently not Signed In!<br>
-        		Please <a href='../../sign.php'>Sign In</a> or <a href='../../register.php'>Register</a>
+        		Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
         	</p>
         </div>
         <?php
         }
         ?>
-        
+
 	</div>
 
-	<script src="../../js/foundation.min.js"></script>
+	<script src="js/foundation.min.js"></script>
     <script>
     	$(document).foundation();
     </script>
