@@ -29,40 +29,13 @@ chdir(dirname(__FILE__));
         if($user->isLoggedIn()) {
         ?>
 
-
+		<script src="js/main.js" charset="utf-8"></script>
 		<div class="row">
-	        <h1>Body Measurements</h1>
-	        <p>
-
-			</p>
-			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="">
-						Body Fat Percentage
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="">
-						Body Mass Index
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="">
-						Height
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="">
-						Lean Body Mass
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="">
-						Weight
-					</button>
-				</li>
-
-			</ul>
+			<script type="text/javascript">
+				var name = "Body Measurements";
+				Start(Main, name, name);
+			</script>
+			<div id="content"></div>
       	</div>
 
 

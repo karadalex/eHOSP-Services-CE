@@ -29,61 +29,13 @@ chdir(dirname(__FILE__));
         if($user->isLoggedIn()) {
         ?>
 
-
+		<script src="js/main.js" charset="utf-8"></script>
 		<div class="row">
-	        <h1>Body Measurements</h1>
-	        <p>
-
-			</p>
-			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="">
-						Active Energy
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Cycling Distance
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Flights Climbed
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Nike+
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Resting Energy
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Stand Hours
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Steps
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Walking & Running Distance
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Workouts
-					</button>
-				</li>
-
-
-			</ul>
+			<script type="text/javascript">
+				var name = "Fitness";
+				Start(Main, name, name);
+			</script>
+			<div id="content"></div>
       	</div>
 
 

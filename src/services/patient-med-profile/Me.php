@@ -29,26 +29,13 @@ chdir(dirname(__FILE__));
         if($user->isLoggedIn()) {
         ?>
 
-
+		<script src="js/main.js" charset="utf-8"></script>
 		<div class="row">
-	        <h1>Body Measurements</h1>
-	        <p>
-
-			</p>
-			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="">
-						Blood Type
-					</button>
-				</li>
-                <li>
-					<button type="button" class="services" onclick="">
-						Fitzpatrick Skin Type
-					</button>
-				</li>
-
-
-			</ul>
+			<script type="text/javascript">
+				var name = "Me"
+				Start(Main, name, name);
+			</script>
+			<div id="content"></div>
       	</div>
 
 
