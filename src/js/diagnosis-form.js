@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "data/diagnosis.json";
+var url = "services/medical-diagnosis/data/diagnosis.json";
 selection = "";
 
 // Parse JSON file and call selectList function
