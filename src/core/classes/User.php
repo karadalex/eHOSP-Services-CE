@@ -89,7 +89,7 @@ class User {
     }
 
     public function logout() {
-        $this->_db->delete('user_sessions ', array('user_id', '=', $this->data()->user_id));
+        $this->_db->delete('user_sessions', array('user_id', '=', $this->data()->user_id));
 
         Session::delete($this->_sessionName);
         Cookie::delete($this->_cookieName);
