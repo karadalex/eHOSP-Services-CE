@@ -6,7 +6,7 @@
     * Use this file to installand configure the application
     * @return : array with application's configuration information
     *
-    * Last modified: Sat Apr 16 10:50:03 2016
+    * Last modified: 04/27/16 14:09:50
     *
     * How to use it in project:
     * $config = include('config.php');
@@ -15,13 +15,13 @@
     $CONFIG = array(
         // Application's Info
         'APP_NAME' => 'eHosp',
-        'APP_HOSTNAME' => '192.168.1.2',
+        'APP_HOSTNAME' => '127.0.0.1',
         'APP_ADMIN_USERNAME' => 'admin',
         'APP_ADMIN_PASSWORD' => 'adminpsswd',
 
         // Database's Info
         'DB_NAME' => 'ehosp',
-        'DB_HOSTNAME' => 'localhost',
+        'DB_HOSTNAME' => '127.0.0.1',
         'DB_PORT' => '3306',
         'DB_ROOT_USERNAME' => 'root',
         'DB_ROOT_PASSWORD' => 'rootpsswd',
@@ -36,7 +36,8 @@
             'cookie_expiry' => 604800
         ),
         'session' => array(
-            'session_name' => 'user'
+            'session_name' => 'user',
+            'token_name' => 'token'
         )
     );
 

@@ -1,16 +1,34 @@
+<?php
+require_once '../../core/init.php';
+chdir(dirname(__FILE__));
+?>
+
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
 	<title>Surgery Design</title>
 	<?php
-		include '../includes/html/head.html';
+		include '../../includes/html/head.html';
 	?>
+	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
 		<?php
-			include '../includes/html/header.html';
+			include '../../includes/php/header.php';
 		?>
+
+
+		<?php
+        if(Session::exists('home')) {
+            echo '<p>' . Session::flash('home'). '</p>';
+        }
+        $user = new User(); //Current
+        if($user->isLoggedIn()) {
+        ?>
+
 
 		<div class="row">
 	        <h1>Surgery Design</h1>
@@ -18,22 +36,40 @@
 	        	Design a surgical procedure to be executed remotely with a surgical robotical
 	        	mechanism
 			</p>
-			<div id="tasks">
-				<a href="surgery_sample_tasks.php">
-					<button type="button" class="services">
+			<ul id="buttons">
+				<li>
+					<button type="button" class="services" onclick="location.href='services/surgery-printing/surgery_sample_tasks.php';">
 						Sample Tasks
 					</button>
-				</a>
-				<a href="custom_surgery.php">
-					<button type="button" class="services">
+				</li>
+				<li>
+					<button type="button" class="services" onclick="location.href='services/surgery-printing/custom_surgery.php';">
 						Design your own Task
 					</button>
-				</a>
-			</div>
+				</li>
+			</ul>
       	</div>
+
+
+      	<?php
+        } else {
+        ?>
+        <div class="row">
+        	<h1>
+	        	Error
+	        </h1>
+        	<p>
+        		You are currently not Signed In!<br>
+        		Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
+        	</p>
+        </div>
+        <?php
+        }
+        ?>
+
 	</div>
 
-	<script src="../../js/foundation.min.js"></script>
+	<script src="js/foundation.min.js"></script>
     <script>
     	$(document).foundation();
     </script>
