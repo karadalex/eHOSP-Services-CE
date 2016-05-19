@@ -31,15 +31,22 @@ chdir(dirname(__FILE__));
 		<div class="row">
 	        <h1>Medical Geographic Information System</h1>
 	        <p>
-
+				A Medical Geographic Information System or Medical GIS is a system
+				designed to capture, store, manipulate, analyze, manage, and present all types of
+				spatial or geographical data, which are related to Medicine or Healthcare Services.
 			</p>
-			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="location.href='services/med-gis/maps.php';">
-						Maps
-					</button>
-				</li>
-			</ul>
+
+			<p>
+				Click below to check the eHOSP Maps:
+				<br>
+				<ul id="buttons">
+					<li>
+						<button type="button" class="services" onclick="location.href='services/med-gis/maps.php';">
+							Maps
+						</button>
+					</li>
+				</ul>
+			</p>
       	</div>
 
       	<?php
