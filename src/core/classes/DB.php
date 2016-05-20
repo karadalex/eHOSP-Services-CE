@@ -97,7 +97,6 @@ class DB {
 			}
 
 			$sql = "INSERT INTO `{$table}` (`" . implode('`, `', $keys) . "`) VALUES ({$values})";
-			echo $sql;
 
 			if (!$this->query($sql, $fields)->error()) {
 				return true;
