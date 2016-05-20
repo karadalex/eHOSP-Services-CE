@@ -61,7 +61,7 @@ header ul li img {
 
 header ul li a {
 	color: #2bb673;
-	padding: 5px 40px;
+	padding: 5px 30px;
 	font-size: 2em;
 	display: block;
 }
@@ -84,7 +84,7 @@ h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 64.063em) {
 
 	header ul li a {
-		padding: 5px 20px;
+		padding: 5px 10px;
 		font-size: 1.5em;
 	}
 
@@ -193,9 +193,19 @@ h2, h3, h4, h5, h6 {
 	}
 
 }
+	@media only screen and (max-height: 530px) {
+		header ul li ul li {
+		    width: 50%;
+		}
+	}
 
-@media only screen and (max-height: 360px) {
-	header ul li ul li {
-	    width: 50%;
+	@media only screen and (max-height: 360px) {
+		header ul li ul {
+			margin-left: 10%;
+		}
+
+		header ul li ul li {
+		    width: 33%;
+		}
 	}
 }

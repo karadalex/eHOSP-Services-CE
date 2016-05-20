@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Apr 18, 2016 at 10:22 AM
+-- Generation Time: May 10, 2016 at 01:18 PM
 -- Server version: 5.5.47
 -- PHP Version: 5.5.31
 
@@ -241,12 +241,12 @@ CREATE TABLE `surgeries` (
 CREATE TABLE `user_diagnosis` (
   `diagnosis_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `doctor_id` int(11) NOT NULL,
-  `symptoms_id` int(11) NOT NULL,
-  `genetic_code_id` int(11) NOT NULL,
+  `doctor_id` int(11) DEFAULT NULL,
+  `symptoms_id` int(11) DEFAULT NULL,
+  `genetic_code_id` int(11) DEFAULT NULL,
   `json_diagnosis_result` longtext NOT NULL COMMENT 'Diagnosis results stored as a JSON object',
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `medical_history_id` int(11) NOT NULL
+  `medical_history_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -295,7 +295,8 @@ CREATE TABLE `user_medical_history` (
 CREATE TABLE `user_registry` (
   `user_id` int(11) NOT NULL,
   `username` varchar(32) DEFAULT NULL,
-  `password` varchar(32) DEFAULT NULL,
+  `password` varchar(64) DEFAULT NULL,
+  `salt` varchar(32) NOT NULL,
   `first_name` varchar(32) DEFAULT NULL,
   `last_name` varchar(32) DEFAULT NULL,
   `email` varchar(1024) DEFAULT NULL,
@@ -315,9 +316,9 @@ CREATE TABLE `user_registry` (
 --
 
 CREATE TABLE `user_sessions` (
-  `sess_id` int(11) NOT NULL,
+  `sess_id` int(64) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `hash` varchar(50) NOT NULL
+  `hash` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -521,7 +522,8 @@ ALTER TABLE `user_registry`
 -- Indexes for table `user_sessions`
 --
 ALTER TABLE `user_sessions`
-  ADD PRIMARY KEY (`sess_id`);
+  ADD PRIMARY KEY (`sess_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `user_symptoms`
@@ -590,7 +592,7 @@ ALTER TABLE `doctor_log`
 -- AUTO_INCREMENT for table `gis_remote_nodes`
 --
 ALTER TABLE `gis_remote_nodes`
-  MODIFY `gis_node_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `gis_node_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `groups`
 --
@@ -625,7 +627,7 @@ ALTER TABLE `surgeries`
 -- AUTO_INCREMENT for table `user_diagnosis`
 --
 ALTER TABLE `user_diagnosis`
-  MODIFY `diagnosis_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `diagnosis_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `user_genetic_code`
 --
@@ -640,12 +642,12 @@ ALTER TABLE `user_log`
 -- AUTO_INCREMENT for table `user_registry`
 --
 ALTER TABLE `user_registry`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `user_sessions`
 --
 ALTER TABLE `user_sessions`
-  MODIFY `sess_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sess_id` int(64) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `user_symptoms`
 --
@@ -746,6 +748,12 @@ ALTER TABLE `user_log`
 --
 ALTER TABLE `user_medical_history`
   ADD CONSTRAINT `user_medical_history_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`);
+
+--
+-- Constraints for table `user_sessions`
+--
+ALTER TABLE `user_sessions`
+  ADD CONSTRAINT `user_sessions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`);
 
 --
 -- Constraints for table `user_symptoms`

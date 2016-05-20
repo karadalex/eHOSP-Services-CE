@@ -1,17 +1,33 @@
+<?php
+require_once 'core/init.php';
+?>
+
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
-		include 'includes/html/head.html';
+    include 'includes/html/head.html';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<div id="container">
 		<?php
-			include 'includes/html/header.html';
+        include 'includes/php/header.php';
 		?>
+        
+        
+        <?php
+        if(Session::exists('home')) {
+            echo '<p>' . Session::flash('home'). '</p>';
+        }
+        $user = new User(); //Current
+        if($user->isLoggedIn()) {
+        ?>        
+        
 
 		<div class="row">
 	        <h1>
@@ -48,6 +64,13 @@
 					</a>
 	        	</li>
 	        	<li>
+	        		<a href="services/med-gis">
+						<button type="button" class="services">
+							Medical Geographic Information System
+						</button>
+					</a>
+	        	</li>
+	        	<li>
 	        		<a href="services/research-platform">
 						<button type="button" class="services">
 							Research Platform
@@ -66,6 +89,25 @@
 	        	</li>
 	        </ul>
       	</div>
+
+
+      	<?php
+        } else {
+        ?>
+        <div class="row">
+        	<h1>
+	        	Error
+	        </h1>
+        	<p>
+        		You are currently not Signed In!<br>
+        		Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
+        	</p>
+        </div>
+        <?php
+        }
+        ?>
+
+
 	</div>
 
 	<script src="js/foundation.min.js"></script>
