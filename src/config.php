@@ -15,8 +15,9 @@
     $CONFIG = array(
         // Application's Info
         'APP_NAME' => 'eHosp',
-        'APP_HOSTNAME' => 'localhost',
+        'APP_HOSTNAME' => '127.0.0.1',
         'APP_PORT' => '80',
+        'APP_ROOT_PATH' => 'ehosp/src/', // Leave blank if app's root path is the same with server's HTML root path
         'APP_ADMIN_USERNAME' => 'admin',
         'APP_ADMIN_PASSWORD' => 'adminpsswd',
 
