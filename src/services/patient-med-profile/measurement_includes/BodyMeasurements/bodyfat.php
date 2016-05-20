@@ -66,8 +66,8 @@ chdir(dirname(__FILE__));
             <div id="curve_chart" style="width: 100%; height: 500px"></div>
 
             <p>
-                The body fat percentage (BFP) of a human or other living being is the total
-                mass of fat divided by total body mass; body fat includes essential body fat
+                <strong>The body fat percentage (BFP) of a human or other living being is the total
+                mass of fat divided by total body mass</strong>; body fat includes essential body fat
                 and storage body fat. Essential body fat is necessary to maintain life and
                 reproductive functions. The percentage of essential body fat for women is
                 greater than that for men, due to the demands of childbearing and other
