@@ -39,7 +39,7 @@ chdir(dirname(__FILE__));
 
 			<form>
 				<div id="interface">
-					<div id="left-panel">
+					<div id="left-panel" class="input-list style-1 clearfix">
 						<ul id="tasks">
 							<li>
 								Action
