@@ -10,7 +10,7 @@ $error_msg = '';
 <head>
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
-		include 'includes/html/head.html';
+		include 'includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/forms.css">

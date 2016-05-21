@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Medical GIS - Maps</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 	<link rel="stylesheet" href="css/edit_map.css" />

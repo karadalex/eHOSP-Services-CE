@@ -5,7 +5,7 @@
 	<title>eHOSP - Settings</title>
 	<?php
 		include 'core/init.php';
-		include 'includes/html/head.html';
+		include 'includes/php/head.php';
 	?>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">

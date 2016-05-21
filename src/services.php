@@ -9,7 +9,7 @@ require_once 'core/init.php';
 <head>
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
-    include 'includes/html/head.html';
+    	include 'includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -18,16 +18,16 @@ require_once 'core/init.php';
 		<?php
         include 'includes/php/header.php';
 		?>
-        
-        
+
+
         <?php
         if(Session::exists('home')) {
             echo '<p>' . Session::flash('home'). '</p>';
         }
         $user = new User(); //Current
         if($user->isLoggedIn()) {
-        ?>        
-        
+        ?>
+
 
 		<div class="row">
 	        <h1>

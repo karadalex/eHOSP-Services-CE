@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Research Platform</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>

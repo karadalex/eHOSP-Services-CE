@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>3D Bioprinting Design</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>

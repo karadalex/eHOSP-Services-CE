@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Medical Diagnosis & Medical Database</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/forms.css">

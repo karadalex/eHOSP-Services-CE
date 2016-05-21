@@ -9,7 +9,7 @@ require_once 'core/init.php';
 <head>
 	<title>eHOSP - Contact</title>
 	<?php
-		include 'includes/html/head.html';
+		include 'includes/php/head.php';
 	?>
 </head>
 <body>

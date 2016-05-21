@@ -9,7 +9,7 @@ require_once 'core/init.php';
 <head>
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
-		include 'includes/html/head.html';
+		include 'includes/php/head.php';
 		include 'core/init.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">

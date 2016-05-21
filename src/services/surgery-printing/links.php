@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Surgery - 3D bioprinting Useful Links</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 </head>
 <body>
