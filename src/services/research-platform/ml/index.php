@@ -1,5 +1,5 @@
 <?php
-require_once '../../core/init.php';
+require_once '../../../core/init.php';
 chdir(dirname(__FILE__));
 ?>
 
@@ -8,16 +8,16 @@ chdir(dirname(__FILE__));
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<title>Research Platform</title>
+	<title>ML Lab</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../../includes/html/head.html';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
 		<?php
-			include '../../includes/php/header.php';
+			include '../../../includes/php/header.php';
 		?>
 
 
@@ -31,18 +31,10 @@ chdir(dirname(__FILE__));
 
 
 		<div class="row">
-	        <h1>Research Platform</h1>
+	        <h1>Machine Learning Lab</h1>
 	        <p>
 
 			</p>
-
-			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="location.href='services/research-platform/ml';">
-						Machine Learning Lab
-					</button>
-				</li>
-			</ul>
       	</div>
 
 
