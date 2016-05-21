@@ -192,6 +192,10 @@ h2, h3, h4, h5, h6 {
 		header ul li ul li {
 		    width: 50%;
 		}
+		
+		header ul li ul li a {
+			padding: 10px 20px;
+		}
 	}
 
 	@media only screen and (max-height: 360px) {
@@ -201,6 +205,10 @@ h2, h3, h4, h5, h6 {
 
 		header ul li ul li {
 		    width: 33%;
+		}
+
+		header ul li ul li a {
+			padding: 10px 20px;
 		}
 	}
 }
