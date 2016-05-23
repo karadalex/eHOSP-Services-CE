@@ -36,23 +36,6 @@ chdir(dirname(__FILE__));
 
 			</p>
       	</div>
-
-      	<?php
-        } else {
-        ?>
-        <div class="row">
-        	<h1>
-	        	Error
-	        </h1>
-        	<p>
-        		You are currently not Signed In!<br>
-        		Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
-        	</p>
-        </div>
-        <?php
-        }
-        ?>
-
 	</div>
 
 	<div id="map" style="width: 90%; height: 500px; margin-left:5%; margin-bottom: 30px"></div>
@@ -79,6 +62,22 @@ chdir(dirname(__FILE__));
 			</li>
 		</ul>
 	</div>
+
+	<?php
+	} else {
+	?>
+	<div class="row">
+		<h1>
+			Error
+		</h1>
+		<p>
+			You are currently not Signed In!<br>
+			Please <a href='sign.php'>Sign In</a> or <a href='register.php'>Register</a>
+		</p>
+	</div>
+	<?php
+	}
+	?>
 
 	<script src="js/foundation.min.js"></script>
     <script>
