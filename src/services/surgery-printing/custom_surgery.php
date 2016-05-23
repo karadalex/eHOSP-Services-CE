@@ -48,7 +48,7 @@ chdir(dirname(__FILE__));
 							</li>
 							<li>
 								Action
-								<select class="" name="action">
+								<select name="action">
 									<option value="null"> ... </option>
 									<option value="motor" onclick="nxt_motor();">Motor</option>
 									<option value="sound" onclick="nxt_sound();">Sound</option>
@@ -59,7 +59,7 @@ chdir(dirname(__FILE__));
 							</li>
 							<li>
 								Sensor
-								<select class="" name="sensor">
+								<select name="sensor">
 									<option value="null"> ... </option>
 									<option value="touch" onclick="nxt_touch()">Touch Sensor</option>
 									<option value="sound" onclick="nxt_sound_sensor()">Sound Sensor</option>
@@ -74,7 +74,7 @@ chdir(dirname(__FILE__));
 							</li>
 							<li>
 								Flow
-								<select class="" name="flow">
+								<select name="flow">
 									<option value="null"> ... </option>
 									<option value="wait" onclick="nxt_wait()">Wait</option>
 									<option value="loop" onclick="nxt_loop()">Loop</option>
@@ -84,7 +84,7 @@ chdir(dirname(__FILE__));
 							</li>
 							<li>
 								Data
-								<select class="" name="data">
+								<select name="data">
 									<option value="null"> ... </option>
 									<option value="logic" onclick="nxt_logic()">Logic</option>
 									<option value="math" onclick="nxt_math()">Math</option>
@@ -97,7 +97,7 @@ chdir(dirname(__FILE__));
 							</li>
 							<li>
 								Advanced
-								<select class="" name="advanced">
+								<select name="advanced">
 									<option value="null"> ... </option>
 									<option value="num_to_text" onclick="nxt_num_to_text()">Number to Text</option>
 									<option value="text" onclick="nxt_text()">Text</option>
@@ -118,7 +118,7 @@ chdir(dirname(__FILE__));
 					</div>
 				</div>
 
-				<div id="taskModal" class="modal"></div>
+				<div id="taskModal" class="modal input-list style-1 clearfix"></div>
 
 				<input type="submit" value="Submit Surgery Procedure">
 			</form>
