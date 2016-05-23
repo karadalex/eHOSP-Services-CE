@@ -39,7 +39,7 @@ chdir(dirname(__FILE__));
 	        	Design your own surgical task or procedure
 			</p>
 
-			<form>
+			<form method="post">
 				<div id="interface">
 					<div id="left-panel" class="input-list style-1 clearfix">
 						<ul id="tasks">
@@ -113,7 +113,7 @@ chdir(dirname(__FILE__));
 
 					<div id="right-panel">
 						<div id="tasks-contents">
-							Test
+							<ol id="tasks-list"></ol>
 						</div>
 					</div>
 				</div>
