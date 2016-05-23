@@ -1,5 +1,5 @@
 <?php
-require_once '../../core/init.php';
+require_once '../../../core/init.php';
 chdir(dirname(__FILE__));
 ?>
 
@@ -8,16 +8,16 @@ chdir(dirname(__FILE__));
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-	<title>Research Platform</title>
+	<title>Med Software</title>
 	<?php
-		include '../../includes/php/head.php';
+		include '../../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
 		<?php
-			include '../../includes/php/header.php';
+			include '../../../includes/php/header.php';
 		?>
 
 
@@ -31,28 +31,16 @@ chdir(dirname(__FILE__));
 
 
 		<div class="row">
-	        <h1>Research Platform</h1>
+	        <h1>Medicine Software</h1>
 	        <p>
-
+                <ul id="buttons">
+    				<li>
+    					<button type="button" class="services" onclick="location.href='services/research-platform/med-software/neurodeb';">
+    						Neuro Debian
+    					</button>
+    				</li>
+    			</ul>
 			</p>
-
-			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="location.href='services/research-platform/ml';">
-						Machine Learning Lab
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/research-platform/med-software';">
-						Medicine Software
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/research-platform/py-platform';">
-						Scientific Python
-					</button>
-				</li>
-			</ul>
       	</div>
 
 
