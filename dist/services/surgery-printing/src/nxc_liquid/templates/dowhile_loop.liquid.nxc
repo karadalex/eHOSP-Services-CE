@@ -1,6 +1,0 @@
-// Do-While Loop
-do
-{
-    {DOWHILE_LOOP_BODY}
-}
-while ({DOWHILE_LOOP_CONDITION})

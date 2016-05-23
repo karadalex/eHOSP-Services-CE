@@ -26,7 +26,7 @@
         'DB_HOSTNAME' => '127.0.0.1',
         'DB_PORT' => '3306',
         'DB_ROOT_USERNAME' => 'root',
-        'DB_ROOT_PASSWORD' => '',
+        'DB_ROOT_PASSWORD' => 'rootpsswd',
 
         // Raspberry Pi's Info
         'RASPBERRYPI_HOSTNAME' => '192.168.1.2',
