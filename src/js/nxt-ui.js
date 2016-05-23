@@ -1,3 +1,11 @@
+/*******************************************************************************
+* Main Functions
+*
+*******************************************************************************/
+
+var tasks_history = ["test1", "test2"];
+var current_task = {};
+
 function __modal__(header, htmlBody) {
     var html = `
         <div class="modal-content">
@@ -9,7 +17,7 @@ function __modal__(header, htmlBody) {
             ` + htmlBody + `
         </div>
         <div class="modal-footer">
-            <button type="button" class="services" onclick="">
+            <button type="button" onclick="add_task()" style="width:50%; margin-top:20px; margin-left: 25%;">
                 Add Task
             </button>
         </div>
@@ -30,6 +38,21 @@ function __modal__(header, htmlBody) {
     }
 }
 
+function add_task() {
+    var all_tasks = document.getElementById("tasks-list");
+    all_tasks.innerHTML += "<li>test</li>";
+    document.getElementById('taskModal').style.display = "none";
+    tasks_history.push(current_task);
+}
+
+
+
+
+/*******************************************************************************
+* Task Functions
+*
+*******************************************************************************/
+
 function nxt_motor() {
     motorHTML = `
     <p> Motor HTML </p>
@@ -38,7 +61,7 @@ function nxt_motor() {
 }
 
 function nxt_sound() {
-    
+
 }
 
 function nxt_display() {
