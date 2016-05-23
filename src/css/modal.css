@@ -28,8 +28,37 @@
     animation-duration: 0.4s
 }
 
-.modal h2, h3 {
+#left {
+    width: 47%;
+    float: left;
+    margin-right: 2%;
+    border-style: none;
+}
+
+#right {
+    width: 47%;
+    float: right;
+    margin-right: 2%;
+    border-style: none;
+}
+
+.parent.clearfix:before,
+.parent.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.parent.clearfix:after {
+  clear: both;
+}
+
+.modal h2 {
     color: #fff;
+    font-size: 2.5rem;
+}
+
+.modal h3 {
+    margin: 0px;
 }
 
 /* Add Animation */
@@ -71,4 +100,10 @@
     background-color: #2bb673;
     color: white;
     margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 40.063em) {
+    #left, #right {
+        width: 100%;
+    }
 }
