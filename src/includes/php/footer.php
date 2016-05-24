@@ -78,10 +78,10 @@
             <table>
                 <tr>
                     <td>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="<?php echo config_get::get('connect/twitter'); ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </td>
                     <td>
-                        <a href="#">Twitter</a>
+                        <a href="<?php echo config_get::get('connect/twitter'); ?>">Twitter</a>
                     </td>
                 </tr>
                 <tr>
@@ -94,18 +94,18 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="<?php echo config_get::get('connect/google+'); ?>"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     </td>
                     <td>
-                        <a href="#">Google+</a>
+                        <a href="<?php echo config_get::get('connect/google+'); ?>">Google+</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="<?php echo config_get::get('connect/github'); ?>"><i class="fa fa-github" aria-hidden="true"></i></a>
                     </td>
                     <td>
-                        <a href="#">Github</a>
+                        <a href="<?php echo config_get::get('connect/github'); ?>">Github</a>
                     </td>
                 </tr>
             </table>
