@@ -30,6 +30,14 @@ chdir(dirname(__FILE__));
         ?>
 
 		<script src="js/patient-med-profile.js" charset="utf-8"></script>
+
+		<style>
+			.no-menu:hover {
+				background: none;
+				box-shadow: none;
+			}
+		</style>
+		
 		<div class="row">
 			<script type="text/javascript">
 				var name = "Me"

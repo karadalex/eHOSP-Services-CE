@@ -36,22 +36,19 @@ chdir(dirname(__FILE__));
 
 			</p>
 
+			<style>
+	            .no-menu:hover {
+	                background: none;
+	                box-shadow: none;
+	            }
+	        </style>
+
 			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="location.href='services/research-platform/ml';">
-						Machine Learning Lab
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/research-platform/med-software';">
-						Medicine Software
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/research-platform/py-platform';">
-						Scientific Python
-					</button>
-				</li>
+				<?php
+				echo li(button("services/research-platform/ml", "Machine Learning Lab"));
+				echo li(button("services/research-platform/med-software", "Medicine Software"));
+				echo li(button("services/research-platform/py-platform", "Scientific Python"));
+				?>
 			</ul>
       	</div>
 

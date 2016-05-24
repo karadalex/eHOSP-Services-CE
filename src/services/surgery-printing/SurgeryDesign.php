@@ -37,16 +37,10 @@ chdir(dirname(__FILE__));
 	        	mechanism
 			</p>
 			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="location.href='services/surgery-printing/surgery_sample_tasks.php';">
-						Sample Tasks
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/surgery-printing/custom_surgery.php';">
-						Design your own Task
-					</button>
-				</li>
+				<?php
+				echo li(button("services/surgery-printing/surgery_sample_tasks.php", "Sample Tasks"));
+				echo li(button("services/surgery-printing/custom_surgery.php", "Design your own Task"));
+				?>
 			</ul>
       	</div>
 

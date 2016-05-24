@@ -39,12 +39,16 @@ chdir(dirname(__FILE__));
 			<p>
 				Click below to check the eHOSP Maps:
 				<br>
+
+				<style>
+		            .no-menu:hover {
+		                background: none;
+		                box-shadow: none;
+		            }
+		        </style>
+
 				<ul id="buttons">
-					<li>
-						<button type="button" class="services" onclick="location.href='services/med-gis/maps.php';">
-							Maps
-						</button>
-					</li>
+					<?php echo li(button("services/med-gis/maps.php", "Maps")); ?>
 				</ul>
 			</p>
       	</div>

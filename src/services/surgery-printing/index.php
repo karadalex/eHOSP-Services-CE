@@ -37,29 +37,23 @@ chdir(dirname(__FILE__));
 				Use this service to design surgery procedures which
 				use robotic surgery and 3D bioprinting in parallel.
 			</p>
+
+			<style>
+	            .no-menu:hover {
+	                background: none;
+	                box-shadow: none;
+	            }
+	        </style>
+
 			<div id="buttons">
 				<ul>
-		        	<li>
-						<button type="button" class="services" onclick="location.href='services/surgery-printing/SurgeryDesign.php';">
-							Surgery Procedure Design
-						</button>
-		        	</li>
-		        	<li>
-						<button type="button" class="services" onclick="location.href='services/surgery-printing/3DBioprintDesign.php';">
-							3D Bioprinting Design
-						</button>
-		        	</li>
-					<li>
-						<?php $rasp_path = $config["RASPBERRYPI_HOSTNAME"].":".$config["RASPBERRYPI_PORT"]."/"; ?>
-						<button type="button" class="services" onclick="location.href='<?php echo "http://".$rasp_path; ?>';">
-							Check Surgery Robot Status
-						</button>
-		        	</li>
-					<li>
-						<button type="button" class="services" onclick="location.href='services/surgery-printing/links.php';">
-							Useful Links
-						</button>
-		        	</li>
+					<?php
+					echo li(button("services/surgery-printing/SurgeryDesign.php", "Surgery Procedure Design"));
+					echo li(button("services/surgery-printing/3DBioprintDesign.php", "3D Bioprinting Design"));
+					$rasp_path = $config["RASPBERRYPI_HOSTNAME"].":".$config["RASPBERRYPI_PORT"]."/";
+					echo li(button("http://".$rasp_path, "Check Surgery Robot Status"));
+					echo li(button("services/surgery-printing/links.php", "Useful Links"));
+					?>
 		        </ul>
 			</div>
       	</div>

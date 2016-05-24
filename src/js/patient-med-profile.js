@@ -23,9 +23,11 @@ function Main(h1, myJSON, jsonIndex) {
     for (var key in myJSON[jsonIndex]) {
         var li = `
         <li>
-            <button type="button" class="services" onclick="location.href='` + myJSON[jsonIndex][key] + `'">
-                ` + key + `
-            </button>
+            <a href="` + myJSON[jsonIndex][key] + `" class="no-menu">
+                <button type="button" class="services">
+                    ` + key + `
+                </button>
+            </a>
         </li>
         `;
         html += li;

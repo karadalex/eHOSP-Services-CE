@@ -34,49 +34,21 @@ require_once 'core/init.php';
 	        	eHOSP Services
 	        </h1>
 
+			<style>
+	            .no-menu:hover {
+	                background: none;
+	                box-shadow: none;
+	            }
+	        </style>
 	        <ul>
-	        	<li>
-	        		<a href="services/medical-diagnosis">
-						<button type="button" class="services">
-							Medical diagnosis & Diseases Database
-						</button>
-					</a>
-	        	</li>
-	        	<li>
-	        		<a href="services/patient-med-profile">
-						<button type="button" class="services">
-							Patient Health Profile
-						</button>
-					</a>
-	        	</li>
-				<li>
-	        		<a href="services/genetic-code">
-						<button type="button" class="services">
-							Genetic Code Service
-						</button>
-					</a>
-	        	</li>
-	        	<li>
-	        		<a href="services/surgery-printing">
-						<button type="button" class="services">
-							Remote Surgery & Remote 3D Bioprinting tool
-						</button>
-					</a>
-	        	</li>
-	        	<li>
-	        		<a href="services/med-gis">
-						<button type="button" class="services">
-							Medical Geographic Information System
-						</button>
-					</a>
-	        	</li>
-	        	<li>
-	        		<a href="services/research-platform">
-						<button type="button" class="services">
-							Research Platform
-						</button>
-					</a>
-	        	</li>
+				<?php
+				echo li(button("services/medical-diagnosis", "Medical diagnosis & Diseases Database"));
+				echo li(button("services/patient-med-profile", "Patient Health Profile"));
+				echo li(button("services/genetic-code", "Genetic Code Service"));
+				echo li(button("services/surgery-printing", "Remote Surgery & Remote 3D Bioprinting tool"));
+				echo li(button("services/med-gis", "Medical Geographic Information System"));
+				echo li(button("services/research-platform", "Research Platform"));
+				?>
 
 				<!-- Settings Section -->
 				<hr>

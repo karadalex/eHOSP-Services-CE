@@ -33,12 +33,16 @@ chdir(dirname(__FILE__));
 		<div class="row">
 	        <h1>Medicine Software</h1>
 	        <p>
+
+				<style>
+					.no-menu:hover {
+						background: none;
+						box-shadow: none;
+					}
+				</style>
+
                 <ul id="buttons">
-    				<li>
-    					<button type="button" class="services" onclick="location.href='services/research-platform/med-software/neurodeb';">
-    						Neuro Debian
-    					</button>
-    				</li>
+					<?php echo li(button("services/research-platform/med-software/neurodeb", "Neuro-Debian")); ?>
     			</ul>
 			</p>
       	</div>

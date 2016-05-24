@@ -36,48 +36,25 @@ chdir(dirname(__FILE__));
 				Welcome to eHOSP, the hospital on the cloud,
 				a platform for e-health and e-medicine!
 			</p>
-			<ul id="buttons">
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/BodyMeasurements.php';">
-						Body Measurements
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/Fitness.php';">
-						Fitness
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/Me.php';">
-						Me
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/Nutrition.php';">
-						Nutrition
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/ReproductiveHealth.php';">
-						Reproductive Health
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/Results.php';">
-						Results
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/Sleep.php';">
-						Sleep
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/patient-med-profile/Vitals.php';">
-						Vitals
-					</button>
-				</li>
 
+			<style>
+	            .no-menu:hover {
+	                background: none;
+	                box-shadow: none;
+	            }
+	        </style>
+
+			<ul id="buttons">
+				<?php
+				echo li(button("services/patient-med-profile/BodyMeasurements.php", "Body Measurements"));
+				echo li(button("services/patient-med-profile/Fitness.php", "Fitness"));
+				echo li(button("services/patient-med-profile/Me.php", "Me"));
+				echo li(button("services/patient-med-profile/Nutrition.php", "Nutrition"));
+				echo li(button("services/patient-med-profile/ReproductiveHealth.php", "Reproductive Health"));
+				echo li(button("services/patient-med-profile/Results.php", "Results"));
+				echo li(button("services/patient-med-profile/Sleep.php", "Sleep"));
+				echo li(button("services/patient-med-profile/Vitals.php", "Vitals"));
+				?>
 			</ul>
       	</div>
 

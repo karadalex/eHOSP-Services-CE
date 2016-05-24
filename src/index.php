@@ -42,11 +42,13 @@ require_once 'core/init.php';
 				Click below to get started
 			</p>
 			<p>
-				<a href="sign.php">
-					<button type="button" class="services">
-						Get Started
-					</button>
-				</a>
+				<style>
+					.no-menu:hover {
+						background: none;
+						box-shadow: none;
+					}
+				</style>
+				<?php echo button("sign.php", "Get Started"); ?>
 			</p>
     	</div>
 
