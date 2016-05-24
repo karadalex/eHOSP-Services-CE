@@ -14,7 +14,9 @@ function __modal__(header, htmlBody) {
             <h2>` + header + `</h2>
         </div>
         <div class="modal-body">
-            ` + htmlBody + `
+            <div class="parent clearfix">
+                ` + htmlBody + `
+            </div>
         </div>
         <div class="modal-footer">
             <button type="button" onclick="add_task()" style="width:50%; margin-top:20px; margin-left: 25%;">
@@ -55,71 +57,69 @@ function add_task() {
 
 function nxt_motor() {
     motorHTML = `
-    <div class="parent clearfix">
-        <div id="left">
-            <div id="port">
-                <h3>Port</h3>
-                <input type="radio" name="port" value="A"> A
-                <input type="radio" name="port" value="B"> B
-                <input type="radio" name="port" value="C"> C
-            </div>
-            <hr>
-            <div id="direction">
-                <h3>Direction</h3>
-                <input type="radio" name="direction" value="forward">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
-                <input type="radio" name="direction" value="backward">
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                <input type="radio" name="direction" value="stop">
-                <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
-            </div>
-            <hr>
-            <div id="action">
-                <h3>Action</h3>
-                <select class="" name="action">
-                    <option value="null"> Select action ... </option>
-                    <option value="const"> Constant </option>
-                    <option value="rampup"> Ramp Up </option>
-                    <option value="rampdown"> Ramp Down </option>
-                </select>
-            </div>
-            <hr>
-            <div id="power">
-                <h3>Power</h3>
-                <input type="range" name="power" value="60">
-            </div>
-            <hr>
+    <div id="left">
+        <div id="port">
+            <h3>Port</h3>
+            <input type="radio" name="port" value="A"> A
+            <input type="radio" name="port" value="B"> B
+            <input type="radio" name="port" value="C"> C
         </div>
-        <div id="right">
-            <div id="control">
-                <h3>Control</h3>
-                <input type="checkbox" name="power">Motor Power<br>
-            </div>
-            <hr>
-            <div id="duration">
-                <h3>Duration</h3>
-                <select class="" name="duration_type">
-                    <option value="null"> Select type ... </option>
-                    <option value="unlimited"> Unlimited </option>
-                    <option value="degrees"> Degrees </option>
-                    <option value="rotations"> Rotations </option>
-                    <option value="seconds"> Seconds </option>
-                </select>
-                <br>
-                <input type="number" name="duration_value" value="">
-            </div>
-            <hr>
-            <div id="wait">
-                <h3>Wait</h3>
-                <input type="checkbox" name="wait">Wait for Completion
-                <i class="fa fa-flag-checkered" aria-hidden="true"></i>
-            </div>
-            <hr>
-            <div id="next">
-                <h3>Next Action</h3>
-                <input type="radio" name="next" value="brake"> Brake
-                <input type="radio" name="next" value="coast"> Coast
-            </div>
+        <hr>
+        <div id="direction">
+            <h3>Direction</h3>
+            <input type="radio" name="direction" value="forward">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            <input type="radio" name="direction" value="backward">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <input type="radio" name="direction" value="stop">
+            <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        </div>
+        <hr>
+        <div id="action">
+            <h3>Action</h3>
+            <select class="" name="action">
+                <option value="null"> Select action ... </option>
+                <option value="const"> Constant </option>
+                <option value="rampup"> Ramp Up </option>
+                <option value="rampdown"> Ramp Down </option>
+            </select>
+        </div>
+        <hr>
+        <div id="power">
+            <h3>Power</h3>
+            <input type="range" name="power" value="60">
+        </div>
+        <hr>
+    </div>
+    <div id="right">
+        <div id="control">
+            <h3>Control</h3>
+            <input type="checkbox" name="power">Motor Power<br>
+        </div>
+        <hr>
+        <div id="duration">
+            <h3>Duration</h3>
+            <select class="" name="duration_type">
+                <option value="null"> Select type ... </option>
+                <option value="unlimited"> Unlimited </option>
+                <option value="degrees"> Degrees </option>
+                <option value="rotations"> Rotations </option>
+                <option value="seconds"> Seconds </option>
+            </select>
+            <br>
+            <input type="number" name="duration_value" value="">
+        </div>
+        <hr>
+        <div id="wait">
+            <h3>Wait</h3>
+            <input type="checkbox" name="wait">Wait for Completion
+            <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+        </div>
+        <hr>
+        <div id="next">
+            <h3>Next Action</h3>
+            <input type="radio" name="next" value="brake"> Brake
+            <input type="radio" name="next" value="coast"> Coast
         </div>
     </div>
     `;
@@ -143,7 +143,27 @@ function nxt_lamp() {
 }
 
 function nxt_touch() {
-
+    touchHTML = `
+    <div id="left">
+        <div id="port">
+            <h3>Port</h3>
+            <input type="radio" name="port" value="1"> 1
+            <input type="radio" name="port" value="2"> 2
+            <input type="radio" name="port" value="3"> 3
+            <input type="radio" name="port" value="4"> 4
+        </div>
+        <hr>
+    </div>
+    <div id="right">
+        <div id="action">
+            <h3>Action</h3>
+            <input type="radio" name="port" value="pressed"> Pressed <br>
+            <input type="radio" name="port" value="released"> Released <br>
+            <input type="radio" name="port" value="bumped"> Bumped <br>
+        </div>
+    </div>
+    `;
+    __modal__("Touch Sensor", touchHTML);
 }
 
 function nxt_sound_sensor() {
