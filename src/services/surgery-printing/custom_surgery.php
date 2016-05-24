@@ -65,7 +65,7 @@ chdir(dirname(__FILE__));
 									<option value="sound" onclick="nxt_sound_sensor()">Sound Sensor</option>
 									<option value="light" onclick="nxt_light()">Light Sensor</option>
 									<option value="ultrasonic" onclick="nxt_ultrasonic()">Ultrasonic Sensor</option>
-									<option value="nxt_btns" onclick="nxt_nxt_btns()">NXT Buttons</option>
+									<option value="nxt_btns" onclick="nxt_btns()">NXT Buttons</option>
 									<option value="rotation" onclick="nxt_rotation()">Rotation Sensor</option>
 									<option value="timer" onclick="nxt_timer()">Timer</option>
 									<option value="receive_msg" onclick="nxt_receive_msg()">Receive Message</option>
@@ -106,6 +106,13 @@ chdir(dirname(__FILE__));
 									<option value="calibrate" onclick="nxt_calibrate()">Calibrate</option>
 									<option value="reset_motor" onclick="nxt_reset_motor()">Reset Motor</option>
 									<option value="bluetooth" onclick="nxt_bluetooth()">Bluetooth Connection</option>
+								</select>
+							</li>
+							<li>
+								Ready Surgical Tasks
+								<select name="advanced">
+									<option value="null"> ... </option>
+
 								</select>
 							</li>
 						</ul>
