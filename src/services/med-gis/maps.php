@@ -79,6 +79,8 @@ chdir(dirname(__FILE__));
 	}
 	?>
 
+	<?php include '../../includes/php/footer.php'; ?>
+
 	<script src="js/foundation.min.js"></script>
     <script>
     	$(document).foundation();
