@@ -627,7 +627,7 @@ ALTER TABLE `surgeries`
 -- AUTO_INCREMENT for table `user_diagnosis`
 --
 ALTER TABLE `user_diagnosis`
-  MODIFY `diagnosis_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `diagnosis_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `user_genetic_code`
 --
@@ -642,7 +642,7 @@ ALTER TABLE `user_log`
 -- AUTO_INCREMENT for table `user_registry`
 --
 ALTER TABLE `user_registry`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 --
 -- AUTO_INCREMENT for table `user_sessions`
 --

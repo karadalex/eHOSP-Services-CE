@@ -152,7 +152,7 @@ h2, h3, h4, h5, h6 {
 
 	h1 {
 		font-size: 2.5em;
-		margin-top: 3em;
+		margin-top: 5em;
 	}
 
 	p {
@@ -188,14 +188,13 @@ h2, h3, h4, h5, h6 {
 		background: #076b3c;
 	}
 
-	.logo {
-		width: 120px;
-	}
-
-}
 	@media only screen and (max-height: 530px) {
 		header ul li ul li {
 		    width: 50%;
+		}
+		
+		header ul li ul li a {
+			padding: 10px 20px;
 		}
 	}
 
@@ -206,6 +205,10 @@ h2, h3, h4, h5, h6 {
 
 		header ul li ul li {
 		    width: 33%;
+		}
+
+		header ul li ul li a {
+			padding: 10px 20px;
 		}
 	}
 }

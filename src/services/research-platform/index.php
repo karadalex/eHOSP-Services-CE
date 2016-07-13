@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Research Platform</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
@@ -36,8 +36,19 @@ chdir(dirname(__FILE__));
 
 			</p>
 
-			<ul id="buttons">
+			<style>
+	            .no-menu:hover {
+	                background: none;
+	                box-shadow: none;
+	            }
+	        </style>
 
+			<ul id="buttons">
+				<?php
+				echo li(button("services/research-platform/ml", "Machine Learning Lab"));
+				echo li(button("services/research-platform/med-software", "Medicine Software"));
+				echo li(button("services/research-platform/py-platform", "Scientific Python"));
+				?>
 			</ul>
       	</div>
 
@@ -59,6 +70,8 @@ chdir(dirname(__FILE__));
         ?>
 
 	</div>
+
+	<?php include '../../includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

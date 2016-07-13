@@ -3,21 +3,32 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     css_minify = require('gulp-clean-css'),
     gutil = require('gulp-util'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    del = require('del'),
+    babel = require('gulp-babel');
 
 var services = ['medical-diagnosis', 'patient-med-profile', 'research-platform', 'surgery-printing', 'genetic-code', 'med-gis'];
+
+// Clean Dist folder from previous builds
+gulp.task('clean', function() {
+    return del([
+        'dist/**'
+      ]);
+});
 
 // Javascript minification task
 // Minify javascript files and put the minified version in the dist folder
 gulp.task('js-minify', function(){
     gulp.src('src/js/**')
         .pipe(plumber())
+        .pipe(babel({presets: ['es2015']}))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 
     // Leaflet vendor
     gulp.src('src/vendor/leaflet/leaflet.js')
         .pipe(plumber())
+        .pipe(babel({presets: ['es2015']}))
         .pipe(uglify())
         .pipe(gulp.dest('dist/vendor/leaflet/leaflet.js'));
 });

@@ -9,7 +9,7 @@ require_once 'core/init.php';
 <head>
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
-		include 'includes/html/head.html';
+		include 'includes/php/head.php';
 		include 'core/init.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -42,16 +42,20 @@ require_once 'core/init.php';
 				Click below to get started
 			</p>
 			<p>
-				<a href="sign.php">
-					<button type="button" class="services">
-						Get Started
-					</button>
-				</a>
+				<style>
+					.no-menu:hover {
+						background: none;
+						box-shadow: none;
+					}
+				</style>
+				<?php echo button("sign.php", "Get Started"); ?>
 			</p>
     	</div>
 
 		<?php } ?>
 	</div>
+
+	<?php include 'includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

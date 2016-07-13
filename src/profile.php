@@ -9,7 +9,7 @@ require_once 'core/init.php';
 <head>
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
-    include 'includes/html/head.html';
+    	include 'includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -63,6 +63,8 @@ require_once 'core/init.php';
 
 
 	</div>
+
+	<?php include 'includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Medical Diagnosis & Medical Database</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
@@ -40,27 +40,21 @@ chdir(dirname(__FILE__));
 			<p>
 				Use the "Medical Database" to find information about diseases, medication and other.
 			</p>
+
+			<style>
+	            .no-menu:hover {
+	                background: none;
+	                box-shadow: none;
+	            }
+	        </style>
+
 			<ul id="buttons">
-	        	<li>
-					<button type="button" class="services" onclick="location.href='services/medical-diagnosis/diagnosis.php';">
-						Medical Diagnosis
-					</button>
-	        	</li>
-	        	<li>
-					<button type="button" class="services" onclick="location.href='services/medical-diagnosis/medHistory.php';">
-						Medical History
-					</button>
-	        	</li>
-	        	<li>
-					<button type="button" class="services" onclick="location.href='#';">
-						Medical Database
-					</button>
-	        	</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/medical-diagnosis/links.php';">
-						Useful Links
-					</button>
-	        	</li>
+				<?php
+				echo li(button("services/medical-diagnosis/diagnosis.php", "Medical Diagnosis"));
+				echo li(button("services/medical-diagnosis/medHistory.php", "Medical History"));
+				echo li(button("#", "Medical Database"));
+				echo li(button("services/medical-diagnosis/links.php", "Useful Links"));
+				?>
 	        </ul>
     	</div>
 
@@ -81,6 +75,8 @@ chdir(dirname(__FILE__));
         ?>
 
 	</div>
+
+	<?php include '../../includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

@@ -10,9 +10,8 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Medical GIS</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
-	<link rel="stylesheet" type="text/css" href="../../css/blue-buttons-list.css">
 </head>
 <body>
 	<div id="container">
@@ -40,12 +39,16 @@ chdir(dirname(__FILE__));
 			<p>
 				Click below to check the eHOSP Maps:
 				<br>
+
+				<style>
+		            .no-menu:hover {
+		                background: none;
+		                box-shadow: none;
+		            }
+		        </style>
+
 				<ul id="buttons">
-					<li>
-						<button type="button" class="services" onclick="location.href='services/med-gis/maps.php';">
-							Maps
-						</button>
-					</li>
+					<?php echo li(button("services/med-gis/maps.php", "Maps")); ?>
 				</ul>
 			</p>
       	</div>
@@ -67,6 +70,8 @@ chdir(dirname(__FILE__));
         ?>
 
 	</div>
+
+	<?php include '../../includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

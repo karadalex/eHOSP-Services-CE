@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Patient Health</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
@@ -30,6 +30,14 @@ chdir(dirname(__FILE__));
         ?>
 
 		<script src="js/patient-med-profile.js" charset="utf-8"></script>
+
+		<style>
+			.no-menu:hover {
+				background: none;
+				box-shadow: none;
+			}
+		</style>
+		
 		<div class="row">
 			<script type="text/javascript">
 				var name = "Vitals";
@@ -56,6 +64,8 @@ chdir(dirname(__FILE__));
         ?>
 
 	</div>
+
+	<?php include '../../includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

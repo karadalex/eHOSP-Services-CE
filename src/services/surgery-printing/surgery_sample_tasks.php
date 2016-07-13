@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Surgery Design - Sample Tasks</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 </head>
@@ -36,17 +36,19 @@ chdir(dirname(__FILE__));
 	        	Click on one of the following buttons to execute a standard predefined surgical
                 task.
 			</p>
+
+			<style>
+	            .no-menu:hover {
+	                background: none;
+	                box-shadow: none;
+	            }
+	        </style>
+
 			<div id="buttons">
-				<li>
-					<button type="button" class="services" onclick="location.href='services/surgery-printing/surgery_sample_tasks/robotic_arm_test';">
-						Robotic Arm Test
-					</button>
-				</li>
-				<li>
-					<button type="button" class="services" onclick="location.href='services/surgery-printing/surgery_sample_tasks/simple_incision_01';">
-						Simple Incision 1
-					</button>
-				</li>
+				<?php
+				echo li(button("services/surgery-printing/surgery_sample_tasks/robotic_arm_test", "Robotic Arm Test"));
+				echo li(button("services/surgery-printing/surgery_sample_tasks/simple_incision_01", "Simple Incision 1"));
+				?>
 			</div>
       	</div>
 
@@ -68,6 +70,8 @@ chdir(dirname(__FILE__));
         ?>
 
 	</div>
+
+	<?php include '../../includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

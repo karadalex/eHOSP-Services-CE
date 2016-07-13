@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Patient Health</title>
 	<?php
-		include '../../../../includes/html/head.html';
+		include '../../../../includes/php/head.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/blue-buttons-list.css">
 
@@ -90,6 +90,8 @@ chdir(dirname(__FILE__));
         ?>
 
 	</div>
+
+	<?php include '../../../../includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

@@ -9,7 +9,7 @@ require_once 'core/init.php';
 <head>
 	<title>eHOSP - About</title>
 	<?php
-		include 'includes/html/head.html';
+		include 'includes/php/head.php';
 	?>
 </head>
 <body>
@@ -45,6 +45,8 @@ require_once 'core/init.php';
 			</p>
       	</div>
 	</div>
+
+	<?php include 'includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>

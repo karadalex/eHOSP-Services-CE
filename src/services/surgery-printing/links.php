@@ -10,7 +10,7 @@ chdir(dirname(__FILE__));
 <head>
 	<title>Surgery - 3D bioprinting Useful Links</title>
 	<?php
-		include '../../includes/html/head.html';
+		include '../../includes/php/head.php';
 	?>
 </head>
 <body>
@@ -54,6 +54,8 @@ chdir(dirname(__FILE__));
         ?>
 
 	</div>
+
+	<?php include '../../includes/php/footer.php'; ?>
 
 	<script src="js/foundation.min.js"></script>
     <script>
