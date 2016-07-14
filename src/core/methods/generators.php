@@ -25,3 +25,15 @@ function li($html_content) {
 
     return $li_html;
 }
+
+function div_c($div_content, $class = null) {
+    if (isset($class)) {
+        $div_html = "
+        <div class='$class'>
+            $div_content
+        </div>
+        ";
+    }
+
+    return $div_html;
+}
