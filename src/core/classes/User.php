@@ -102,4 +102,10 @@ class User {
     public function isLoggedIn() {
         return $this->_isLoggedIn;
     }
+
+    public function role() {
+        $data = $this->_db->get('groups', array('user_id', '=', $this->data()->user_id));
+        $role = $data->first()->permissions;
+        return $role;
+    }
 }
