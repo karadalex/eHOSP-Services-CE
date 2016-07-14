@@ -138,8 +138,16 @@ $error_msg = '';
 						<li>
 							<select name="user_type">
 								<option value="null"  <?php if(Input::get('user_type') == 'null') echo 'selected'; ?>>User Type</option>
-								<option value="doctor"  <?php if(Input::get('user_type') == 'doctor') echo 'selected'; ?>>Doctor</option>
-								<option value="patient"  <?php if(Input::get('user_type') == 'patient') echo 'selected'; ?>>Patient</option>
+								<?php
+								$userTypes = ['PATIENT', 'DOCTOR', 'MEDICAL LAB TECHNICIAN', 'SURGEON', 'SURGICAL TECHNOLOGIST',
+								              'ANESTHESIOLOGIST', 'PHYSICAL THERAPIST','RADIOLOGIST', 'RADIOLOGIST TECHNOLOGIST',
+											  'REGISTERED NURSE', 'BUSINESS OFFICE', 'PHYSICIAN', 'PATIENT ADVOCATE', 
+											  'HEALTH SERVICES MANAGER', 'MEDICAL CODER', 'HEALTH INFORMATION TECHNICIAN',
+											  'PHARMACY TECHNICIAN', 'PHARMACIST', 'SOCIAL WORKER', 'HOSPITAL ADMIN'];
+								for ($i=0; $i < count($userTypes); $i++) { 
+									echo "<option value='" . $userTypes[$i] . "'" .  ((Input::get('user_type') == $userTypes[$i]) ? 'selected' : '') . ">" . $userTypes[$i] . "</option>";
+								}
+								?>
 							</select>
 						</li>
 						<li>
