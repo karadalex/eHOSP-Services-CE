@@ -42,12 +42,15 @@ require_once 'core/init.php';
 	        </style>
 	        <ul>
 				<?php
-				echo li(button("services/medical-diagnosis", "Medical diagnosis & Diseases Database"));
-				echo li(button("services/patient-med-profile", "Patient Health Profile"));
-				echo li(button("services/genetic-code", "Genetic Code Service"));
-				echo li(button("services/surgery-printing", "Remote Surgery & Remote 3D Bioprinting tool"));
-				echo li(button("services/med-gis", "Medical Geographic Information System"));
-				echo li(button("services/research-platform", "Research Platform"));
+				$userType = $user->data()->user_type;
+				switch ($userType) {
+					case 'PATIENT':
+						include "views/patient.php";
+						break;
+					default:
+						# code...
+						break;
+				}
 				?>
 
 				<!-- Settings Section, Only for Administrators -->
