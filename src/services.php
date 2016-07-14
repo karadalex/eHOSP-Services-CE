@@ -50,15 +50,14 @@ require_once 'core/init.php';
 				echo li(button("services/research-platform", "Research Platform"));
 				?>
 
-				<!-- Settings Section -->
-				<hr>
-				<li>
-	        		<a href="settings.php">
-						<button type="button" class="services">
-							Settings
-						</button>
-					</a>
-	        	</li>
+				<!-- Settings Section, Only for Administrators -->
+				<?php
+				$permissions = $user->role();
+				if ($permissions == "admin") {
+					echo "<hr>"; 
+					echo li(button("settings.php", "Settings"));
+				} 
+				?>
 	        </ul>
       	</div>
 
