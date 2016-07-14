@@ -14,8 +14,20 @@
 <body>
 	<div id="container">
 		<?php
-			include 'includes/html/header.html';
+			include 'includes/php/header.php';
 		?>
+
+		<?php
+        if(Session::exists('home')) {
+            echo '<p>' . Session::flash('home'). '</p>';
+        }
+        $user = new User(); //Current
+        $permissions = $user->role();
+
+        if($user->isLoggedIn() && $permissions == "admin") {
+        ?>
+
+
         <h1> Settings </h1>
         <p> Change the settings below to configure your application according to your
             system and needs
@@ -92,6 +104,13 @@
 					<input type="submit" value="Save Settings">
 				</form>
         </div>
+
+
+        <?php		
+        } else {
+        	Redirect::to(404);
+        }
+        ?>
 	</div>
 	
 	<?php include 'includes/php/footer.php'; ?>
