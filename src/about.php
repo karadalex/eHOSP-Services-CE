@@ -43,6 +43,12 @@ require_once 'core/init.php';
 				and 3D medical bioprinting can be performed simultaneously through the Internet
 				and IoT infrastructure.
 			</p>
+
+			<h3>Short Robotic Platform Demonstration</h3>
+			<br>
+			<div class="flex-video widescreen">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/zXt-nwiKWcA" frameborder="0" allowfullscreen></iframe>
+			</div>
       	</div>
 	</div>
 
