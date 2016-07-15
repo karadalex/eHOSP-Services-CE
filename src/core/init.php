@@ -1,4 +1,12 @@
 <?php
+//Set HTTP Headers - In case that they are not configured by the server
+header('X-Powered-By: ');
+header('Server: ');
+header('X-Content-Type-Options: nosniff');
+header('X-XSS-Protection: 1; mode=block');
+header("Content-Security-Policy: script-src 'self'");
+//header('X-Frame-Options: SAMEORIGIN');
+
 session_start();
 error_reporting(0);
 
