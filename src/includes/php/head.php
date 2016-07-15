@@ -21,5 +21,5 @@ $base = "http://" . $hostname . ":" . $port . "/" . $path;
 <script src="js/vendor/modernizr.js"></script>
 <script src="js/vendor/jquery.js"></script>
 <script src="js/script.js"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/vendor/jquery-ui.css">
+<script src="js/vendor/jquery-ui.js"></script>
