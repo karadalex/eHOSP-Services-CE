@@ -42,14 +42,12 @@ require_once 'core/init.php';
 	        </style>
 	        <ul>
 				<?php
+				include "views/views.php";
 				$userType = $user->data()->user_type;
-				switch ($userType) {
-					case 'PATIENT':
-						include "views/patient.php";
-						break;
-					default:
-						# code...
-						break;
+				foreach ($views as $key => $value) {
+					if ($userType == $key) {
+						include $value;
+					}
 				}
 				?>
 
