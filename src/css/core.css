@@ -81,6 +81,24 @@ h2, h3, h4, h5, h6 {
 	background-color: rgba(43, 181, 114, 0.72);
 }
 
+.logos {
+	background-color: #aaa;
+	padding: 3em 2em;
+	text-align: center;
+}
+
+.logos .img {
+	padding-bottom: 1em;
+	font-size: 2em;
+}
+
+.logos .img img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.5em;
+}
+
 @media only screen and (max-width: 64.063em) {
 
 	header ul li a {
