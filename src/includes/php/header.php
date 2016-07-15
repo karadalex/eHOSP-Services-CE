@@ -54,7 +54,7 @@
 					<li id="menuOut"><img src="media/img/back.png" /></li>
 					<li><a class="menu" href="index.php">Home</a></li>
 					<li><a class="menu" href="about.php">About</a></li>
-					<li><a class="menu" href="#">Doc</a></li>
+					<li><a class="menu" href="doc.php">Doc</a></li>
 					<li><a class="menu" href="contact.php">Contact</a></li>
 
 
