@@ -13,7 +13,8 @@ $base = "http://" . $hostname . ":" . $port . "/" . $path;
 <meta name="keywords" content="eHOSP,Cloud,Hospital,">
 <meta name="author" content="Alex Karadimos">
 
-<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/vendor/normalize.css" />
+<link rel="stylesheet" href="css/vendor/foundation.css" />
 <link rel="stylesheet" href="css/custom.css" />
 <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
