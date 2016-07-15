@@ -24,10 +24,10 @@ require_once 'core/init.php';
 				Welcome to eHOSP, the hospital on the cloud,
 				a platform for e-health and e-medicine!
 			</p>
-			<?php 
-			echo li(button("#", "For Users"));
-			echo li(button("https://karadalex.gitbooks.io/ehosp-documentation/content/", "For Developers"));
-			?>
+			<div class="expanded button-group">
+				<a class="button" href="#">For Users</a>
+				<a class="button" href="https://karadalex.gitbooks.io/ehosp-documentation/content/">For Developers</a>
+			</div>
       	</div>
 	</div>
 
