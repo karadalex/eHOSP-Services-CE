@@ -16,7 +16,7 @@ $base = "http://" . $hostname . ":" . $port . "/" . $path;
 <link rel="stylesheet" href="css/foundation.css" />
 <link rel="stylesheet" href="css/custom.css" />
 <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
 
 <script src="js/vendor/modernizr.js"></script>
 <script src="js/vendor/jquery.js"></script>
