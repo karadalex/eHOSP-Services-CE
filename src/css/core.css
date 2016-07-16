@@ -100,10 +100,22 @@ h2, h3, h4, h5, h6 {
 }
 
 .my-video {
-	margin: auto;
     width: 60%;
-    height: 315;
+    height: auto;
+    margin-left: 20%;
     padding: 10px;
+}
+
+#video-space {
+	padding: 1em;
+	background-color: rgba(134, 167, 241, 0.5);
+	border-radius: 5px;
+	margin-bottom: 100px;
+}
+
+.blank-space {
+	height: 50px;
+	width: 100%;
 }
 
 @media only screen and (max-width: 64.063em) {
@@ -134,6 +146,7 @@ h2, h3, h4, h5, h6 {
 	.my-video {
 	    width: 100%;
 	    height: auto;
+	    margin: auto;
 	}
 
 }
