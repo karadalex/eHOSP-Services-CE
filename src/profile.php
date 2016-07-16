@@ -42,6 +42,10 @@ require_once 'core/init.php';
             <p>
                 <?php echo $user->data()->first_name . " " . $user->data()->last_name; ?>
             </p>
+            <h3>User Type</h3>
+            <p>
+                <?php echo $user->data()->user_type; ?>
+            </p>
       	</div>
 
 
