@@ -68,7 +68,7 @@
 
 					<hr class="dropdown-mobile-content">
 					<li class="dropdown-mobile-content"><a class="menu" href="profile.php">My Profile</a></li>
-					<li class="dropdown-mobile-content"><a class="menu" href="">Settings</a></li>
+					<li class="dropdown-mobile-content"><a class="menu" href="user_settings.php">Settings</a></li>
 					<li class="dropdown-mobile-content"><a class="menu" href="signout.php">Logout</a></li>
 
 					<li></li>
