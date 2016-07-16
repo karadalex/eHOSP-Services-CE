@@ -70,6 +70,10 @@ ul.input-list li {
     margin-bottom: 10px;
 }
 
+ul.sign-in li {
+    width: 100%;
+}
+
 @media all and (max-width: 800px) {
     ul.input-list {
         margin: 0;

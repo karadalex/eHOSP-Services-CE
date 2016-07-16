@@ -80,17 +80,19 @@ $error_msg = '';
 
 	        <section>
 				<form action="" method="post">
-					<ul class="input-list style-1 clearfix">
-						<li>
-							<input type="text" placeholder="Username" name="username">
-						</li>
-						<li>
-							<input type="password" placeholder="Password" name="password">
-						</li>
-                        <li>
-                            <input type="checkbox" name="remember"> Remember me
-                        </li>
-					</ul>
+                    <div class="center">
+                        <ul class="input-list style-1 clearfix sign-in">
+                            <li>
+                                <input type="text" placeholder="Username" name="username">
+                            </li>
+                            <li>
+                                <input type="password" placeholder="Password" name="password">
+                            </li>
+                            <li>
+                                <input type="checkbox" name="remember"> Remember me
+                            </li>
+                        </ul>
+                    </div>
 
 
                     <input type="hidden" name="token" value="<?php echo Token::generate();?>">
