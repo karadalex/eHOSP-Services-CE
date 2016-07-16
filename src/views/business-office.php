@@ -3,6 +3,7 @@
 if ($_SERVER['REQUEST_URI'] == "/server/src/views/business-office.php") {
     http_response_code (404);
 } else {
+    echo li(button("services/communication", "Communication"));
     echo li(button("services/third-party/accounting", "Accounting Analytics"));
     echo li(button("services/third-party/bpm", "Business Process Management (BPM)"));
     echo li(button("services/third-party/intelligence", "Business Intelligence"));

@@ -9,4 +9,5 @@ if ($_SERVER['REQUEST_URI'] == "/server/src/views/doctor.php") {
     echo li(button("services/", "Treatment Plans"));
     echo li(button("services/", "Rehabilitative Programs"));
     echo li(button("services/edu", "Educational Platform"));
+    echo li(button("services/communication", "Communication"));
 }
