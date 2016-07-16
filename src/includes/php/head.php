@@ -2,7 +2,7 @@
 $hostname = $GLOBALS['config']['APP_HOSTNAME'];
 $port = $GLOBALS['config']['APP_PORT'];
 $path = $GLOBALS['config']['APP_ROOT_PATH'];
-$base = "http://" . $hostname . ":" . $port . "/" . $path;
+$base = "https://" . $hostname . ":" . $port . "/" . $path;
 ?>
 
 <base href="<?php echo $base; ?>"/>
