@@ -99,6 +99,13 @@ h2, h3, h4, h5, h6 {
     height: 1.5em;
 }
 
+.my-video {
+	margin: auto;
+    width: 60%;
+    height: 315;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 64.063em) {
 
 	header ul li a {
@@ -122,6 +129,11 @@ h2, h3, h4, h5, h6 {
 
 	.row {
 		width: 95%;
+	}
+
+	.my-video {
+	    width: 100%;
+	    height: auto;
 	}
 
 }

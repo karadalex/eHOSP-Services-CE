@@ -46,9 +46,10 @@ require_once 'core/init.php';
 
 			<h3>Short Robotic Platform Demonstration</h3>
 			<br>
-			<div class="flex-video widescreen">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/zXt-nwiKWcA" frameborder="0" allowfullscreen></iframe>
+			<div class="my-video">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/zXt-nwiKWcA" frameborder="0" allowfullscreen></iframe>
 			</div>
+			
       	</div>
 	</div>
 
