@@ -1,58 +1,60 @@
-<style>
-#footer_parent {
-    background-color: #cccccc;
-    text-align: left;
-    margin-top: 70px;
-    padding-left: 10%;
-    position: static;
-    width: 100%;
-    bottom: 0px;
-    left: 0px;
-}
-
-#footer_parent:before, #footer_parent:after {
-  content: " ";
-  display: table;
-}
-
-#footer_parent:after {
-  clear: both;
-}
-
-#footer_parent h6 {
-    margin-top: 20px;
-}
-
-#footer_parent a {
-    box-shadow: none;
-    color: black;
-}
-
-#footer_parent a:hover {
-    background: none;
-    color: #0078a0;
-}
-
-#ehosp, #connect, #col1, #col2 {
-    width: 50%;
-    float: left;
-}
-
-/************************Mobile Viewport***************************************/
-@media only screen and (max-width: 500px) {
-    #ehosp, #connect {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    #col1, #col2 {
-        width: 100%;
-    }
-}
-</style>
-
 <footer>
+    <style>
+    #footer_parent {
+        background-color: #cccccc;
+        text-align: left;
+        margin-top: 70px;
+        padding-left: 10%;
+        position: static;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    #footer_parent:before, #footer_parent:after {
+      content: " ";
+      display: table;
+    }
+
+    #footer_parent:after {
+      clear: both;
+    }
+
+    #footer_parent h6 {
+        margin-top: 20px;
+    }
+
+    #footer_parent a {
+        box-shadow: none;
+        color: black;
+    }
+
+    #footer_parent a:hover {
+        background: none;
+        color: #0078a0;
+    }
+
+    #ehosp, #connect, #col1, #col2 {
+        width: 50%;
+        float: left;
+    }
+
+    /************************Mobile Viewport***************************************/
+    @media only screen and (max-width: 500px) {
+        #ehosp, #connect {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        #col1, #col2 {
+            width: 100%;
+        }
+    }
+    </style>
+
+
+    
     <div id="footer_parent">
         <div id="ehosp">
             <h6>eHOSP</h6>
