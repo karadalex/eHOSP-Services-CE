@@ -25,80 +25,45 @@ $error_msg = '';
 	        <h1> Change Settings</h1>
 
             <?php
-            if(Input::exists()) {
-                if (Token::check(Input::get('token'))) {
-                    $validate = new Validation();
-                    $validation = $validate->check($_POST, array(
-                        'first_name' => array(
-                            'required' => true
-                        ),
-                        'last_name' => array(
-                            'required' => true
-                        ),
-                        'email' => array(
-                            'required' => true
-                        ),
-                        'username' => array(
-                            'required' => true,
-                            'min' => 4,
-                            'max' => 20,
-                            'unique' => 'user_registry'
-                        ),
-                        'password' => array(
-                            'required' => true,
-                            'min' => 6
-                        ),
-                        'password_again' => array(
-                            'required' => true,
-                            'matches' => 'password'
-                        ),
-                        'age' => array(
-                            'required' => true
-                        ),
-                        'birth_country' => array(
-                            'required' => true
-                        ),
-                        // 'name' => array(
-                        // 	'required' => true,
-                        // 	'min' => 2,
-                        // 	'max' => 50
-                        // )
-                    ));
+            if(Session::exists('home')) {
+                echo '<p>' . Session::flash('home'). '</p>';
+            }
+            $user = new User(); //Current
+            if($user->isLoggedIn()) {
+                if(Input::exists()) {
+                    $user = new User();
+                    $salt = Hash::salt(32);
+                    $db = DB::getInstance();
 
-                    if ($validate->passed()) {
-                        $user = new User();
+                    try {
+                        // TODO: Add more registration fields
+                        $db->update('user_registry', $user->data()->user_id, array(
+                            'username' => Input::get('username'),
+                            'first_name' => Input::get('first_name'),
+                            'last_name' => Input::get('last_name'),
+                            'email' => Input::get('email'),
+                            'user_type' => Input::get('user_type'),
+                            'date' => date('Y-m-d H:i:s')
+                        ));
 
-                        $salt = Hash::salt(32);
+	                    if (Input::get('password') !== "") {
+	                    	if ($user->data()->password !== Hash::make(Input::get('password'), $user->data()->salt)) {
+		                        if (Input::get('password') === Input::get('password_again')) {
+		                        	$db->update('user_registry', $user->data()->user_id, array(
+			                            'password' => Hash::make(Input::get('password'), $salt),
+			                            'salt' => $salt
+			                        ));
+		                        }
+	                        }
+	                    }
 
-                        try {
-                            // TODO: Add more registration fields
-                            $user->create(array(
-                                'username' => Input::get('username'),
-                                'password' => Hash::make(Input::get('password'), $salt),
-                                'salt' => $salt,
-                                'first_name' => Input::get('first_name'),
-                                'last_name' => Input::get('last_name'),
-                                'email' => Input::get('email'),
-                                'gender' => Input::get('gender'),
-                                'user_type' => Input::get('user_type'),
-                                'age' => Input::get('age'),
-                                'birth_country' => Input::get('birth_country'),
-                                'social_security_number' => (strlen(Input::get('ssn')) > 0) ? (Input::get('ssn')) : NULL,
-                                'date' => date('Y-m-d H:i:s')
-                            ));
-
-                            Session::flash('home', 'You have successfully registered! You can now log in');
-                            Redirect::to('sign.php');
-                            // Redirect::to(404);
-                        } catch (Exception $e) {
-                            // TODO: Redirect to specific error page instead of die
-                            die($e->getMessage());
-                        }
-
-                    } else {
-                        foreach($validation->errors() as $error) {
-                            $error_msg .= $error . '\n';
-                        }
+                        // Session::flash('home', "<script>alert('Your settings have been saved successfully');</script>");
+                        Redirect::to('user_settings.php');
+                        echo "Your changes have been saved successfully!";
+                        // Redirect::to(404);
+                    } catch (Exception $e) {
+                        // TODO: Redirect to specific error page instead of die
+                        die($e->getMessage());
                     }
                 }
             }
