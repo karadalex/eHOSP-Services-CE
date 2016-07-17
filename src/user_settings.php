@@ -28,41 +28,57 @@ $error_msg = '';
             if(Session::exists('home')) {
                 echo '<p>' . Session::flash('home'). '</p>';
             }
+
+            // TODO: 
+            // 1. Validate form to assert that username is unique
+            // 2. Display error messages
+            
             $user = new User(); //Current
             if($user->isLoggedIn()) {
                 if(Input::exists()) {
-                    $user = new User();
                     $salt = Hash::salt(32);
                     $db = DB::getInstance();
 
                     try {
-                        // TODO: Add more registration fields
                         $db->update('user_registry', $user->data()->user_id, array(
                             'username' => Input::get('username'),
                             'first_name' => Input::get('first_name'),
                             'last_name' => Input::get('last_name'),
                             'email' => Input::get('email'),
-                            'user_type' => Input::get('user_type'),
-                            'date' => date('Y-m-d H:i:s')
+                            'user_type' => Input::get('user_type')
                         ));
 
 	                    if (Input::get('password') !== "") {
 	                    	if ($user->data()->password !== Hash::make(Input::get('password'), $user->data()->salt)) {
-		                        if (Input::get('password') === Input::get('password_again')) {
-		                        	$db->update('user_registry', $user->data()->user_id, array(
+	                    		$validate = new Validation();
+			                    $validation = $validate->check($_POST, array(
+			                        'password' => array(
+			                            'required' => true,
+			                            'min' => 6
+			                        ),
+			                        'password_again' => array(
+			                            'required' => true,
+			                            'matches' => 'password'
+			                        )
+			                    ));
+
+			                    if ($validate->passed()) {
+		                            $db->update('user_registry', $user->data()->user_id, array(
 			                            'password' => Hash::make(Input::get('password'), $salt),
 			                            'salt' => $salt
 			                        ));
-		                        }
+		                        } else {
+			                        foreach($validation->errors() as $error) {
+			                            $error_msg .= $error . '\n';
+			                        }
+			                    }
 	                        }
 	                    }
 
                         // Session::flash('home', "<script>alert('Your settings have been saved successfully');</script>");
                         Redirect::to('user_settings.php');
                         echo "Your changes have been saved successfully!";
-                        // Redirect::to(404);
                     } catch (Exception $e) {
-                        // TODO: Redirect to specific error page instead of die
                         die($e->getMessage());
                     }
                 }
