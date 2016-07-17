@@ -76,7 +76,7 @@
 						<a class="dropdown">Me</a>
 						<div class="dropdown-content">
 							<li class="me_menu"><a class="menu" href="profile.php">My Profile</a></li>
-							<li class="me_menu"><a class="menu" href="">Settings</a></li>
+							<li class="me_menu"><a class="menu" href="user_settings.php">Settings</a></li>
 							<li class="me_menu"><a class="menu" href="signout.php">Logout</a></li>
 						</div>
 					</div>
