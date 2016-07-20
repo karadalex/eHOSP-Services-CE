@@ -1,5 +1,6 @@
 <?php
 require_once 'core/init.php';
+ob_start();
 ?>
 
 
@@ -10,7 +11,6 @@ require_once 'core/init.php';
 	<title>eHOSP - Hospital on the cloud</title>
 	<?php
 		include 'includes/php/head.php';
-		include 'core/init.php';
 	?>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -22,14 +22,13 @@ require_once 'core/init.php';
 
 
 		<?php
-        if(Session::exists('home')) {
-            echo '<p>' . Session::flash('home'). '</p>';
-        }
-        $user = new User();
-        if($user->isLoggedIn()) {
+		// if(Session::exists('home')) {
+		//     echo '<p>' . Session::flash('home'). '</p>';
+		// }
+		if($user->isLoggedIn()) {
 			Redirect::to('services.php');
 		} else {
-        ?>
+    	?>
 
 
 		<div class="main">
@@ -63,3 +62,5 @@ require_once 'core/init.php';
     </script>
 </body>
 </html>
+
+<?php ob_end_flush(); ?>
