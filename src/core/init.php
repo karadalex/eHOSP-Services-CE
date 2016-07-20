@@ -1,7 +1,7 @@
 <?php
 //Set HTTP Headers - In case that they are not configured by the server
-if ($_SERVER["SERVER_PORT"] != 443) {
-    $redir = "Location: https://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+if ($_SERVER["SERVER_PORT"] != 8443) {
+    $redir = "Location: https://" . $_SERVER['HTTP_HOST'] . ":" . "8443" . $_SERVER['PHP_SELF'];
     header($redir);
 }
 header('X-Powered-By: ');
@@ -31,6 +31,8 @@ require_once 'methods/sanitize.php';
 require_once 'methods/generators.php';
 require_once 'methods/paths.php';
 
+// Global Data and Variables
+require_once 'data/userTypes.php';
 
 if (Cookie::exists(config_get::get('remember/cookie_name')) && !Session::exists(config_get::get('session/session_name'))) {
     $hash = Cookie::get(config_get::get('remember/cookie_name'));
