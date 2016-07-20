@@ -20,5 +20,6 @@ $views = array(
     'PHARMACY TECHNICIAN' => 'views/pharmacy-tech.php' , 
     'PHARMACIST' => 'views/pharmacist.php' , 
     'SOCIAL WORKER' => 'views/social-worker.php' , 
-    'HOSPITAL ADMIN' => 'views/hosp-admin.php'
+    'HOSPITAL ADMIN' => 'views/hosp-admin.php',
+    'ROBOTICS MANAGER' => 'views/robotics.php'
 );
