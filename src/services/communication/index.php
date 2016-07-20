@@ -43,10 +43,10 @@ chdir(dirname(__FILE__));
 		            }
 		        </style>
 
-				<ul id="buttons">
-					<?php echo li(button("services/communication/messages.php", "Messages")); ?>
-					<?php echo li(button("services/communication/video-chat.php", "Video Chat")); ?>
-				</ul>
+		        <div class="expanded button-group">
+					<a class="button" href="messages.php">Messages</a>
+					<a class="button" href="video-chat.php">Video Chat</a>
+				</div>
 			</p>
       	</div>
 
