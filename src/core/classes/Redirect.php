@@ -12,14 +12,12 @@ class Redirect {
                         chdir(dirname(__FILE__));
                         chdir('../../includes/html/errors');
                         include getcwd() . '/404.html';
-                        exit();
                         break;
                 }
             }
 
             // Location Redirection
             header('Location: ' . $location);
-            exit();
         }
     }
 }
