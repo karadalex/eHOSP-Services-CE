@@ -25,14 +25,11 @@ $error_msg = '';
 	        <h1> Change Settings</h1>
 
             <?php
-            if(Session::exists('home')) {
-                echo '<p>' . Session::flash('home'). '</p>';
-            }
 
-            // TODO: 
+            // TODO:
             // 1. Validate form to assert that username is unique
             // 2. Display error messages
-            
+
             $user = new User(); //Current
             if($user->isLoggedIn()) {
                 if(Input::exists()) {
@@ -112,12 +109,7 @@ $error_msg = '';
 							<select name="user_type">
 								<option value="null"  <?php if($user->data()->user_type == 'null') echo 'selected'; ?>>User Type</option>
 								<?php
-								$userTypes = ['PATIENT', 'DOCTOR', 'MEDICAL LAB TECHNICIAN', 'SURGEON', 'SURGICAL TECHNOLOGIST',
-								              'ANESTHESIOLOGIST', 'PHYSICAL THERAPIST','RADIOLOGIST', 'RADIOLOGIST TECHNOLOGIST',
-											  'REGISTERED NURSE', 'BUSINESS OFFICE', 'PHYSICIAN', 'PATIENT ADVOCATE', 
-											  'HEALTH SERVICES MANAGER', 'MEDICAL CODER', 'HEALTH INFORMATION TECHNICIAN',
-											  'PHARMACY TECHNICIAN', 'PHARMACIST', 'SOCIAL WORKER', 'HOSPITAL ADMIN'];
-								for ($i=0; $i < count($userTypes); $i++) { 
+								for ($i=0; $i < count($userTypes); $i++) {
 									echo "<option value='" . $userTypes[$i] . "'" .  (($user->data()->user_type == $userTypes[$i]) ? 'selected' : '') . ">" . $userTypes[$i] . "</option>";
 								}
 								?>
