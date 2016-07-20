@@ -1,0 +1,19 @@
+.dashboard-container {
+	width: 100%;
+	height: 500px;
+	background-color: #86A7F1;
+	border-radius: 5px;
+	box-shadow:10px 10px 20px #616671;
+	position: relative;
+}
+
+.dashboard-fullscreen {
+	color: #D9E4FD;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.dashboard-fullscreen:hover {
+	cursor:pointer;
+}

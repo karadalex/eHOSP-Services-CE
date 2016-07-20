@@ -16,3 +16,15 @@ Main website
 - headline_text: #2bb673
 - main_text: #373737
 - hover_desktop: #2bb673v
+
+
+Dashboard palette
+=================
+
+(Adobe Kuler Template, colors from left to right)
+
+- #3F4F71
+- #D9E4FD
+- #86A7F1
+- #616671
+- #6A84BE

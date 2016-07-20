@@ -12,6 +12,8 @@ chdir(dirname(__FILE__));
 	<?php
 		include '../../includes/php/head.php';
 	?>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <script src="js/dashboard.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -31,6 +33,10 @@ chdir(dirname(__FILE__));
 		<div class="row">
 	        <h1>Patients</h1>
 	        <br>
+
+            <div class="dashboard-container">
+                <i class="fa fa-arrows-alt fa-lg dashboard-fullscreen" aria-hidden="true"></i>
+            </div>
             
       	</div>
 
