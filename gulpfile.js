@@ -51,7 +51,7 @@ gulp.task('img-minify', function(){
 // CSS task
 // Minify CSS code
 gulp.task('minify-css', function() {
-    gulp.src('src/css/*.css')
+    gulp.src('src/css/**')
         .pipe(plumber())
         .pipe(css_minify({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/css'));
@@ -61,6 +61,12 @@ gulp.task('minify-css', function() {
         .pipe(plumber())
         .pipe(css_minify({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/vendor/leaflet'));
+
+    // Fontawesome vendor
+    gulp.src('src/vendor/font-awesome/css/font-awesome.min.css')
+        .pipe(plumber())
+        .pipe(css_minify({compatibility: 'ie8'}))
+        .pipe(gulp.dest('dist/vendor/font-awesome/css'));    
 });
 
 // Copying task
@@ -75,6 +81,12 @@ gulp.task('simply-copy', function(){
     gulp.src('src/services/**')
         .pipe(plumber())
         .pipe(gulp.dest('dist/services'));
+    gulp.src('src/vendor/font-awesome/fonts/**')
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/vendor/font-awesome/fonts'));
+    gulp.src('src/views/**')
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/views'));
     gulp.src('src/*.php')
         .pipe(plumber())
         .pipe(gulp.dest('dist'));
@@ -86,5 +98,14 @@ gulp.task('simply-copy', function(){
         .pipe(gulp.dest('dist'));
 });
 
+// Watch Task
+// Watch files for any change
+gulp.task('watch', function(){
+    gulp.watch('src/**/*.php', ['simply-copy']);
+    gulp.watch('src/js/**', ['js-minify']);
+    gulp.watch('src/css/**', ['minify-css']);
+    gulp.watch('src/media/img/**', ['img-minify']);
+});
+
 // Default task to run all of the above tasks
-gulp.task('default', ['js-minify', 'minify-css', 'simply-copy', 'img-minify']);
+gulp.task('default', ['js-minify', 'minify-css', 'simply-copy', 'img-minify', 'watch']);
