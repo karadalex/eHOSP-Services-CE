@@ -1,6 +1,6 @@
 <?php
 require_once 'core/init.php';
-
+ob_start();
 $error_msg = '';
 ?>
 
@@ -119,3 +119,6 @@ $error_msg = '';
     </script>
 </body>
 </html>
+
+
+<?php ob_end_flush(); ?>
