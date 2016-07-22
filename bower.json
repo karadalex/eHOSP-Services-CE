@@ -1,0 +1,21 @@
+{
+  "name": "eHOSP",
+  "description": "A platform for e-health and e-medicine",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alex Karadimos"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/karadalex/eHOSP_Server_MainSource",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0",
+    "paper-ripple": "PolymerElements/paper-ripple#^1.0.8"
+  }
+}
