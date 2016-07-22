@@ -5,7 +5,7 @@
 // Use official test code as stated above to test dist directory
 
 
-require_once '../core/init.php';
+require_once '../../core/init.php';
 
 
 

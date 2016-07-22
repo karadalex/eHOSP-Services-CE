@@ -1,5 +1,5 @@
 <?php
-    chdir('../../src');
+    chdir('../../../src');
     $config = include('config.php');
 
     $connection = new mysqli($config['DB_HOSTNAME'], $config['DB_ROOT_USERNAME'], $config['DB_ROOT_PASSWORD']);

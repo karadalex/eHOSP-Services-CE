@@ -1,5 +1,5 @@
 <?php
-require_once '../core/init.php';
+require_once '../../core/init.php';
 
 var_dump(Input::exists());
 echo "<br>";

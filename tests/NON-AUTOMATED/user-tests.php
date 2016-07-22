@@ -1,5 +1,5 @@
 <?php
-require_once '../core/init.php';
+require_once '../../core/init.php';
 
 $user = new User(); //Current
 $permissions = $user->role();
