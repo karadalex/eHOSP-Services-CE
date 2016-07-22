@@ -14,6 +14,7 @@ chdir(dirname(__FILE__));
 	?>
     <link rel="stylesheet" type="text/css" href="css/dashboard.css">
     <script src="js/dashboard.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -34,7 +35,17 @@ chdir(dirname(__FILE__));
 	        <h1>Patients</h1>
 	        <br>
 
-            <div class="dashboard-container">
+            <div class="dashboard-container" ng-app>
+                <div class="dashboard-header">
+                    <span>Patients Dashboard</span>
+                    <hr>
+                </div>
+                <div class="dashboard-sidebar">
+                    
+                </div>
+                <div class="dashboard-main">
+                    
+                </div>
                 <i class="fa fa-arrows-alt fa-lg dashboard-fullscreen" aria-hidden="true"></i>
             </div>
             

@@ -1,10 +1,5 @@
-$(document).on('click', function() {
-    $(document).ready(function() {
-        $(".dashboard-fullscreen").on("click", function() {
-			// $(this).css({
-			// 	"background-color": "red";
-			// });
-        	alert("Test");
-		});
-    });
+$(document).ready(function() {
+    $('.dashboard-fullscreen').click(function(e){
+	    $('.dashboard-container').toggleClass('fullscreen'); 
+	});
 });

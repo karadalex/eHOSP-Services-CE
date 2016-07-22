@@ -10,6 +10,8 @@ chdir(dirname(__FILE__));
 	<?php
 		include '../../includes/php/head.php';
 	?>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <script src="js/dashboard.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -30,9 +32,20 @@ chdir(dirname(__FILE__));
 	        <h1>Video Communication</h1>
 	        <br>
 
-            <div id='video-space'>
-                <video class="my-video" controls autoplay>Test</video>
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <span>Video Chat Dashboard</span>
+                    <hr>
+                </div>
+                <div class="dashboard-sidebar">
+                    
+                </div>
+                <div class="dashboard-main">
+                    <video class="my-video dashboard-video" controls autoplay>Test</video>
+                </div>
+                <i class="fa fa-arrows-alt fa-lg dashboard-fullscreen" aria-hidden="true"></i>
             </div>
+
             <div class="blank-space"></div>
             <script src="js/video-chat.js"></script>
 			
