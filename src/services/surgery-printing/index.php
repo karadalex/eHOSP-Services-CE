@@ -1,6 +1,12 @@
 <?php
 require_once '../../core/init.php';
 chdir(dirname(__FILE__));
+
+$user = new User(); //Current
+
+if ($user->data()->user_type != 'SURGEON') {
+    Redirect::to('../../services.php');
+}
 ?>
 
 
@@ -26,7 +32,6 @@ chdir(dirname(__FILE__));
         if(Session::exists('home')) {
             echo '<p>' . Session::flash('home'). '</p>';
         }
-        $user = new User(); //Current
         if($user->isLoggedIn()) {
         ?>
 

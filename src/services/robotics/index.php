@@ -1,6 +1,12 @@
 <?php
 require_once '../../core/init.php';
 chdir(dirname(__FILE__));
+
+$user = new User(); //Current
+
+if ($user->data()->user_type != 'ROBOTICS MANAGER') {
+    Redirect::to('../../services.php');
+}
 ?>
 
 
@@ -12,6 +18,8 @@ chdir(dirname(__FILE__));
 	<?php
 		include '../../includes/php/head.php';
 	?>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <script src="js/dashboard.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -23,15 +31,28 @@ chdir(dirname(__FILE__));
         if(Session::exists('home')) {
             echo '<p>' . Session::flash('home'). '</p>';
         }
-        $user = new User(); //Current
         if($user->isLoggedIn()) {
         ?>
 
 
 		<div class="row">
-	        <h1>Robotics Dashboard</h1>
+	        <h1>Robotics</h1>
 	        <br>
             
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <span>Robotics Dashboard</span>
+                    <hr>
+                </div>
+                <div class="dashboard-sidebar">
+                    
+                </div>
+                <div class="dashboard-main">
+                    
+                </div>
+                <i class="fa fa-arrows-alt fa-lg dashboard-fullscreen" aria-hidden="true"></i>
+            </div>
+
       	</div>
 
       	<?php
