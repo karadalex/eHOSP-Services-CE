@@ -1,5 +1,6 @@
-# Ignore locally installed help packages:
-node_modules
+# Ignore locally installed packages from package-managers:
+node_modules/
+src/vendor/bower/
 composer.phar
 
 # Ignore log files:
