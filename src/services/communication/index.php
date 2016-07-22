@@ -44,8 +44,8 @@ chdir(dirname(__FILE__));
 		        </style>
 
 		        <div class="expanded button-group">
-					<a class="button" href="messages.php">Messages</a>
-					<a class="button" href="video-chat.php">Video Chat</a>
+					<a class="button" href="services/communication/messages.php">Messages</a>
+					<a class="button" href="services/communication/video-chat.php">Video Chat</a>
 				</div>
 			</p>
       	</div>
