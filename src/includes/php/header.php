@@ -59,7 +59,7 @@ ul#menu {
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('media/searchicon.png');
+  background-image: url('media/img/searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
