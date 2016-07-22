@@ -89,6 +89,8 @@ h2, h3, h4, h5, h6 {
 	background-color: #aaa;
 	padding: 3em 2em;
 	text-align: center;
+	border-radius: 5px;
+	box-shadow:10px 10px 20px #616671;
 }
 
 .logos .img {
@@ -112,7 +114,8 @@ h2, h3, h4, h5, h6 {
 
 #video-space {
 	padding: 1em;
-	background-color: rgba(134, 167, 241, 0.5);
+	background-color: #86A7F1;
+	box-shadow:10px 10px 20px #616671;
 	border-radius: 5px;
 	margin-bottom: 100px;
 }
