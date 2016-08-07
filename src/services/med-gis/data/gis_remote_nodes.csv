@@ -1,100 +1,101 @@
-;Kiprinos;Europe;Greece;Evros, Thraki;;41.5752196;26.2288126;68 m
-;Soufli;Europe;Greece;Evros, Thraki;;41.2443761;26.1359431;308 m
-;Metaksades;Europe;Greece;Evros, Thraki;;41.4198507;26.2240908;133 m
-;Avdira;Europe;Greece;Ksanthi, Thraki;;41.0479535;24.9754175;16 m
-;Stavroupoli;Europe;Greece;Ksanthi, Thraki;;41.1979838;24.7055252;108 m
-;Fillira;Europe;Greece;Rodopi, Thraki;;41.1570062;25.6391526;212 m
-;Arriana;Europe;Greece;Rodopi, Thraki;;41.0825671;25.6950637;57 m
-;Gratini;Europe;Greece;Rodopi, Thraki;;41.1435011;25.5334831;91 m
-;Xoristi;Europe;Greece;Drama, Macedonia;;41.1313621;24.2085896;120 m
-;Paranesti;Europe;Greece;Drama, Macedonia;;41.2670566;24.5008184;122 m
-;Mikropoli;Europe;Greece;Drama, Macedonia;;41.1918781;23.8205588;334 m
-;Kalampaki;Europe;Greece;Drama, Macedonia;;41.0519293;24.1877003;71 m
-;Galipsos;Europe;Greece;Kavala, Macedonia;;40.8032344;23.9502138;174 m
-;Avli;Europe;Greece;Kavala, Macedonia;;40.8737619;24.1787963;148 m
-;Eleftheroupoli;Europe;Greece;Kavala, Macedonia;;40.9156544;24.2547455;74 m
-;Mavrothalassa;Europe;Greece;Serres, Macedonia;;40.8946186;23.7510711;24 m
-;Rodolivos;Europe;Greece;Serres, Macedonia;;40.9201953;23.9742039;354 m
-;Palaiokomi;Europe;Greece;Serres, Macedonia;;40.8709952;23.9011314;140 m
-;Polikastro;Europe;Greece;Kilkis, Macedonia;;40.9971976;22.5703984;43 m
-;Nea Maditos;Europe;Greece;Thessaloniki, Macedonia;;40.6228453;23.5628922;68 m
-;Souroti/Peristera;Europe;Greece;Thessaloniki, Macedonia;;40.472433;23.0927079;104 m
-;Ammouliani;Europe;Greece;Chalkidiki, Macedonia;;40.3313805;23.922016;9 m
-;Kassandreia;Europe;Greece;Chalkidiki, Macedonia;;40.0480392;23.4134501;51 m
-;Aleksandreia;Europe;Greece;Imathia, Macedonia;;40.6279023;22.444571;8 m
-;Plati;Europe;Greece;Imathia, Macedonia;;40.6426064;22.5355213;6 m
-;Vergina;Europe;Greece;Imathia, Macedonia;;40.4876578;22.3158996;105 m
-;Litoxoro;Europe;Greece;Pieria, Macedonia;;40.1029473;22.5026117;308 m
-;Platamonas;Europe;Greece;Pieria, Macedonia;;39.9901304;22.6238625;11 m
-;Argos Orestiko;Europe;Greece;Kastoria, Macedonia;;40.4527427;21.2587379;650 m
-;Nestorio;Europe;Greece;Kastoria, Macedonia;;40.38698;20.9745074;1456 m
-;Koresteia;Europe;Greece;Kastoria, Macedonia;;40.622839;21.202944;825 m
-;Velventos;Europe;Greece;Kozani, Macedonia;;40.2545476;22.0742782;442 m
-;Delvinaki;Europe;Greece;Ioannina, Ipiros;;39.9339652;20.4654499;673 m
-;Pramanta;Europe;Greece;Ioannina, Ipiros;;39.5228398;21.1044466;21.1044466
-;Vasiliki;Europe;Greece;Lefkada, Eptanisa;;38.6287203;20.6090484;4 m
-;Sami;Europe;Greece;Kefallonia, Eptanisa;;38.2514148;20.6471688;0 m
-;Karavados;Europe;Greece;Kefallonia, Eptanisa;;38.1295617;20.5830175;122 m
-;Zagora;Europe;Greece;Magnisia, Thessalia;;39.4416384;23.1028193;500 m
-;Argalasti;Europe;Greece;Magnisia, Thessalia;;39.2259226;23.2195437;248 m
-;Skopelos;Europe;Greece;Magnisia, Thessalia;;39.1251493;23.6799766;404 m
-;Elati;Europe;Greece;Trikala, Thessalia;;39.504302;21.5351193;927 m
-;Oixalia;Europe;Greece;Trikala, Thessalia;;39.6071378;21.9814142;109 m
-;Neraida;Europe;Greece;Trikala, Thessalia;;39.2831174;22.551196;246 m
-;Farkadona;Europe;Greece;Trikala, Thessalia;;39.6252172;22.0714835;199 m
-;Mouzaki;Europe;Greece;Karditsa, Thessalia;;39.3941058;21.642224;326 m
-;Sofades;Europe;Greece;Karditsa, Thessalia;;39.3359337;22.0916414;110 m
-;Mitropoli;Europe;Greece;Karditsa, Thessalia;;39.3049991;21.8449346;187 m
-;Anafi;Europe;Greece;Kiklades,  Aegean;;36.363178;25.7693535;313 m
-;Kimolos;Europe;Greece;Kiklades,  Aegean;;36.7929382;24.5747321;83 m
-;Folegandros;Europe;Greece;Kiklades,  Aegean;;36.6171452;24.916088;305 m
-;Lipsoi;Europe;Greece;Kiklades,  Aegean;;37.3011088;26.7437518;197 m
-;Kasos;Europe;Greece;Dodekanisa, Aegean;;35.401053;26.9263671;144 m
-;Gennadi (Rodhes);Europe;Greece;Dodekanisa, Aegean;;36.0236145;27.9232631;34 m
-;Tilos;Europe;Greece;Dodekanisa, Aegean;;36.4230663;27.3733989;196 m
-;Mitikas;Europe;Greece;Aitoloakarnania, Sterea Ellada;;38.6676093;20.944772;2 m
-;Astakos;Europe;Greece;Aitoloakarnania, Sterea Ellada;;38.5357192;21.0820678;7 m
-;Empesos;Europe;Greece;Aitoloakarnania, Sterea Ellada;;39.0234046;21.3212072;307 m
-;Aggelokastro;Europe;Greece;Aitoloakarnania, Sterea Ellada;;38.5655403;21.2959837;64 m
-;Prousos;Europe;Greece;Evritania, Sterea Ellada;;38.7445499;21.6533763;789 m
-;Dytiki Fragkista;Europe;Greece;Evritania, Sterea Ellada;;38.9268157;21.5945271;814 m
-;Agrafa;Europe;Greece;Evritania, Sterea Ellada;;39.1374707;21.64942;841 m
-;Granitsa;Europe;Greece;Evritania, Sterea Ellada;;39.101254;21.5112341;814 m
-;Pelasgia;Europe;Greece;Fthiotida, Sterea Ellada;;38.9485485;22.8400018;213 m
-;Livanates;Europe;Greece;Fthiotida, Sterea Ellada;;38.7114946;23.0506735;38 m
-;Agios Konstantinos;Europe;Greece;Fthiotida, Sterea Ellada;;38.7574323;22.856209;10 m
-;Raches;Europe;Greece;Fthiotida, Sterea Ellada;;38.8906036;22.7810269;108 m
-;Mantoudi;Europe;Greece;Evoia, Sterea Ellada;;38.7991058;23.4796423;40 m
-;Platanistos;Europe;Greece;Evoia, Sterea Ellada;;38.0180986;24.5166729;196 m
-;Stropones;Europe;Greece;Evoia, Sterea Ellada;;38.6181479;23.889958;331 m
-;Paradisi;Europe;Greece;Evoia, Sterea Ellada;;38.0753996;24.3800778;307 m
-;Gimno;Europe;Greece;Evoia, Sterea Ellada;;38.4391281;23.8850944;134 m
-;Skiros;Europe;Greece;Evoia, Sterea Ellada;;38.8162965;24.5955356;446 m
-;Domvrena;Europe;Greece;Biotia, Sterea Ellada;;38.2528595;22.9822252;152 m
-;Akrefnio;Europe;Greece;Biotia, Sterea Ellada;;38.4565114;23.2213292;197 m
-;Erimanthia;Europe;Greece;Achaia, Peloponnese;;37.9818717;21.725492;409 m
-;Klitoria;Europe;Greece;Achaia, Peloponnese;;37.8946941;22.1246492;533 m
-;Zarouchleika;Europe;Greece;Achaia, Peloponnese;;38.2147354;21.7288919;14 m
-;Psofida;Europe;Greece;Achaia, Peloponnese;;37.8777503;21.8995497;597 m
-;Chalandritsa;Europe;Greece;Achaia, Peloponnese;;38.1087967;21.7838411;351 m
-;Simopoulo;Europe;Greece;Hlia, Peloponnese;;37.8488746;21.5714789;203 m
-;Elafonisos;Europe;Greece;Lakonia, Peloponnese;;36.4875509;22.9594983;109 m
-;Agios Nikolaos Voion;Europe;Greece;Lakonia, Peloponnese;;36.513036;23.060626;12 m
-;Mavromati (Ithomis);Europe;Greece;Messinia, Peloponnese;;37.1793854;21.9238234;408 m
-;Kardamili;Europe;Greece;Messinia, Peloponnese;;36.8870432;22.2329977;14 m
-;Ampelionas;Europe;Greece;Messinia, Peloponnese;;37.4352341;21.9490176;820 m
-;Kampos;Europe;Greece;Messinia, Peloponnese;;36.9379603;22.2028277;299 m
-;Kiato;Europe;Greece;Korinthia, Peloponnese;;38.0126545;22.750171;1 m
-;Kalianoi;Europe;Greece;Korinthia, Peloponnese;;37.8890753;22.4947054;694 m
-;Gkoura;Europe;Greece;Korinthia, Peloponnese;;37.9326446;22.3407976;956 m
-;Kissamos;Europe;Greece;Chania, Crete;;35.4945873;23.6537459;21 m
-;Kandanos;Europe;Greece;Chania, Crete;;35.3274474;23.7415942;431 m
-;Anogia;Europe;Greece;Rethimno, Crete;;35.2896605;24.8844831;760 m
-;Spili;Europe;Greece;Rethimno, Crete;;35.2188059;24.5357817;417 m
-;Agia Fotini;Europe;Greece;Rethimno, Crete;;35.2546152;24.6342283;479 m
-;Tilissos;Europe;Greece;Iraklio, Crete;;35.2970392;25.0182231;196 m
-;Charakas;Europe;Greece;Iraklio, Crete;;35.0119015;25.1203147;294 m
-;Tzermiado;Europe;Greece;Lasithi, Crete;;35.19954;25.4891347;837 m
-;Chandras;Europe;Greece;Lasithi, Crete;;35.0812107;26.099508;574 m
-;Tourloti;Europe;Greece;Lasithi, Crete;;35.1840527;25.9049913;5 m
-;Psixro;Europe;Greece;Lasithi, Crete;;35.164941;25.4505762;837 m
+gis_node_id;name;continent;country;region;nearest_city;latitude;longitude;elevation;population;status
+;Kiprinos;Europe;Greece;Evros, Thraki;;41.5752196;26.2288126;68 m;;
+;Soufli;Europe;Greece;Evros, Thraki;;41.2443761;26.1359431;308 m;;
+;Metaksades;Europe;Greece;Evros, Thraki;;41.4198507;26.2240908;133 m;;
+;Avdira;Europe;Greece;Ksanthi, Thraki;;41.0479535;24.9754175;16 m;;
+;Stavroupoli;Europe;Greece;Ksanthi, Thraki;;41.1979838;24.7055252;108 m;;
+;Fillira;Europe;Greece;Rodopi, Thraki;;41.1570062;25.6391526;212 m;;
+;Arriana;Europe;Greece;Rodopi, Thraki;;41.0825671;25.6950637;57 m;;
+;Gratini;Europe;Greece;Rodopi, Thraki;;41.1435011;25.5334831;91 m;;
+;Xoristi;Europe;Greece;Drama, Macedonia;;41.1313621;24.2085896;120 m;;
+;Paranesti;Europe;Greece;Drama, Macedonia;;41.2670566;24.5008184;122 m;;
+;Mikropoli;Europe;Greece;Drama, Macedonia;;41.1918781;23.8205588;334 m;;
+;Kalampaki;Europe;Greece;Drama, Macedonia;;41.0519293;24.1877003;71 m;;
+;Galipsos;Europe;Greece;Kavala, Macedonia;;40.8032344;23.9502138;174 m;;
+;Avli;Europe;Greece;Kavala, Macedonia;;40.8737619;24.1787963;148 m;;
+;Eleftheroupoli;Europe;Greece;Kavala, Macedonia;;40.9156544;24.2547455;74 m;;
+;Mavrothalassa;Europe;Greece;Serres, Macedonia;;40.8946186;23.7510711;24 m;;
+;Rodolivos;Europe;Greece;Serres, Macedonia;;40.9201953;23.9742039;354 m;;
+;Palaiokomi;Europe;Greece;Serres, Macedonia;;40.8709952;23.9011314;140 m;;
+;Polikastro;Europe;Greece;Kilkis, Macedonia;;40.9971976;22.5703984;43 m;;
+;Nea Maditos;Europe;Greece;Thessaloniki, Macedonia;;40.6228453;23.5628922;68 m;;
+;Souroti/Peristera;Europe;Greece;Thessaloniki, Macedonia;;40.472433;23.0927079;104 m;;
+;Ammouliani;Europe;Greece;Chalkidiki, Macedonia;;40.3313805;23.922016;9 m;;
+;Kassandreia;Europe;Greece;Chalkidiki, Macedonia;;40.0480392;23.4134501;51 m;;
+;Aleksandreia;Europe;Greece;Imathia, Macedonia;;40.6279023;22.444571;8 m;;
+;Plati;Europe;Greece;Imathia, Macedonia;;40.6426064;22.5355213;6 m;;
+;Vergina;Europe;Greece;Imathia, Macedonia;;40.4876578;22.3158996;105 m;;
+;Litoxoro;Europe;Greece;Pieria, Macedonia;;40.1029473;22.5026117;308 m;;
+;Platamonas;Europe;Greece;Pieria, Macedonia;;39.9901304;22.6238625;11 m;;
+;Argos Orestiko;Europe;Greece;Kastoria, Macedonia;;40.4527427;21.2587379;650 m;;
+;Nestorio;Europe;Greece;Kastoria, Macedonia;;40.38698;20.9745074;1456 m;;
+;Koresteia;Europe;Greece;Kastoria, Macedonia;;40.622839;21.202944;825 m;;
+;Velventos;Europe;Greece;Kozani, Macedonia;;40.2545476;22.0742782;442 m;;
+;Delvinaki;Europe;Greece;Ioannina, Ipiros;;39.9339652;20.4654499;673 m;;
+;Pramanta;Europe;Greece;Ioannina, Ipiros;;39.5228398;21.1044466;21.1044466;;
+;Vasiliki;Europe;Greece;Lefkada, Eptanisa;;38.6287203;20.6090484;4 m;;
+;Sami;Europe;Greece;Kefallonia, Eptanisa;;38.2514148;20.6471688;0 m;;
+;Karavados;Europe;Greece;Kefallonia, Eptanisa;;38.1295617;20.5830175;122 m;;
+;Zagora;Europe;Greece;Magnisia, Thessalia;;39.4416384;23.1028193;500 m;;
+;Argalasti;Europe;Greece;Magnisia, Thessalia;;39.2259226;23.2195437;248 m;;
+;Skopelos;Europe;Greece;Magnisia, Thessalia;;39.1251493;23.6799766;404 m;;
+;Elati;Europe;Greece;Trikala, Thessalia;;39.504302;21.5351193;927 m;;
+;Oixalia;Europe;Greece;Trikala, Thessalia;;39.6071378;21.9814142;109 m;;
+;Neraida;Europe;Greece;Trikala, Thessalia;;39.2831174;22.551196;246 m;;
+;Farkadona;Europe;Greece;Trikala, Thessalia;;39.6252172;22.0714835;199 m;;
+;Mouzaki;Europe;Greece;Karditsa, Thessalia;;39.3941058;21.642224;326 m;;
+;Sofades;Europe;Greece;Karditsa, Thessalia;;39.3359337;22.0916414;110 m;;
+;Mitropoli;Europe;Greece;Karditsa, Thessalia;;39.3049991;21.8449346;187 m;;
+;Anafi;Europe;Greece;Kiklades,  Aegean;;36.363178;25.7693535;313 m;;
+;Kimolos;Europe;Greece;Kiklades,  Aegean;;36.7929382;24.5747321;83 m;;
+;Folegandros;Europe;Greece;Kiklades,  Aegean;;36.6171452;24.916088;305 m;;
+;Lipsoi;Europe;Greece;Kiklades,  Aegean;;37.3011088;26.7437518;197 m;;
+;Kasos;Europe;Greece;Dodekanisa, Aegean;;35.401053;26.9263671;144 m;;
+;Gennadi (Rodhes);Europe;Greece;Dodekanisa, Aegean;;36.0236145;27.9232631;34 m;;
+;Tilos;Europe;Greece;Dodekanisa, Aegean;;36.4230663;27.3733989;196 m;;
+;Mitikas;Europe;Greece;Aitoloakarnania, Sterea Ellada;;38.6676093;20.944772;2 m;;
+;Astakos;Europe;Greece;Aitoloakarnania, Sterea Ellada;;38.5357192;21.0820678;7 m;;
+;Empesos;Europe;Greece;Aitoloakarnania, Sterea Ellada;;39.0234046;21.3212072;307 m;;
+;Aggelokastro;Europe;Greece;Aitoloakarnania, Sterea Ellada;;38.5655403;21.2959837;64 m;;
+;Prousos;Europe;Greece;Evritania, Sterea Ellada;;38.7445499;21.6533763;789 m;;
+;Dytiki Fragkista;Europe;Greece;Evritania, Sterea Ellada;;38.9268157;21.5945271;814 m;;
+;Agrafa;Europe;Greece;Evritania, Sterea Ellada;;39.1374707;21.64942;841 m;;
+;Granitsa;Europe;Greece;Evritania, Sterea Ellada;;39.101254;21.5112341;814 m;;
+;Pelasgia;Europe;Greece;Fthiotida, Sterea Ellada;;38.9485485;22.8400018;213 m;;
+;Livanates;Europe;Greece;Fthiotida, Sterea Ellada;;38.7114946;23.0506735;38 m;;
+;Agios Konstantinos;Europe;Greece;Fthiotida, Sterea Ellada;;38.7574323;22.856209;10 m;;
+;Raches;Europe;Greece;Fthiotida, Sterea Ellada;;38.8906036;22.7810269;108 m;;
+;Mantoudi;Europe;Greece;Evoia, Sterea Ellada;;38.7991058;23.4796423;40 m;;
+;Platanistos;Europe;Greece;Evoia, Sterea Ellada;;38.0180986;24.5166729;196 m;;
+;Stropones;Europe;Greece;Evoia, Sterea Ellada;;38.6181479;23.889958;331 m;;
+;Paradisi;Europe;Greece;Evoia, Sterea Ellada;;38.0753996;24.3800778;307 m;;
+;Gimno;Europe;Greece;Evoia, Sterea Ellada;;38.4391281;23.8850944;134 m;;
+;Skiros;Europe;Greece;Evoia, Sterea Ellada;;38.8162965;24.5955356;446 m;;
+;Domvrena;Europe;Greece;Biotia, Sterea Ellada;;38.2528595;22.9822252;152 m;;
+;Akrefnio;Europe;Greece;Biotia, Sterea Ellada;;38.4565114;23.2213292;197 m;;
+;Erimanthia;Europe;Greece;Achaia, Peloponnese;;37.9818717;21.725492;409 m;;
+;Klitoria;Europe;Greece;Achaia, Peloponnese;;37.8946941;22.1246492;533 m;;
+;Zarouchleika;Europe;Greece;Achaia, Peloponnese;;38.2147354;21.7288919;14 m;;
+;Psofida;Europe;Greece;Achaia, Peloponnese;;37.8777503;21.8995497;597 m;;
+;Chalandritsa;Europe;Greece;Achaia, Peloponnese;;38.1087967;21.7838411;351 m;;
+;Simopoulo;Europe;Greece;Hlia, Peloponnese;;37.8488746;21.5714789;203 m;;
+;Elafonisos;Europe;Greece;Lakonia, Peloponnese;;36.4875509;22.9594983;109 m;;
+;Agios Nikolaos Voion;Europe;Greece;Lakonia, Peloponnese;;36.513036;23.060626;12 m;;
+;Mavromati (Ithomis);Europe;Greece;Messinia, Peloponnese;;37.1793854;21.9238234;408 m;;
+;Kardamili;Europe;Greece;Messinia, Peloponnese;;36.8870432;22.2329977;14 m;;
+;Ampelionas;Europe;Greece;Messinia, Peloponnese;;37.4352341;21.9490176;820 m;;
+;Kampos;Europe;Greece;Messinia, Peloponnese;;36.9379603;22.2028277;299 m;;
+;Kiato;Europe;Greece;Korinthia, Peloponnese;;38.0126545;22.750171;1 m;;
+;Kalianoi;Europe;Greece;Korinthia, Peloponnese;;37.8890753;22.4947054;694 m;;
+;Gkoura;Europe;Greece;Korinthia, Peloponnese;;37.9326446;22.3407976;956 m;;
+;Kissamos;Europe;Greece;Chania, Crete;;35.4945873;23.6537459;21 m;;
+;Kandanos;Europe;Greece;Chania, Crete;;35.3274474;23.7415942;431 m;;
+;Anogia;Europe;Greece;Rethimno, Crete;;35.2896605;24.8844831;760 m;;
+;Spili;Europe;Greece;Rethimno, Crete;;35.2188059;24.5357817;417 m;;
+;Agia Fotini;Europe;Greece;Rethimno, Crete;;35.2546152;24.6342283;479 m;;
+;Tilissos;Europe;Greece;Iraklio, Crete;;35.2970392;25.0182231;196 m;;
+;Charakas;Europe;Greece;Iraklio, Crete;;35.0119015;25.1203147;294 m;;
+;Tzermiado;Europe;Greece;Lasithi, Crete;;35.19954;25.4891347;837 m;;
+;Chandras;Europe;Greece;Lasithi, Crete;;35.0812107;26.099508;574 m;;
+;Tourloti;Europe;Greece;Lasithi, Crete;;35.1840527;25.9049913;5 m;;
+;Psixro;Europe;Greece;Lasithi, Crete;;35.164941;25.4505762;837 m;;
