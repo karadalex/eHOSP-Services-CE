@@ -19,4 +19,7 @@ if ($_SERVER['REQUEST_URI'] == "/server/src/views/business-office.php") {
     echo li(button("services/third-party", "Product Information Manager (PIM)"));
     echo li(button("services/third-party", "Project Management"));
     echo li(button("services/edu", "Educational Platform"));
+    echo "<hr>";
+    echo li(button("services/emergency", "Emergency", "", "background-color: #ec5840"));
+    echo li(button("services/first-aid", "First Aid", "", "background-color: #ec5840"));
 }
