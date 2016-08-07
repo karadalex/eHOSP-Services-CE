@@ -1,10 +1,10 @@
 <?php
 
-function button($button_url = null, $button_text) {
+function button($button_url = null, $button_text, $classList = null, $styles = null) {
     if (isset($button_url)) {
         $btn_html = "
         <a href=\"$button_url\" class=\"no-menu\">
-            <button type=\"button\" class=\"services\">
+            <button type=\"button\" class=\"services $classList\" style=\"$styles\">
                 $button_text
             </button>
         </a>
