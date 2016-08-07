@@ -123,7 +123,7 @@ ul#menu {
   <!-- Header for bigger devices -->
 	<div class="row header-row">
 		<ul>
-			<li><img src="media/img/LOGO_big.png" /></li>
+			<li><img id="ehosp-logo" src="media/img/LOGO_big.png" /></li>
 			<li>
 				<ul id="menu" class="menu">
 					<li><a class="menu" href="index.php">Home</a></li>
@@ -193,4 +193,6 @@ ul#menu {
       </li>
     </ul>
   </div>
+
+  <div class="shadow"></div>
 </header>

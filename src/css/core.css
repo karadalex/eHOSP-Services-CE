@@ -63,6 +63,11 @@ header ul li img {
 	margin-right: 0px;
 }
 
+#ehosp-logo {
+	position: relative;
+	bottom: 15px;
+}
+
 header ul li a {
 	color: #2bb673;
 	padding: 5px 30px;
@@ -131,6 +136,17 @@ h2, h3, h4, h5, h6 {
     padding: 10px;
 }
 
+.shadow-show {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: RGBA(20, 20, 20, 0.7);
+	z-index: 5;
+}
+
+
 @media only screen and (max-width: 64.063em) {
 
 	header ul li a {
@@ -171,8 +187,8 @@ h2, h3, h4, h5, h6 {
 		top: 0px;
 		right: 0px;
 		margin-left: 35%;
-		z-index: 10;
-		box-shadow: -10px 0px 300px #000;
+		z-index: 10;/*
+		box-shadow: -10px 0px 300px #000;*/
 	}
 
 	#toggleMenu {
