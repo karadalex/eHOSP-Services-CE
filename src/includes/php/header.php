@@ -108,7 +108,7 @@ ul#menu {
     width: 100%;
   }
 
-	@media only screen and (max-height: 360px) {
+	@media only screen and (max-height: 455px) {
 		hr.dropdown-mobile-content {
 			display: none;
 		}
