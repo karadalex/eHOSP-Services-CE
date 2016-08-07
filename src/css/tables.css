@@ -1,0 +1,42 @@
+.table table {
+    width: 100%;
+}
+
+.table th, td {
+    padding: 15px;
+    height: 50px;
+}
+
+.table table, th, td {
+    border: 1px solid #bfbfbf;
+}
+
+.table thead tr {
+    background-color: #008CBA;
+    font-size: 22px;
+    color: #fff;
+}
+
+.table tbody {
+    font-size: 18px;
+}
+
+.table tbody tr a {
+    color: #ec5840;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.table tbody tr a:hover {
+    background: none;
+    box-shadow: none;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table tbody tr:hover {
+    background-color: #2bb673;
+    color: #fff;
+}
