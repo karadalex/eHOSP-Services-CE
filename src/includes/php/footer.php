@@ -88,10 +88,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="<?php echo config_get::get('connect/facebook'); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </td>
                     <td>
-                        <a href="#">Facebook</a>
+                        <a href="<?php echo config_get::get('connect/facebook'); ?>">Facebook</a>
                     </td>
                 </tr>
                 <tr>
