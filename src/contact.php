@@ -21,8 +21,7 @@ require_once 'core/init.php';
 		<div class="row">
 	        <h1>Contact us</h1>
 	        <p>
-				Welcome to eHOSP, the hospital on the cloud,
-				a platform for e-health and e-medicine!
+				For anything you want, you can contact us via the following form:
 			</p>
       	</div>
 	</div>
