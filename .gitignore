@@ -1,14 +1,23 @@
-# Ignore locally installed packages from package-managers:
+# Vendor modules (NPM, Bower etc.)
 node_modules/
-src/vendor/bower/
+public/components/
+vendor/
+
+# Public files, compiled from resources
+public/storage/
+public/css/
+public/js/
+public/img/
+
+# Homestead
+Homestead.yaml
+Homestead.json
+
+# Ignore private config files
+.env
+
+# Local Composer
 composer.phar
 
 # Ignore log files:
 /npm-debug.log
-
-# Ignore automatically Generated Files
-src/config.php
-src/settings.php
-
-# Ignore automatically generated builds (generated with Gulp)
-dist/

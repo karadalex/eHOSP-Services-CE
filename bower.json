@@ -1,12 +1,12 @@
 {
   "name": "eHOSP",
-  "description": "A platform for e-health and e-medicine",
+  "description": "A platform for e-health, e-medicine and telerobotic surgery",
   "main": "gulpfile.js",
   "authors": [
-    "Alex Karadimos"
+    "Alex Karadimos <karadalex@gmail.com>"
   ],
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/karadalex/eHOSP_Server_MainSource",
+  "license": "MIT",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,8 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.6.0",
-    "paper-ripple": "PolymerElements/paper-ripple#^1.0.8",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "jquery-ui": "^1.12.0",
+    "leaflet": "^0.7.7"
   }
 }

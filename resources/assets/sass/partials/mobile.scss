@@ -1,0 +1,33 @@
+@media only screen and (max-width: 768px) {
+    body {
+        margin-bottom: 400px;
+    }
+
+    .navbar-default {
+        background-color: #ebebeb;
+        border-color: transparent;;
+    }
+
+    #navbar-mobile-only {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        width: 70%;
+
+        background-color: #2bb673;
+        z-index: 999;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    a.services {
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    body {
+        margin-bottom: 500px;
+    }
+}
