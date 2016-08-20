@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: May 10, 2016 at 01:18 PM
+-- Generation Time: Aug 18, 2016 at 07:18 AM
 -- Server version: 5.5.47
 -- PHP Version: 5.5.31
 
@@ -136,6 +136,20 @@ CREATE TABLE `doctor_log` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `emergency_contacts`
+--
+
+CREATE TABLE `emergency_contacts` (
+  `contact_id` int(11) NOT NULL,
+  `country` varchar(5) NOT NULL,
+  `contact_name` tinytext NOT NULL,
+  `phone_numbers` mediumtext NOT NULL,
+  `contact_type` tinytext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `gis_remote_nodes`
 --
 
@@ -235,6 +249,18 @@ CREATE TABLE `surgeries` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `symptoms`
+--
+
+CREATE TABLE `symptoms` (
+  `data_symptoms_id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `description` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user_diagnosis`
 --
 
@@ -301,7 +327,7 @@ CREATE TABLE `user_registry` (
   `last_name` varchar(32) DEFAULT NULL,
   `email` varchar(1024) DEFAULT NULL,
   `gender` enum('MALE','FEMALE') DEFAULT NULL,
-  `user_type` enum('DOCTOR','PATIENT') DEFAULT NULL,
+  `user_type` enum('DOCTOR','PATIENT','MEDICAL LAB TECHNICIAN','SURGEON','SURGICAL TECHNOLOGIST','ANESTHESIOLOGIST','PHYSICAL THERAPIST','RADIOLOGIST','RADIOLOGIST TECHNOLOGIST','REGISTERED NURSE','BUSINESS OFFICE','PHYSICIAN','PATIENT ADVOCATE','HEALTH SERVICES MANAGER','MEDICAL CODER','HEALTH INFORMATION TECHNICIAN','PHARMACY TECHNICIAN','PHARMACIST','SOCIAL WORKER','HOSPITAL ADMIN','ROBOTICS MANAGER') DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   `birth_country` varchar(11) DEFAULT NULL,
   `social_security_number` int(11) DEFAULT NULL,
@@ -353,6 +379,19 @@ CREATE TABLE `user_vital_signs` (
   `mass` int(11) NOT NULL,
   `body_mass_index` int(11) NOT NULL,
   `vitals_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `video_chat_sessions`
+--
+
+CREATE TABLE `video_chat_sessions` (
+  `video_chat_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `stream_url` text NOT NULL,
+  `config` mediumtext
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -428,6 +467,12 @@ ALTER TABLE `doctor_log`
   ADD KEY `doctor_id` (`doctor_id`);
 
 --
+-- Indexes for table `emergency_contacts`
+--
+ALTER TABLE `emergency_contacts`
+  ADD PRIMARY KEY (`contact_id`);
+
+--
 -- Indexes for table `gis_remote_nodes`
 --
 ALTER TABLE `gis_remote_nodes`
@@ -478,6 +523,12 @@ ALTER TABLE `surgeries`
   ADD KEY `doctor_id` (`doctor_id`),
   ADD KEY `3d_task_id` (`3d_task_id`),
   ADD KEY `diagnosis_id` (`diagnosis_id`);
+
+--
+-- Indexes for table `symptoms`
+--
+ALTER TABLE `symptoms`
+  ADD PRIMARY KEY (`data_symptoms_id`);
 
 --
 -- Indexes for table `user_diagnosis`
@@ -540,6 +591,13 @@ ALTER TABLE `user_vital_signs`
   ADD KEY `user_id` (`user_id`);
 
 --
+-- Indexes for table `video_chat_sessions`
+--
+ALTER TABLE `video_chat_sessions`
+  ADD PRIMARY KEY (`video_chat_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -589,10 +647,15 @@ ALTER TABLE `doctors_registry`
 ALTER TABLE `doctor_log`
   MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `emergency_contacts`
+--
+ALTER TABLE `emergency_contacts`
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+--
 -- AUTO_INCREMENT for table `gis_remote_nodes`
 --
 ALTER TABLE `gis_remote_nodes`
-  MODIFY `gis_node_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `gis_node_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 --
 -- AUTO_INCREMENT for table `groups`
 --
@@ -624,10 +687,15 @@ ALTER TABLE `raspberrypi_registry`
 ALTER TABLE `surgeries`
   MODIFY `surgery_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `symptoms`
+--
+ALTER TABLE `symptoms`
+  MODIFY `data_symptoms_id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `user_diagnosis`
 --
 ALTER TABLE `user_diagnosis`
-  MODIFY `diagnosis_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `diagnosis_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `user_genetic_code`
 --
@@ -642,7 +710,7 @@ ALTER TABLE `user_log`
 -- AUTO_INCREMENT for table `user_registry`
 --
 ALTER TABLE `user_registry`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `user_sessions`
 --
@@ -658,6 +726,11 @@ ALTER TABLE `user_symptoms`
 --
 ALTER TABLE `user_vital_signs`
   MODIFY `vital_signs_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `video_chat_sessions`
+--
+ALTER TABLE `video_chat_sessions`
+  MODIFY `video_chat_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Constraints for dumped tables
 --
@@ -698,6 +771,12 @@ ALTER TABLE `code_history`
 --
 ALTER TABLE `doctor_log`
   ADD CONSTRAINT `doctor_log_ibfk_1` FOREIGN KEY (`doctor_id`) REFERENCES `doctors_registry` (`doctor_id`);
+
+--
+-- Constraints for table `groups`
+--
+ALTER TABLE `groups`
+  ADD CONSTRAINT `groups_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`);
 
 --
 -- Constraints for table `nxt_log`
@@ -766,6 +845,12 @@ ALTER TABLE `user_symptoms`
 --
 ALTER TABLE `user_vital_signs`
   ADD CONSTRAINT `user_vital_signs_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`);
+
+--
+-- Constraints for table `video_chat_sessions`
+--
+ALTER TABLE `video_chat_sessions`
+  ADD CONSTRAINT `video_chat_sessions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_registry` (`user_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

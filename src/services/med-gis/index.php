@@ -47,9 +47,10 @@ chdir(dirname(__FILE__));
 		            }
 		        </style>
 
-				<ul id="buttons">
-					<?php echo li(button("services/med-gis/maps.php", "Maps")); ?>
-				</ul>
+				<div class="expanded button-group">
+					<a class="button" href="services/med-gis/maps.php">Maps</a>
+				</div>
+				
 			</p>
       	</div>
 

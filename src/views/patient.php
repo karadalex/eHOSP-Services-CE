@@ -1,7 +1,8 @@
 <?php
 
-if ($_SERVER['REQUEST_URI'] == "/server/src/views/doctor.php") {
+if ($_SERVER['REQUEST_URI'] == "/server/src/views/patient.php") {
     http_response_code(404);
+    header('Location: ../');
 } else {
     echo li(button("services/syptoms", "Syptoms Checker"));
     echo li(button("services/patient-med-profile", "Patient Health Profile"));

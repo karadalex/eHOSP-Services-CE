@@ -146,6 +146,7 @@ h2, h3, h4, h5, h6 {
 	z-index: 5;
 }
 
+/************************** Tablet View ***************************************/
 
 @media only screen and (max-width: 64.063em) {
 
@@ -175,6 +176,7 @@ h2, h3, h4, h5, h6 {
 
 }
 
+/************************ Smartphone View *************************************/
 
 @media only screen and (max-width: 44.063em) {
 
@@ -198,8 +200,11 @@ h2, h3, h4, h5, h6 {
 	}
 
 	#toggleMenu img {
-	    max-width: 85%;
+	    max-width: 50px;
 	    height: auto;
+		position: relative;
+		bottom: 40px;
+		left: 8px;
 	}
 
 	header ul li img {
@@ -219,7 +224,7 @@ h2, h3, h4, h5, h6 {
 
 	h1 {
 		font-size: 2.5em;
-		margin-top: 5em;
+		margin-top: 2.5em;
 	}
 
 	p {
@@ -244,6 +249,10 @@ h2, h3, h4, h5, h6 {
 		width: 57px;
 	}
 
+	header ul li ul li#menuOut img {
+		max-width: 50px;
+	}
+
 	header ul li ul li a {
         color: #fff;
 		padding: 10px 38px;
@@ -255,7 +264,11 @@ h2, h3, h4, h5, h6 {
 		background: #076b3c;
 	}
 
-	@media only screen and (max-height: 530px) {
+	.button {
+		width: 100%;
+	}
+
+	@media only screen and (max-height: 630px) {
 		header ul li ul li {
 		    width: 50%;
 		}
@@ -265,7 +278,7 @@ h2, h3, h4, h5, h6 {
 		}
 	}
 
-	@media only screen and (max-height: 360px) {
+	@media only screen and (max-height: 455px) {
 		header ul li ul {
 			margin-left: 10%;
 		}
@@ -276,6 +289,10 @@ h2, h3, h4, h5, h6 {
 
 		header ul li ul li a {
 			padding: 10px 20px;
+		}
+
+		header ul li ul li#menuOut {
+			margin: 10px 100% 3px 30px;
 		}
 	}
 }

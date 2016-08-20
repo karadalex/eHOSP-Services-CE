@@ -1,0 +1,30 @@
+# Build the Docker Container only from built code and not source-code
+
+# Ignore git structure
+.git/
+.gitignore
+.gitattributes
+
+# Ignore dotfiles
+.bowerrc
+.editorconfig
+.eslintrc.json
+.travis.yml
+.idea/
+
+# Ignore build scripts
+docker.js
+gulpfile.js
+Vagrantfile
+
+# Ignore source code (Keep only build)
+src/
+docker_solutions/
+tests/
+node_modules/
+
+# Ignore other unnecessary (for the container) files
+bower.json
+package.json
+composer.phar
+TODO

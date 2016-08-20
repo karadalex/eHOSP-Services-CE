@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- Dumping data for table `emergency_contacts`
 --
 
-INSERT INTO `emergency_contacts` (`contact_id`, `country`, `contact_name`, `phone_numbers`, `contact_type`) VALUES
+INSERT INTO `emergency_contacts` (`id`, `country`, `contact_name`, `phone_numbers`, `contact_type`) VALUES
 (1, 'GRC', 'ΕΚΑΒ', '166', ''),
 (2, 'GRC', 'ΑΜΕΣΗ ΙΑΤΡΙΚΗ ΒΟΗΘΕΙΑ (INTERAMERICAN)', '168', ''),
 (3, 'GRC', 'ΑΜΕΣΗ ΙΑΤΡΙΚΗ ΒΟΗΘΕΙΑ (ΙΑΤΡΙΚΟ ΚΕΝΤΡΟ ΑΘΗΝΩΝ)', '178', ''),

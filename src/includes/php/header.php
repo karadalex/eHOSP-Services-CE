@@ -101,7 +101,6 @@ ul#menu {
   .search input[type=text] {
     width: 80%;
     position: relative;
-    top: 15px;
   }
 
   .search input[type=text]:focus {

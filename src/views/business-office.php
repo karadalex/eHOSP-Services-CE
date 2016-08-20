@@ -2,6 +2,7 @@
 
 if ($_SERVER['REQUEST_URI'] == "/server/src/views/business-office.php") {
     http_response_code (404);
+    header('Location: ../');
 } else {
     echo li(button("services/communication", "Communication"));
     echo li(button("services/third-party/accounting", "Accounting Analytics"));

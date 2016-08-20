@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.6.0",
-    "paper-ripple": "PolymerElements/paper-ripple#^1.0.8"
+    "paper-ripple": "PolymerElements/paper-ripple#^1.0.8",
+    "font-awesome": "^4.6.3"
   }
 }

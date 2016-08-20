@@ -1,5 +1,5 @@
 @echo off
-echo Installing eMed platform...
+echo Installing eHosp platform...
 
 
 pause

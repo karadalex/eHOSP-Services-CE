@@ -1,6 +1,8 @@
 <?php
+
 if ($_SERVER['REQUEST_URI'] == "/server/src/views/robotics.php") {
     http_response_code(404);
+    header('Location: ../');
 } else {
     echo li(button("services/robotics", "Robotics Dashboard"));
     echo li(button("services/med-gis", "Medical Geographic Information System"));
