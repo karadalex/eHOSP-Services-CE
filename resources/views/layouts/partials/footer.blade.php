@@ -4,24 +4,24 @@
             <h6>eHOSP</h6>
             <div id="col1">
                 <ul>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/doc">Doc</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/support">Support</a></li>
+                    <li><a href="/home"> @lang('nav.Home') </a></li>
+                    <li><a href="/about"> @lang('nav.About') </a></li>
+                    <li><a href="/doc"> @lang('nav.Doc') </a></li>
+                    <li><a href="/blog"> @lang('nav.Blog') </a></li>
+                    <li><a href="/support"> @lang('nav.Support') </a></li>
                 </ul>
             </div>
             <div id="col2">
                 <ul>
-                    <li><a href="/downloads">Downloads</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                    <li><a href="/research">Research</a></li>
-                    <li><a href="/refs">References</a></li>
+                    <li><a href="/downloads"> @lang('nav.Downloads') </a></li>
+                    <li><a href="/contact"> @lang('nav.Contact Us') </a></li>
+                    <li><a href="/research"> @lang('nav.Research') </a></li>
+                    <li><a href="/refs"> @lang('nav.References') </a></li>
                 </ul>
             </div>
         </div>
         <div id="connect">
-            <h6>Connect</h6>
+            <h6> @lang('nav.Social') </h6>
             <div id="col1">
                 <ul>
                     <li>
@@ -46,11 +46,6 @@
                         <a href="https://github.com/search?q=user%3Akaradalex+eHOSP">
                             <i class="fa fa-github" aria-hidden="true"></i>
                             &nbsp; Github
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-
                         </a>
                     </li>
                 </ul>
