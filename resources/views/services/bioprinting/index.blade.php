@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1>3D Bioprinting Design</h1>
+            <h1>3D Bioprinting</h1>
         </div>
     </div>
 </div>
