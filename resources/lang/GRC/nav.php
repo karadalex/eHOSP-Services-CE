@@ -15,13 +15,19 @@ return [
 
     'Home' => 'Αρχική',
     'About' => 'Σχετικά',
+    'Blog' => 'Ιστολόγιο',
     'Contact' => 'Επικοινωνία',
-    'Doc' => 'Documentation',
+    'Contact Us' => 'Επικοινωνία',
+    'Doc' => 'Εγχειρίδιο',
+    'Documentation' => 'Εγχειρίδιο',
+    'Downloads' => 'Λήψεις',
     'My Profile' => 'Το προφιλ μου',
     'Settings' => 'Ρυθμίσεις',
+    'Login' => 'Σύνδεση',
     'Logout' => 'Αποσύνδεση',
+    'Social' => 'Κοινωνικά',
     'Support' => 'Υποστήριξη',
     'Research' => 'Έρευνα',
-    'References' => 'Αναφορές'
-
+    'References' => 'Αναφορές',
+    'Register' => 'Εγγραφή',
 ];

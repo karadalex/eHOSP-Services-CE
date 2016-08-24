@@ -13,15 +13,21 @@ return [
     |
     */
 
-    'home' => 'Home',
-    'about' => 'About',
-    'contact' => 'Contact',
-    'doc' => 'Documentation',
+    'Home' => 'Home',
+    'About' => 'About',
+    'Blog' => 'Blog',
+    'Contact' => 'Contact',
+    'Contact Us' => 'Contact Us',
+    'Doc' => 'Doc',
+    'Documentation' => 'Documentation',
+    'Downloads' => 'Downloads',
     'My Profile' => 'My Profile',
     'Settings' => 'Settings',
+    'Login' => 'Login',
     'Logout' => 'Logout',
+    'Social' => 'Social',
     'Support' => 'Support',
     'Research' => 'Research',
-    'References' => 'References'
-
+    'References' => 'References',
+    'Register' => 'Register'
 ];
