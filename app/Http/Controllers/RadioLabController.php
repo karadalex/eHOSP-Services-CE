@@ -15,7 +15,7 @@ class RadioLabController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.radiology-lab.index', [
             'title' => 'eHOSP - Radiology Lab'
         ]);
     }

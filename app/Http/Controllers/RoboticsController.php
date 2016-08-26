@@ -15,7 +15,7 @@ class RoboticsController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.robotics.index', [
             'title' => 'eHOSP - Robotics'
         ]);
     }

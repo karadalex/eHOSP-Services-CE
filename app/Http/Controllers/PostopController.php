@@ -15,7 +15,7 @@ class PostopController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.postop-treatments.index', [
             'title' => 'eHOSP - Post-Op Treatments'
         ]);
     }

@@ -32,7 +32,7 @@ Route::get('/blog', 'BlogController@index');
 
 // Service Routes
 Route::get('/services/bioprinting', 'BioprintingController@index');
-Route::get('/services/third-party/accounting', 'ThirdPartyController@index');
+Route::get('/services/third-party/accounting', 'ThirdPartyController@accounting');
 Route::get('/services/third-party/bpm', 'ThirdPartyController@index');
 Route::get('/services/third-party/business', 'ThirdPartyController@index');
 Route::get('/services/communication', 'CommunicationController@index');

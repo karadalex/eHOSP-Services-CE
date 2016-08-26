@@ -15,7 +15,7 @@ class PatientHealthProfileController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.patient-med-profile.index', [
             'title' => 'eHOSP - Health Profile'
         ]);
     }

@@ -15,7 +15,7 @@ class PatientsController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.patients.index', [
             'title' => 'eHOSP - Patients'
         ]);
     }

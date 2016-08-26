@@ -15,7 +15,7 @@ class ResearchController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.research-platform.index', [
             'title' => 'eHOSP - Research Lab'
         ]);
     }
