@@ -9,6 +9,11 @@
                     <h1> My Profile </h1>
                 </div>
                 <div class="panel-body">
+                    <h2>
+                        User Details
+                        <a href="settings" class="pull-right"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                    </h2>
+                    <hr>
                     <div class="row" style="margin-top:20px">
                         <div class="col-md-3 col-md-offset-1">
                             <span class="emphasize"> Username </span>
