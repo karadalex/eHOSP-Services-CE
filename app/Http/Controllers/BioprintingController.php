@@ -15,7 +15,7 @@ class BioprintingController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.bioprinting.index', [
             'title' => 'eHOSP - 3D Bioprinting'
         ]);
     }
