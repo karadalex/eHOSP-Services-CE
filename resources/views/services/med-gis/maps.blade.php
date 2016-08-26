@@ -11,7 +11,17 @@
         <div class="col-md-10 col-md-offset-1">
             <h1>Medical GIS Maps</h1>
 			<div id="map" style="width: 90%; height: 500px; margin-left:5%; margin-bottom: 30px"></div>
+
+            <script>
+            var gis_nodes;
+                $.getJSON("{{ url('api/v1/gis-nodes') }}", function (data) {
+                    gis_nodes = data;
+                });
+            </script>
 			<script src="{{ asset('js/maps.js') }}"></script>
+            <style media="screen">
+                .leaflet-top {z-index:10;}
+            </style>
 
 			<div id="edit_map">
                 <div class="row row-eq-height">
