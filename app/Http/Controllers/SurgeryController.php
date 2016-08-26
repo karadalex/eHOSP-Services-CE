@@ -15,14 +15,14 @@ class SurgeryController extends Controller
 
     public function index()
     {
-        return view('services.', [
+        return view('services.surgery.index', [
             'title' => 'eHOSP - Surgery'
         ]);
     }
 
     public function custom_surgery()
     {
-        return view('services.surgery-printing.custom-surgery', [
+        return view('services.surgery.custom-surgery', [
             'title' => 'eHOSP - Custom Surgery'
         ]);
     }
