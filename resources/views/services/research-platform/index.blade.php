@@ -7,9 +7,9 @@
             <h1>Research Platform</h1>
 			<ul id="buttons">
 				<?php include config('global.methods') . '/generators.php'; ?>
-				{{ echo li(button("services/research-platform/ml", "Machine Learning Lab")) }}
-				{{ echo li(button("services/research-platform/med-software", "Medicine Software")) }}
-				{{ echo li(button("services/research-platform/py-platform", "Scientific Python")) }}
+				{{ btn("services/research-platform/ml", "Machine Learning Lab") }}
+				{{ btn("services/research-platform/med-software", "Medicine Software") }}
+				{{ btn("services/research-platform/py-platform", "Scientific Python") }}
 			</ul>
         </div>
     </div>

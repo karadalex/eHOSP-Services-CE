@@ -19,14 +19,14 @@
 
 			<ul id="buttons">
 				<?php include config('global.methods') . '/generators.php'; ?>
-				{{ echo li(button("services/patient-med-profile/BodyMeasurements.php", "Body Measurements")) }}
-				{{ echo li(button("services/patient-med-profile/Fitness.php", "Fitness")) }}
-				{{ echo li(button("services/patient-med-profile/Me.php", "Me")) }}
-				{{ echo li(button("services/patient-med-profile/Nutrition.php", "Nutrition")) }}
-				{{ echo li(button("services/patient-med-profile/ReproductiveHealth.php", "Reproductive Health")) }}
-				{{ echo li(button("services/patient-med-profile/Results.php", "Results")) }}
-				{{ echo li(button("services/patient-med-profile/Sleep.php", "Sleep")) }}
-				{{ echo li(button("services/patient-med-profile/Vitals.php", "Vitals")) }}
+				{{ btn("patient-med-profile/BodyMeasurements.php", "Body Measurements") }}
+				{{ btn("patient-med-profile/Fitness.php", "Fitness") }}
+				{{ btn("patient-med-profile/Me.php", "Me") }}
+				{{ btn("patient-med-profile/Nutrition.php", "Nutrition") }}
+				{{ btn("patient-med-profile/ReproductiveHealth.php", "Reproductive Health") }}
+				{{ btn("patient-med-profile/Results.php", "Results") }}
+				{{ btn("patient-med-profile/Sleep.php", "Sleep") }}
+				{{ btn("patient-med-profile/Vitals.php", "Vitals") }}
 			</ul>
       	</div>
         </div>
