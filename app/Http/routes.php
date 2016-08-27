@@ -31,53 +31,53 @@ Route::get('/blog', 'BlogController@index');
 
 
 // Service Routes
-Route::get('/services/bioprinting', 'BioprintingController@index');
-Route::get('/services/third-party/accounting', 'ThirdPartyController@accounting');
-Route::get('/services/third-party/bpm', 'ThirdPartyController@index');
-Route::get('/services/third-party/business', 'ThirdPartyController@index');
-Route::get('/services/communication', 'CommunicationController@index');
-Route::get('/services/communication/messages', 'CommunicationController@messages');
-Route::get('/services/communication/video-chat', 'CommunicationController@video_chat');
-Route::get('/services/third-party/collaboration', 'ThirdPartyController@index');
-Route::get('/services/third-party/crm', 'ThirdPartyController@index');
-Route::get('/services/diagnosis', 'DiagnosisController@index');
-Route::get('/services/third-party/doc-manage', 'ThirdPartyController@index');
-Route::get('/services/edu', 'EduController@index');
-Route::get('/services/emergency', 'EmergencyController@index');
-Route::get('/services/first-aid', 'FirstAidController@index');
-Route::get('/services/third-party/email', 'ThirdPartyController@index');
-Route::get('/services/third-party/erp', 'ThirdPartyController@index');
-Route::get('/services/genetics', 'GeneticsController@index');
-Route::get('/services/health-policies', 'HealthcareController@index');
-Route::get('/services/health-services', 'HealthcareController@index');
-Route::get('/services/third-party/human-resources', 'ThirdPartyController@index');
+Route::get('/bioprinting', 'BioprintingController@index');
+Route::get('/third-party/accounting', 'ThirdPartyController@accounting');
+Route::get('/third-party/bpm', 'ThirdPartyController@index');
+Route::get('/third-party/business', 'ThirdPartyController@index');
+Route::get('/communication', 'CommunicationController@index');
+Route::get('/communication/messages', 'CommunicationController@messages');
+Route::get('/communication/video-chat', 'CommunicationController@video_chat');
+Route::get('/third-party/collaboration', 'ThirdPartyController@index');
+Route::get('/third-party/crm', 'ThirdPartyController@index');
+Route::get('/diagnosis', 'DiagnosisController@index');
+Route::get('/third-party/doc-manage', 'ThirdPartyController@index');
+Route::get('/edu', 'EduController@index');
+Route::get('/emergency', 'EmergencyController@index');
+Route::get('/first-aid', 'FirstAidController@index');
+Route::get('/third-party/email', 'ThirdPartyController@index');
+Route::get('/third-party/erp', 'ThirdPartyController@index');
+Route::get('/genetics', 'GeneticsController@index');
+Route::get('/health-policies', 'HealthcareController@index');
+Route::get('/health-services', 'HealthcareController@index');
+Route::get('/third-party/human-resources', 'ThirdPartyController@index');
 
-Route::get('/services/med-gis', 'MedGisController@index');
-Route::get('/services/med-gis/maps', 'MedGisController@maps');
+Route::get('/med-gis', 'MedGisController@index');
+Route::get('/med-gis/maps', 'MedGisController@maps');
 
-Route::get('/services/reports', 'MedReportsController@index');
-Route::get('/services/med-lab', 'MedLabController@index');
-Route::get('/services/third-party/marketing', 'ThirdPartyController@index');
-Route::get('/services/patients', 'PatientsController@index');
-Route::get('services/patient-med-profile', 'PatientHealthProfileController@index');
-Route::get('/services/patient-monitor', 'PatientMonitorController@index');
-Route::get('/services/pharmacy-lab', 'PharmaLabController@index');
-Route::get('/services/physical-treats', 'PhysicalTreatsController@index');
-Route::get('/services/prescriptions', 'PrescriptionsController@index');
-Route::get('/services/postop', 'PostopController@index');
-Route::get('/services/third-party/pim', 'ThirdPartyController@index');
-Route::get('/services/third-party/project-manage', 'ThirdPartyController@index');
-Route::get('/services/qa', 'QAController@index');
-Route::get('/services/radio-lab', 'RadioLabController@index');
-Route::get('/services/research-platform', 'ResearchController@index');
-Route::get('/services/robotics', 'RoboticsController@index');
-Route::get('/services/symptoms', 'SymptomsController@index');
+Route::get('/reports', 'MedReportsController@index');
+Route::get('/med-lab', 'MedLabController@index');
+Route::get('/third-party/marketing', 'ThirdPartyController@index');
+Route::get('/patients', 'PatientsController@index');
+Route::get('/patient-med-profile', 'PatientHealthProfileController@index');
+Route::get('/patient-monitor', 'PatientMonitorController@index');
+Route::get('/pharmacy-lab', 'PharmaLabController@index');
+Route::get('/physical-treats', 'PhysicalTreatsController@index');
+Route::get('/prescriptions', 'PrescriptionsController@index');
+Route::get('/postop', 'PostopController@index');
+Route::get('/third-party/pim', 'ThirdPartyController@index');
+Route::get('/third-party/project-manage', 'ThirdPartyController@index');
+Route::get('/qa', 'QAController@index');
+Route::get('/radio-lab', 'RadioLabController@index');
+Route::get('/research-platform', 'ResearchController@index');
+Route::get('/robotics', 'RoboticsController@index');
+Route::get('/symptoms', 'SymptomsController@index');
 
-Route::get('/services/surgery', 'SurgeryController@index');
-Route::get('/services/surgery-printing/custom-surgery', 'SurgeryController@custom_surgery');
+Route::get('/surgery', 'SurgeryController@index');
+Route::get('/surgery/custom-surgery', 'SurgeryController@custom_surgery');
 
-Route::get('/services/surgery-ops', 'SurgeryOpsController@index');
-Route::get('/services/tissue-sample', 'TissueController@index');
+Route::get('/surgery-ops', 'SurgeryOpsController@index');
+Route::get('/tissue-sample', 'TissueController@index');
 
 
 // API Routes
