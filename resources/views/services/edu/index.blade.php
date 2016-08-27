@@ -8,9 +8,10 @@
 	        <br>
 
 			<div class="expanded button-group">
-				<a class="button" href="services/edu/">VR/AR Anatomy</a>
-				<a class="button" href="services/edu/">Anatomy Encyclopedia</a>
-				<a class="button" href="services/edu/">Diseases</a>
+                <?php include config('global.methods') . '/generators.php'; ?>
+                {{ btn("services/edu/", "VR/AR Anatomy") }}
+                {{ btn("services/edu/", "Anatomy Encyclopedia") }}
+                {{ btn("services/edu/", "Diseases") }}
 			</div>
         </div>
     </div>
