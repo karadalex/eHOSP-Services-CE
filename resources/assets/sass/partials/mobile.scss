@@ -22,7 +22,17 @@
 
 @media only screen and (max-width: 992px) {
     a.services {
-        height: 70px;
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    a.services {
+        height: auto;
+    }
+
+    h1 {
+        word-wrap: break-word;
     }
 }
 
