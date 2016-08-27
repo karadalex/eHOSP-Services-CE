@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1 style="color: #ec5840">Emergency</h1>
+            <h1 style="color: #ec5840"> @lang('services.Emergency') </h1>
 			<div class="table">
 				<table>
 					<thead>

@@ -14,7 +14,7 @@
             <div id="col2">
                 <ul>
                     <li><a href="/downloads"> @lang('nav.Downloads') </a></li>
-                    <li><a href="/contact"> @lang('nav.Contact Us') </a></li>
+                    <li><a href="/contact"> @lang('nav.Contact') </a></li>
                     <li><a href="/research"> @lang('nav.Research') </a></li>
                     <li><a href="/refs"> @lang('nav.References') </a></li>
                 </ul>

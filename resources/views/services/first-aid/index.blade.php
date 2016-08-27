@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-			<h1 style="color: #ec5840">First Aid</h1>
+			<h1 style="color: #ec5840"> @lang('services.First Aid') </h1>
 	        <br>
         </div>
     </div>

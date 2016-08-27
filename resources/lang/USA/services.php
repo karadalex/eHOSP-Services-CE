@@ -13,6 +13,9 @@ return [
     |
     */
 
+    'eHOSP Services' => 'eHOSP Services',
+
+
     '3D Bioprinting' => '3D Bioprinting',
     'Accounting Analytics' => 'Accounting Analytics',
     'BPM' => 'BPM',
@@ -32,6 +35,7 @@ return [
     'Healthcare Servicies' =>'Healthcare Servicies',
     'Human Resources' => 'Human Resources',
     'Medical G.I.S.' => 'Medical G.I.S.',
+    'Medical Geographic Information System',
     'Medical Reports' => 'Medical Reports',
     'Medical Lab' => 'Medical Lab',
     'Marketing Automation' => 'Marketing Automation',

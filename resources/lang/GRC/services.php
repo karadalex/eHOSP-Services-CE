@@ -13,6 +13,9 @@ return [
     |
     */
 
+    'eHOSP Services' => 'Υπηρεσίες eHOSP',
+
+
     '3D Bioprinting' => '3Δ Εκτύπωση',
     'Accounting Analytics' => 'Accounting Analytics',
     'BPM' => 'BPM',
@@ -31,25 +34,25 @@ return [
     'Healthcare Policies' => 'Healthcare Policies',
     'Healthcare Servicies' =>'Healthcare Servicies',
     'Human Resources' => 'Human Resources',
-    'Medical G.I.S.' => 'Medical G.I.S.',
+    'Medical G.I.S.' => 'Ιατρικό Σ.Γ.Π.',
     'Medical Reports' => 'Medical Reports',
     'Medical Lab' => 'Ιατρικό Εργαστήριο',
     'Marketing Automation' => 'Marketing Automation',
     'Patients' => 'Ασθενείς',
-    'Patient Health Profile' => 'Patient Health Profile',
+    'Patient Health Profile' => 'Προφίλ Υγείας Ασθενούς',
     'Patient Monitoring' => 'Patient Monitoring',
     'Pharmacy Lab' => 'Φαρμακευτικό Εργαστήριο',
     'Physical Treatments' => 'Physical Treatments',
-    'Prescriptions' => 'Prescriptions',
-    'Post-Op Treatments' => 'Post-Op Treatments',
+    'Prescriptions' => 'Συνταγές',
+    'Post-Op Treatments' => 'Μετεγχειρητικές Θεραπείες',
     'PIM' => 'PIM',
     'Project Management' => 'Project Management',
     'Questions & Answers' => 'Questions & Answers',
     'Radiology Lab' => 'Ακτινολογικό Εργαστήριο',
     'Research Platform' => 'Πλατφόρμα Έρευνας',
     'Robotics' => 'Ρομποτική',
-    'Symptoms Checker' => 'Symptoms Checker',
+    'Symptoms Checker' => 'Ελεγκτής Συμπτωμάτων',
     'Surgery' => 'Χειρουργική',
-    'Surgical Operations' => 'Surgical Operations',
+    'Surgical Operations' => 'Χειρουργικές Λειτουργίες',
     'Tissue Sampling' => 'Tissue Sampling'
 ];

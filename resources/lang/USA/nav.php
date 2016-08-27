@@ -15,6 +15,7 @@ return [
 
     'Home' => 'Home',
     'About' => 'About',
+    'About eHOSP' => 'About eHOSP',
     'Blog' => 'Blog',
     'Contact' => 'Contact',
     'Contact Us' => 'Contact Us',
@@ -27,7 +28,9 @@ return [
     'Logout' => 'Logout',
     'Social' => 'Social',
     'Support' => 'Support',
+    'Support Us' => 'Support Us',
     'Research' => 'Research',
     'References' => 'References',
-    'Register' => 'Register'
+    'Register' => 'Register',
+    'Maps' => 'Maps'
 ];

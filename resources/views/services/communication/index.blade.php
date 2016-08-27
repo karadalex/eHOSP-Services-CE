@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1> Communication </h1>
+            <h1> @lang('services.Communication') </h1>
 			<p>
 				Click below to choose how you want to communicate:
 				<br>

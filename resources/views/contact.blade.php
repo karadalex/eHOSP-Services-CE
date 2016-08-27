@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1> Contact Us </h1>
+            <h1> @lang('nav.Contact Us') </h1>
         </div>
     </div>
 </div>

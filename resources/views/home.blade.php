@@ -15,10 +15,10 @@ function service_btn($route, $title) {
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h1>eHOSP Services</h1>
+                    <h1> @lang('services.eHOSP Services') </h1>
                 </div>
 
                 <div class="panel-body">

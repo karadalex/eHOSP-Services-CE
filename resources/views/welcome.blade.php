@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="main">
-    	        <h1 style="margin-bottom: 70px"> Welcome to eHOSP</h1>
+    	        <h1 style="margin-bottom: 70px"> @lang('titles.Welcome to eHOSP') </h1>
     	        <p>
     				Welcome to eHOSP, the hospital on the cloud,
     				a platform for e-health and e-medicine!

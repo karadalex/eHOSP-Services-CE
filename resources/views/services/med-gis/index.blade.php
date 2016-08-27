@@ -4,26 +4,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1>Medical Geographic Information System</h1>
+            <h1> @lang('titles.Medical Geographic Information System') </h1>
 	        <p>
-				A Medical Geographic Information System or Medical GIS is a system
-				designed to capture, store, manipulate, analyze, manage, and present all types of
-				spatial or geographical data, which are related to Medicine or Healthcare Services.
+                @lang('text/services/med-gis/index.p1')
 			</p>
 
 			<p>
-				Click below to check the eHOSP Maps:
+				@lang('text/services/med-gis/index.p2')
 				<br>
 
-				<style>
-		            .no-menu:hover {
-		                background: none;
-		                box-shadow: none;
-		            }
-		        </style>
-
-				<div class="expanded button-group">
-					<a class="button" href="med-gis/maps">Maps</a>
+				<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-4" style="margin-top:20px">
+					<a class="button full-width" href="med-gis/maps"> @lang('nav.Maps') </a>
 				</div>
 
 			</p>

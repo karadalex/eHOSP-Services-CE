@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h1> My Profile </h1>
+                    <h1> @lang('nav.My Profile') </h1>
                 </div>
                 <div class="panel-body">
                     <h2>
