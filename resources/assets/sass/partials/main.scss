@@ -126,3 +126,40 @@ button, .button {
 	border-radius: 5px;
 	margin-bottom: 100px;
 }
+
+.invisible-click {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 5;
+}
+
+#smart-assistance-header {
+    background-color: #cccccc;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
+    font-size: 22px;
+    height: 50px;
+
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 100;
+
+    padding: 3px 3px;
+    text-align: center;
+}
+
+#smart-assistance-menu {
+    background-color: #fff;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
+    height: 170px;
+
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    z-index: 99;
+
+    display: none;
+}

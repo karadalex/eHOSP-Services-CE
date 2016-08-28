@@ -13,9 +13,11 @@
 
     @yield('content')
 
+    @include('layouts.partials.smart-assistance')
+
     @include('layouts.partials.footer')
 
     @include('layouts.partials.scripts')
-    
+
 </body>
 </html>
