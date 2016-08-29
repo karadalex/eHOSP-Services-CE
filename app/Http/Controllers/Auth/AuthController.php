@@ -2,7 +2,7 @@
 
 namespace eHOSP\Http\Controllers\Auth;
 
-use eHOSP\User;
+use eHOSP\Models\User;
 use Validator;
 use eHOSP\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;

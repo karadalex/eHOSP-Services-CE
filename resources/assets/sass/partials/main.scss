@@ -149,6 +149,7 @@ button, .button {
 
     padding: 3px 3px;
     text-align: center;
+    @include rotate(90deg);
 }
 
 #smart-assistance-menu {

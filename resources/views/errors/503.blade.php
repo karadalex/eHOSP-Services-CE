@@ -18,7 +18,6 @@
                 display: table;
                 font-weight: 100;
                 font-family: 'Lato', sans-serif;
-                /*background-color: #28B09E;*/
                 background-color: #EBEBEB;
             }
 

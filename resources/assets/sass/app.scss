@@ -1,5 +1,8 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import "mixins/main";
+@import "variables/main";
+
 @import "partials/main";
 
 @import "partials/header";
