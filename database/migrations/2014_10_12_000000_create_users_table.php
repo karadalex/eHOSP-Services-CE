@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -30,7 +31,7 @@ class CreateUsersTable extends Migration
             $table->integer('age');
             $table->string('birth_country');
             $table->string('ssn');
-            $table->boolean('active');
+            $table->boolean('active')->default(1);
             $table->rememberToken();
             $table->timestamps();
         });

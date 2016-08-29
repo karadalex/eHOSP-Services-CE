@@ -1,16 +1,15 @@
 <?php
 
-Route::get('/api', function () {
-    return 'eHOSP API';
-});
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| API Routes - version: 1 (v1)
 |--------------------------------------------------------------------------
 |
-|  API methods (v1)
-|  version: 1
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
 |
 */
 

@@ -4,7 +4,7 @@ namespace eHOSP\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use eHOSP\Http\Requests;z
+use eHOSP\Http\Requests;
 
 class MedGisController extends Controller
 {

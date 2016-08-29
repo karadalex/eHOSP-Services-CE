@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
 |
 */
 
@@ -21,7 +21,8 @@ Route::get('/refs', 'StaticPagesController@refs');
 Route::get('/research', 'StaticPagesController@research');
 Route::get('/support', 'StaticPagesController@support');
 
-Route::auth();
+Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index');
 Route::get('/profile', 'ProfileController@index');
@@ -79,6 +80,6 @@ Route::get('/surgery/custom-surgery', 'SurgeryController@custom_surgery');
 Route::get('/surgery-ops', 'SurgeryOpsController@index');
 Route::get('/tissue-sample', 'TissueController@index');
 
-
-// API Routes
-include_once 'ApiRoutes.php';
+Route::get('/api', function () {
+    return 'eHOSP API';
+});

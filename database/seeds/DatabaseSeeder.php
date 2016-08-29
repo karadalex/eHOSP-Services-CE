@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
             'gender' => 'MALE',
             'user_type' => 'DOCTOR',
             'age' => 19,
-            'birth_country' => 'GRC'
+            'birth_country' => 'GRC',
+            'ssn' => '123456789'
         ]);
     }
 }
