@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class GisRemoteNodes extends Seeder
+class GisRemoteNodesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class GisRemoteNodes extends Seeder
      */
     public function run()
     {
-        // 
+        //
     }
 }
