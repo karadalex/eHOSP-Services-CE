@@ -11,6 +11,9 @@
 |
 */
 
+$closures = include config('global.methods').'/WebRoutesClosures.php';
+
+
 // Root Routes (Simple Static Pages)
 Route::get('/', 'StaticPagesController@index');
 Route::get('/about', 'StaticPagesController@about');
@@ -27,6 +30,7 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index');
 Route::get('/profile', 'ProfileController@index');
 Route::get('/settings', 'SettingsController@index');
+Route::post('/settings', 'SettingsController@changes');
 Route::get('/blog', 'BlogController@index');
 
 
@@ -80,6 +84,7 @@ Route::get('/surgery/custom-surgery', 'SurgeryController@custom_surgery');
 Route::get('/surgery-ops', 'SurgeryOpsController@index');
 Route::get('/tissue-sample', 'TissueController@index');
 
-Route::get('/api', function () {
-    return 'eHOSP API';
-});
+
+// Routes with closure functionality
+Route::get('/api', $closures['api_index']);
+Route::post('/avatar', $closures['avatar_post']);
