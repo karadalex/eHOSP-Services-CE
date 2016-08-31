@@ -193,3 +193,21 @@ nav li img.avatar-small {
     float: left;
     left: -5px;
 }
+
+img.small-qr {
+    max-height: 32px;
+}
+
+.big-qr {
+    position: fixed;
+    top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: RGBA(20, 20, 20, 0.7);
+	z-index: 1000;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

@@ -24,4 +24,12 @@ $(document).ready(function() {
 		$("#smart-assistance-menu").toggle('slide', {direction: "right"}, 400);
 	});
 
+	// QR Code Enlarge
+	$(".small-qr").on('click', function() {
+		$(".big-qr").toggle('slide', {direction: "up"}, 400);
+	});
+	$(".big-qr").on('click', function() {
+		$(".big-qr").toggle('slide', {direction: "down"}, 400);
+	});
+
 });
