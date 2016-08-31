@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'username' => 'testUser',
             'password' => bcrypt('password'),
+            'avatar' => 'public/avatars/default.jpg',
+            'language' => 'GRC',
             'first_name' => 'first',
             'last_name' => 'last',
             'email' => 'test@example.com',
