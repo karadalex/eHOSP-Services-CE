@@ -26,12 +26,12 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-img.navbar-menu, #navbar-mobile-only img {
+img.navbar-menu, img#back {
     display: none;
     max-height: 55px;
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 15px;
+    right: 10px;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(2px 5px 6px rgba(0, 0, 0, 0.5));
     z-index: 10;

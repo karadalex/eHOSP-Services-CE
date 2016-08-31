@@ -29,6 +29,7 @@
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="{{ Storage::url(Auth::user()->avatar) }}" alt="avatar" class="avatar-small" />
                             {{ Auth::user()->username }} <span class="caret"></span>
                         </a>
 
@@ -46,8 +47,12 @@
 
 
     <div id="navbar-mobile-only">
-        <img src="{{ asset('/img/back.png') }}" alt="hide side navbar" />
+        <img src="{{ asset('/img/back.png') }}" alt="hide side navbar" id="back" />
         <ul>
+            @if (Auth::user())
+                <img src="{{ Storage::url(Auth::user()->avatar) }}" alt="avatar" class="avatar-medium" />
+            @endif
+
             <li><a href="{{ url('/home') }}"><i class="fa fa-home" aria-hidden="true"></i>
 &nbsp; @lang('nav.Home') </a></li>
             <li><a href="{{ url('/about') }}"><i class="fa fa-info-circle" aria-hidden="true"></i>
