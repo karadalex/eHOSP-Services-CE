@@ -15,6 +15,6 @@ class EmergencyContacts extends Seeder
         $username = env('DB_USERNAME');
         $password = env('DB_PASSWORD');
         $database = env('DB_DATABASE');
-        exec("mysql -u $username -p $password $database < $path");
+        exec("mysql --user=$username --password=$password $database < $path");
     }
 }
