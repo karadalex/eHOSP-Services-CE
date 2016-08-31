@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class EmergencyContacts extends Seeder
+class EmergencyContactsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
