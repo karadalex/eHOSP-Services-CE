@@ -10,7 +10,7 @@
                 </div>
                 <div class="panel-body">
                     <h2>
-                        Profile Picture
+                        @lang('nav.Profile Picture')
                         <a href="settings" class="pull-right"><i class="fa fa-cogs" aria-hidden="true"></i></a>
                     </h2>
                     <hr>
@@ -21,13 +21,13 @@
                     </div>
 
                     <h2>
-                        User Details
+                        @lang('nav.User Details')
                         <a href="settings" class="pull-right"><i class="fa fa-cogs" aria-hidden="true"></i></a>
                     </h2>
                     <hr>
                     <div class="row" style="margin-top:20px">
                         <div class="col-md-3 col-md-offset-1">
-                            <span class="emphasize"> Username </span>
+                            <span class="emphasize"> @lang('nav.Username') </span>
                         </div>
                         <div class="col-md-4">
                             {{ Auth::user()->username }}
@@ -35,7 +35,7 @@
                     </div>
                     <div class="row" style="margin-top:10px">
                         <div class="col-md-3 col-md-offset-1">
-                            <span class="emphasize"> Name </span>
+                            <span class="emphasize"> @lang('nav.Name') </span>
                         </div>
                         <div class="col-md-4">
                             {{ strtoupper(Auth::user()->first_name . " " . Auth::user()->last_name) }}
@@ -43,7 +43,7 @@
                     </div>
                     <div class="row" style="margin-top:10px">
                         <div class="col-md-3 col-md-offset-1">
-                            <span class="emphasize"> User Type </span>
+                            <span class="emphasize"> @lang('nav.User Type') </span>
                         </div>
                         <div class="col-md-4">
                             {{ Auth::user()->user_type }}
@@ -51,7 +51,7 @@
                     </div>
                     <div class="row" style="margin-top:10px">
                         <div class="col-md-3 col-md-offset-1">
-                            <span class="emphasize"> Age </span>
+                            <span class="emphasize"> @lang('nav.Age') </span>
                         </div>
                         <div class="col-md-4">
                             {{ Auth::user()->age }}

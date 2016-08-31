@@ -42,5 +42,8 @@ return [
     'Save Changes' => 'Save Changes',
     'Old Password' => 'Old Password',
     'New Password' => 'New Password',
-    'New Password Confirmation' => 'New Password Confirmation'
+    'New Password Confirmation' => 'New Password Confirmation',
+    'User Details' => 'User Details',
+    'Name' => 'Name',
+    'Age' => 'Age'
 ];

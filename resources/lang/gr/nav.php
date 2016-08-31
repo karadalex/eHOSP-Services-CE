@@ -42,5 +42,8 @@ return [
     'Save Changes' => 'Αποθήκευση Αλλαγών',
     'Old Password' => 'Παλιός Κωδικός',
     'New Password' => 'Νέος Κωδικός',
-    'New Password Confirmation' => 'Επιβεβαίωση Νέου Κωδικού'
+    'New Password Confirmation' => 'Επιβεβαίωση Νέου Κωδικού',
+    'User Details' => 'Στοιχεία Χρήστη',
+    'Name' => 'Όνομα',
+    'Age' => 'Ηλικία'
 ];
