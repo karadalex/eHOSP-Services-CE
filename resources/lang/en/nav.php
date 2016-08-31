@@ -33,5 +33,14 @@ return [
     'Research' => 'Research',
     'References' => 'References',
     'Register' => 'Register',
-    'Maps' => 'Maps'
+    'Maps' => 'Maps',
+    'Username' => 'Username',
+    'Profile Picture' => 'Profile Picture',
+    'User Type' =>'User Type',
+    'Language' => 'Language',
+    'Email' => 'Email',
+    'Save Changes' => 'Save Changes',
+    'Old Password' => 'Old Password',
+    'New Password' => 'New Password',
+    'New Password Confirmation' => 'New Password Confirmation'
 ];

@@ -33,5 +33,14 @@ return [
     'Research' => 'Έρευνα',
     'References' => 'Αναφορές',
     'Register' => 'Εγγραφή',
-    'Maps' => 'Χάρτες'
+    'Maps' => 'Χάρτες',
+    'Username' => 'Όνομα Χρήστη',
+    'Profile Picture' => 'Εικόνα Προφίλ',
+    'User Type' =>'Τύπος Χρήστη',
+    'Language' => 'Γλώσσα',
+    'Email' => 'Διεύθυνση ηλ. ταχυδρομείου',
+    'Save Changes' => 'Αποθήκευση Αλλαγών',
+    'Old Password' => 'Παλιός Κωδικός',
+    'New Password' => 'Νέος Κωδικός',
+    'New Password Confirmation' => 'Επιβεβαίωση Νέου Κωδικού'
 ];
