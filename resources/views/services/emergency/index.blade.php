@@ -15,9 +15,22 @@
 	                    <tr>
 	                        <th>Services</th>
 	                        <th>Phone Numbers</th>
+                            <th>QR</th>
 	                    </tr>
 	                </thead>
 	                <tbody>
+                        <?php
+                        function qrphone($phoneNum) {
+                            $png = QrCode::format('png')
+                                            ->size(256)
+                                            ->margin(0)
+                                            ->backgroundColor(235,235,235)
+                                            ->merge('/public/img/LOGO_big.png')
+                                            ->phoneNumber($phoneNum);
+                            $png = base64_encode($png);
+                            return $png;
+                        }
+                        ?>
 	                    @foreach ($emergency_contacts as $contact)
 							<tr>
 								<td>
@@ -28,6 +41,12 @@
 										{{ $contact->phone_numbers }}
 									</a>
 								</td>
+                                <td>
+                                    <img class="small-qr" src="data:image/png;base64,{{ qrphone($contact->phone_numbers) }}" alt="" />
+                                    <div class="big-qr" style="display: none;">
+                                        <img src="data:image/png;base64,{{ qrphone($contact->phone_numbers) }}" alt="" />
+                                    </div>
+                                </td>
 							</tr>
 						@endforeach
 	                </tbody>
