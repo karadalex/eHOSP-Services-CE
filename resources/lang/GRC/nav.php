@@ -26,6 +26,7 @@ return [
     'Settings' => 'Ρυθμίσεις',
     'Login' => 'Σύνδεση',
     'Logout' => 'Αποσύνδεση',
+    'Smart Assistance' => 'Έξυπνη Βοήθεια',
     'Social' => 'Κοινωνικά',
     'Support' => 'Υποστήριξη',
     'Support Us' => 'Υποστηρίξτε μας',

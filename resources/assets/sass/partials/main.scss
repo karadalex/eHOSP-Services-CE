@@ -137,10 +137,11 @@ button, .button {
 }
 
 #smart-assistance-header {
-    background-color: #cccccc;
+    background-color: #8AD5E4;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     font-size: 22px;
     height: 50px;
+    width: 200px;
 
     position: fixed;
     bottom: 0px;
@@ -149,18 +150,46 @@ button, .button {
 
     padding: 3px 3px;
     text-align: center;
-    // @include rotate(90deg);
+    transform-origin: 100% 0%;
+    @include rotate(90deg);
+
+    h6 {
+        color: #fff;
+        font-weight: bold;
+    }
 }
 
 #smart-assistance-menu {
     background-color: #fff;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
-    height: 170px;
+    height: 200px;
 
     position: fixed;
     bottom: 50px;
-    right: 0px;
+    right: 50px;
     z-index: 99;
 
     display: none;
+}
+
+.avatar-big {
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.avatar-medium {
+    max-height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+nav li img.avatar-small {
+    max-height: 35px;
+    border-radius: 50%;
+    position: relative;
+    top: -8px;
+    float: left;
+    left: -5px;
 }

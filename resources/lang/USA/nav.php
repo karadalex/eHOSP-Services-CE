@@ -26,6 +26,7 @@ return [
     'Settings' => 'Settings',
     'Login' => 'Login',
     'Logout' => 'Logout',
+    'Smart Assistance' => 'Smart Assistance',
     'Social' => 'Social',
     'Support' => 'Support',
     'Support Us' => 'Support Us',

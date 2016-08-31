@@ -16,12 +16,12 @@ $(document).ready(function() {
 
 	// Smart Assistance Animation
 	$("#smart-assistance-header").on('click', function() {
-		$("#smart-assistance-menu").toggle('slide', {direction: "down"}, 400);
+		$("#smart-assistance-menu").toggle('slide', {direction: "right"}, 400);
 		$(".invisible-container").toggleClass('invisible-click');
 	});
-	$(".invisible-click").on('click', function() {
+	$(".invisible-container").on('click', function() {
 		$(".invisible-container").toggleClass('invisible-click');
-		$("#smart-assistance-menu").toggle('slide', {direction: "down"}, 400);
+		$("#smart-assistance-menu").toggle('slide', {direction: "right"}, 400);
 	});
 
 });
