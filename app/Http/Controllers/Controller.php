@@ -18,8 +18,8 @@ class Controller extends BaseController
     {
         $this->middleware(function ($request, $next) {
             if (Auth::user()) {
-                $country = Auth::user()->birth_country;
-                App::setLocale($country);
+                $language = Auth::user()->language;
+                App::setLocale($language);
             }
             return $next($request);
         });
