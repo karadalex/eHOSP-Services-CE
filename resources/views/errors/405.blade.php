@@ -4,11 +4,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <h1> Page Not Found ... </h1>
+            <h1> Method Not Allowed ... </h1>
             <p style="text-align:center">
-                The page you are looking for could not be found
+                There was an error with your request
                 <br>
-                Please try again, or redirect back to <a href="/home">Home</a>
+                Please try again later, or redirect back to <a href="/home">Home</a>
             </p>
         </div>
     </div>
