@@ -25,11 +25,16 @@ $(document).ready(function() {
 	});
 
 	// QR Code Enlarge
-	$(".small-qr").on('click', function() {
-		$(".big-qr").toggle('slide', {direction: "up"}, 400);
-	});
-	$(".big-qr").on('click', function() {
-		$(".big-qr").toggle('slide', {direction: "down"}, 400);
+	$(".small-qr").on('click', function(event) {
+		var idLink = $(event.target).attr('data');
+		triggeredBigQR = "#big-qr"+idLink;
+		$(triggeredBigQR).toggle('slide', {direction: "up"}, 400);
+
+		$(triggeredBigQR).on('click', function() {
+			$(triggeredBigQR).toggle('slide', {direction: "down"}, 400);
+			triggeredBigQR = "";
+
+		});
 	});
 
 });
