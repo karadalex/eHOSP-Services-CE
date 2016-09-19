@@ -5,7 +5,8 @@ namespace eHOSP\Http\Controllers;
 use Illuminate\Http\Request;
 
 use eHOSP\Http\Requests;
-use DB;
+use Auth;
+use eHOSP\Models\EmergencyContacts;
 
 class EmergencyController extends Controller
 {
@@ -17,7 +18,18 @@ class EmergencyController extends Controller
 
     public function index()
     {
-        $emergency_contacts = DB::table('emergency_contacts')->where('country', 'GRC')->get();
+        require config('global.methods').'/qrcodes.php';
+
+        $country = Auth::user()->birth_country;
+        $emergency_contactsObj = EmergencyContacts::where('country', $country)->get();
+        $emergency_contacts = array();
+        foreach ($emergency_contactsObj as $contact) {
+            array_push($emergency_contacts, array(
+                'contact_name' => $contact->contact_name,
+                'phone_numbers' => $contact->phone_numbers,
+                'qr' => qrphone($contact->phone_numbers)
+            ));
+        }
         return view('services.emergency.index', [
             'title' => 'eHOSP - Emergency',
             'emergency_contacts' => $emergency_contacts

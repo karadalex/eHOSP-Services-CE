@@ -19,32 +19,20 @@
 	                    </tr>
 	                </thead>
 	                <tbody>
-                        <?php
-                        function qrphone($phoneNum) {
-                            $png = QrCode::format('png')
-                                            ->size(256)
-                                            ->margin(0)
-                                            ->backgroundColor(235,235,235)
-                                            ->merge('/public/img/LOGO_big.png')
-                                            ->phoneNumber($phoneNum);
-                            $png = base64_encode($png);
-                            return $png;
-                        }
-                        ?>
 	                    @foreach ($emergency_contacts as $contact)
 							<tr>
 								<td>
-									{{ $contact->contact_name }}
+									{{ $contact["contact_name"] }}
 								</td>
 								<td>
-									<a href="tel:{{ $contact->phone_numbers }}">
-										{{ $contact->phone_numbers }}
+									<a href="tel:{{ $contact["phone_numbers"] }}">
+										{{ $contact["phone_numbers"] }}
 									</a>
 								</td>
                                 <td>
-                                    <img class="small-qr" src="data:image/png;base64,{{ qrphone($contact->phone_numbers) }}" alt="" />
-                                    <div class="big-qr" style="display: none;">
-                                        <img src="data:image/png;base64,{{ qrphone($contact->phone_numbers) }}" alt="" />
+                                    <img class="small-qr" src="data:image/png;base64,{{ $contact["qr"] }}" alt="QR" data="{{$contact["phone_numbers"]}}"/>
+                                    <div class="big-qr" id="big-qr{{$contact["phone_numbers"]}}" style="display: none; z-index:1000">
+                                        <img src="data:image/png;base64,{{ $contact["qr"] }}" alt="QR" />
                                     </div>
                                 </td>
 							</tr>
