@@ -46,9 +46,6 @@ class SettingsController extends Controller
             $message = trans('messages.settings.success');
         }
 
-        return view('settings', [
-            'title' => 'eHOSP - Changes',
-            'message' => $message
-        ]);
+        return redirect('settings')->with('message', $message);;
     }
 }
