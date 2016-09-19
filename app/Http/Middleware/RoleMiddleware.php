@@ -18,7 +18,9 @@ class RoleMiddleware
     public function handle($request, Closure $next, ...$roles)
     {
         if (!in_array(Auth::user()->user_type, $roles)) {
-            return redirect('home');
+            // Send 404 error for security purposes
+            abort(404);
+            // return redirect('home');
         }
 
         return $next($request);
