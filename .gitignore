@@ -4,7 +4,7 @@ public/components/
 vendor/
 
 # Public files, compiled from resources
-public/storage/
+public/storage
 public/css/
 public/js/
 
