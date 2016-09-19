@@ -5,11 +5,16 @@ namespace eHOSP\Http\Controllers;
 use Illuminate\Http\Request;
 
 use eHOSP\Http\Requests;
+use Auth;
 
 class StaticPagesController extends Controller
 {
     public function index()
     {
+        if (Auth::user()) {
+            return redirect()->route('login');
+        }
+
         return view('welcome', [
             'title' => 'eHOSP - Hospital on the Cloud'
         ]);
