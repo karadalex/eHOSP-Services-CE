@@ -33,6 +33,7 @@ Route::get('/settings', 'SettingsController@index');
 Route::post('/settings', 'SettingsController@changes');
 Route::get('/blog', 'BlogController@index');
 
+Route::get('/api/dashboard', 'ApiController@index');
 
 
 // Service Routes
