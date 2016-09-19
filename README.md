@@ -8,13 +8,21 @@ Welcome to eHOSP, the hospital on the cloud, a platform for e-health and e-medic
 
 To run thisapplication on aserver simply follow the steps from one of the following categories.
 
-Virtual Machine configuration:
-==============================
 
-
-Docker configuration:
-=====================
-
-
-Vagrant configuration:
+Server Configuration
 ======================
+
+_(Instructions tested in DigitalOcean)_
+
+Requirements
+  - LEMP environment
+  - PHP >=5.6.4
+
+```
+apt-get update
+apt-get install git node
+composer global require "laravel/installer"
+npm install
+composer install
+gulp --production
+```
