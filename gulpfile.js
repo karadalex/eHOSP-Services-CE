@@ -16,7 +16,7 @@ require('laravel-elixir-vue');
 elixir(mix => {
     // mix.sass('app.scss')
     //    .webpack('app.js');
-    
+
     mix.sass('app.scss')
       .sass('dashboard.scss')
       .sass('tables.scss')
@@ -25,13 +25,14 @@ elixir(mix => {
       .sass('forms.scss');
 
     mix.scripts('main/*.js', 'public/js/app.js')
-      .scripts('extra/dashboard.js')
-      .scripts('extra/video-chat.js')
-      .scripts('extra/maps.js')
-      .scripts('extra/nxt-events.js')
-      .scripts('extra/nxt-ui.js')
-      .scripts('extra/diagnosis-form.js')
-      .scripts('extra/patient-med-profile.js');
+      .scripts('lib/dashboard.js')
+      .scripts('lib/video-chat.js')
+      .scripts('lib/maps.js')
+      .scripts('lib/nxt-events.js')
+      .scripts('lib/nxt-ui.js')
+      .scripts('lib/diagnosis-form.js')
+      .scripts('lib/patient-med-profile.js')
+      .webpack('components.js');
 
     mix.browserSync({
        proxy: 'localhost:8000',
