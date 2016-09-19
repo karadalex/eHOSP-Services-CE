@@ -13,6 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::resource('/api/v1/users', 'API\v1\UserApi');
-Route::resource('/api/v1/gis-nodes', 'API\v1\MedGis');
-Route::resource('/api/v1/emergency-contacts', 'API\v1\EmergencyContacts');
+Route::resource('/v1/users', 'API\v1\UserApi');
+Route::resource('/v1/gis-nodes', 'API\v1\MedGis');
+Route::resource('/v1/emergency-contacts', 'API\v1\EmergencyContacts');
