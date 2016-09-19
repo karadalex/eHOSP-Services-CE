@@ -4,6 +4,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+
+            @if (session('message'))
+                <div class="alert alert-success">
+                    <p style="text-align:center;">
+                        {{ session('message') }}
+                    </p>
+                </div>
+            @endif
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h1> @lang('nav.Settings') </h1>
@@ -61,7 +70,7 @@
                             </div>
                         </div>
                         <hr>
-                        
+
                         <div class="row" style="margin-top:20px">
                             <div class="col-md-3 col-md-offset-1">
                                 <span class="emphasize"> @lang('nav.User Type') </span>
@@ -95,13 +104,7 @@
                         </div>
                     </form>
 
-                    @if (isset($message))
-                    <div class="row" style="margin-top:20px">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <p style="text-align:center;color:#2bb673;margin-top:20px"> {{ $message }} </p>
-                        </div>
-                    </div>
-                    @endif
+
 
                 </div>
             </div>
