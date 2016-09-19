@@ -12,8 +12,10 @@ public/js/
 Homestead.yaml
 Homestead.json
 
-# Ignore private config files
+# Ignore private files
 .env
+storage/oauth-private.key
+storage/oauth-public.key
 
 # Local Composer
 composer.phar
