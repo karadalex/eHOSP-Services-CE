@@ -11,17 +11,11 @@
 .eslintrc.json
 .travis.yml
 .idea/
+.env.example
 
 # Ignore build scripts
-docker.js
 gulpfile.js
 Vagrantfile
-
-# Ignore source code (Keep only build)
-src/
-docker_solutions/
-tests/
-node_modules/
 
 # Ignore other unnecessary (for the container) files
 bower.json
