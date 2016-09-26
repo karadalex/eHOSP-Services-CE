@@ -9,7 +9,7 @@
       "type": "image/ico"
     }
   ],
-  "start_url": "index.php?launcher=true",
+  "start_url": "/",
   "theme_color": "#2bb673",
   "background_color": "#ebebeb"
 }
