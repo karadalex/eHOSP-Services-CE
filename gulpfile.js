@@ -32,9 +32,11 @@ elixir(mix => {
       .scripts('lib/nxt-ui.js')
       .scripts('lib/diagnosis-form.js')
       .scripts('lib/patient-med-profile.js')
-      .webpack('components.js');
+      .webpack('components.js')
+      .webpack('sw.js', 'public/sw.js');
 
     mix.browserSync({
        proxy: 'localhost:8000',
+       files: ['./*', '!public/']
     });
 });
