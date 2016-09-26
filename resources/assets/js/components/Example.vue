@@ -18,6 +18,10 @@
     export default {
         ready() {
             console.log('Component ready.')
+            this.$http.get('/api/v1/user')
+                .then(response => {
+                    console.log(response.data);
+            });
         }
     }
 </script>
