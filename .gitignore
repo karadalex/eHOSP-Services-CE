@@ -7,6 +7,7 @@ vendor/
 public/storage
 public/css/
 public/js/
+public/sw.js
 
 # Homestead
 Homestead.yaml
