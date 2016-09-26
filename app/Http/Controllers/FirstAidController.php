@@ -8,12 +8,6 @@ use eHOSP\Http\Requests;
 
 class FirstAidController extends Controller
 {
-    public function __construct()
-    {
-        parent::__construct();
-        $this->middleware('auth');
-    }
-
     public function index()
     {
         return view('services.first-aid.index', [

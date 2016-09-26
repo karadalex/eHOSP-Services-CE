@@ -13,15 +13,19 @@ class EmergencyController extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->middleware('auth');
     }
 
     public function index()
     {
         require config('global.methods').'/qrcodes.php';
 
-        $country = Auth::user()->birth_country;
-        $emergency_contactsObj = EmergencyContacts::where('country', $country)->get();
+        if (Auth::user()) {
+            $country = Auth::user()->birth_country;
+            $emergency_contactsObj = EmergencyContacts::where('country', $country)->get();
+        } else {
+            $emergency_contactsObj = EmergencyContacts::where('country', 'GRC')->get();
+        }
+
         $emergency_contacts = array();
         foreach ($emergency_contactsObj as $contact) {
             array_push($emergency_contacts, array(
