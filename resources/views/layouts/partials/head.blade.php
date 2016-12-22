@@ -13,6 +13,8 @@
 <meta name="description" content="eHOSP - Hospital Platform in the Cloud">
 <meta name="keywords" content="eHOSP, Cloud, Hospital,">
 <meta name="author" content="Alex Karadimos">
+<meta name="theme-color" content="#2bb673">
+<meta name="msapplication-TileColor" content="#2bb673">
 
 <link rel="manifest" href="/manifest.json">
 
