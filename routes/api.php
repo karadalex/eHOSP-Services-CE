@@ -16,3 +16,5 @@ use Illuminate\Http\Request;
 Route::get('/v1/user', 'API\v1\UserApi@index');
 Route::resource('/v1/gis-nodes', 'API\v1\MedGis');
 Route::resource('/v1/emergency-contacts', 'API\v1\EmergencyContacts');
+
+Route::post('/v1/bot', 'API\v1\Bot@index');
