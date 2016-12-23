@@ -16,8 +16,8 @@
                                 ->generate(Request::url());
                 $png = base64_encode($png);
                 ?>
-                <img class="small-qr" src="data:image/png;base64,{{ $png }}" alt="" />
-                <div class="big-qr" style="display: none;">
+                <img class="small-qr" src="data:image/png;base64,{{ $png }}" alt="" data="Contact"/>
+                <div class="big-qr" id="big-qrContact" style="display: none;">
                     <img src="data:image/png;base64,{{ $png }}" alt="" />
                 </div>
             </div>
