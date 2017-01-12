@@ -20,8 +20,8 @@
 			<div id="buttons">
 				<ul>
 					<?php include config('global.methods') . '/generators.php'; ?>
-					{{ echo li(button("services/surgery-printing/surgery_sample_tasks/robotic_arm_test", "Robotic Arm Test")) }}
-					{{ echo li(button("services/surgery-printing/surgery_sample_tasks/simple_incision_01", "Simple Incision 1")) }}
+					{{ btn("samples/robotic_arm_test", "Robotic Arm Test") }}
+					{{ btn("samples/simple_incision_01", "Simple Incision 1") }}
 		        </ul>
 			</div>
         </div>
