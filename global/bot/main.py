@@ -1,6 +1,6 @@
 # coding=UTF-8
 
-import sys
+from greek import greek
 
-if sys.argv[1] == "Γειά" or sys.argv[1] == "ΓΕΙΑ":
-    print "Χαίρετε, πώς μπορώ να σας εξυπηρετήσω;"
+if __name__ == '__main__':
+    greek.main()
