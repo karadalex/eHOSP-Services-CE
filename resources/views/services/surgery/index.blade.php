@@ -20,9 +20,9 @@
 			<div id="buttons">
 				<ul>
 					<?php include config('global.methods') . '/generators.php'; ?>
-					{{ btn("services/surgery/surgery-design", "Surgery Procedure Design") }}
+					{{ btn("surgery/surgery-design", "Surgery Procedure Design") }}
 					{{ btn("#", "Check Surgery Robot Status") }}
-					{{ btn("surgery/links", "Useful Links") }}
+          			{{ btn("surgery/links", "Useful Links") }}
 		        </ul>
 			</div>
         </div>

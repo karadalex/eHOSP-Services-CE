@@ -11,8 +11,8 @@
 			</p>
 			<ul id="buttons">
 				<?php include config('global.methods') . '/generators.php'; ?>
-				{{ echo li(button("services/surgery-printing/surgery-sample-tasks", "Sample Tasks")) }}
-				{{ echo li(button("services/surgery-printing/custom-surgery", "Design your own Task")) }}
+				{{ btn("surgery-sample-tasks", "Surgery Sample Tasks (For testing purposes only)") }}
+				{{ btn("custom-surgery", "Design your own Task") }}
 			</ul>
         </div>
     </div>
