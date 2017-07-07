@@ -4,7 +4,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="{{asset('/img/LOGO_big.png')}}" alt="ehosp logo" />
+                <img src="{{asset('/img/512x512.png')}}" alt="ehosp logo" />
             </a>
 
             <img class="navbar-menu" src="{{ asset('/img/menu.png') }}" alt="menu" />

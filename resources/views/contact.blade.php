@@ -12,7 +12,7 @@
                                 ->size(256)
                                 ->margin(0)
                                 ->backgroundColor(235,235,235)
-                                ->merge('/public/img/LOGO_big.png')
+                                ->merge('/public/img/512x512.png')
                                 ->generate(Request::url());
                 $png = base64_encode($png);
                 ?>
