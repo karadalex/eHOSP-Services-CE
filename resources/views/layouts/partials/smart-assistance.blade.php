@@ -5,7 +5,8 @@
         </div>
         <div class="invisible-container"></div>
         <div class="col-xs-7 col-sm-6 col-md-5 col-lg-4" id="smart-assistance-menu">
-            <p style="text-align:center;padding-top:20px"> Search or talk to the eHOSP bot </p>
+            <i class="fa fa-arrows-alt fa-ls bot-fullscreen" aria-hidden="true" style="color:#2bb673"></i>
+            <p style="text-align:center;padding-top:2px"> Search or talk to the eHOSP bot </p>
             <hr>
             <bot></bot>
             <script src="{{asset('js/components.js')}}"></script>
