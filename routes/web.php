@@ -79,8 +79,14 @@ Route::get('/research-platform', 'ResearchController@index');
 Route::get('/robotics', 'RoboticsController@index');
 Route::get('/symptoms', 'SymptomsController@index');
 
+// Surgery
 Route::get('/surgery', 'SurgeryController@index');
+Route::get('/surgery/surgery-design', 'SurgeryController@surgery_design');
 Route::get('/surgery/custom-surgery', 'SurgeryController@custom_surgery');
+Route::get('/surgery/surgery-sample-tasks', 'SurgeryController@surgery_sample_tasks');
+Route::get('/surgery/samples/robotic_arm_test', 'SurgeryController@robotic_arm_test');
+Route::get('/surgery/samples/simple_incision_01', 'SurgeryController@simple_incision_1');
+Route::get('/surgery/samples/stiches_test_1', 'SurgeryController@stiches_test_1');
 
 Route::get('/surgery-ops', 'SurgeryOpsController@index');
 Route::get('/tissue-sample', 'TissueController@index');
