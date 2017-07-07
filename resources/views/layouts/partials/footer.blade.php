@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/E-Hosp-279238362431959">
+                        <a href="https://www.facebook.com/ehosp">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             &nbsp; Facebook
                         </a>
@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/search?q=user%3Akaradalex+eHOSP">
+                        <a href="https://github.com/ehosp">
                             <i class="fa fa-github" aria-hidden="true"></i>
                             &nbsp; Github
                         </a>
