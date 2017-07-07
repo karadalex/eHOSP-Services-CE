@@ -10,8 +10,15 @@
     				Welcome to eHOSP, the hospital on the cloud,
     				a platform for e-health and e-medicine!
     			</p>
+				<p>
+					eHOSP is a hospital that runs in the Cloud and executes 
+					physical tasks with Robotics. It aims to be a complete smart platform 
+					to improve healthcare and well-being with new technologies such as 
+					wearables, IoT, drones, Artificial Intelligence and of course Robotics
+				</p>
+				<br>
     			<p>
-    				Click below to get started
+    				Click below to get started or <a href="/about">learn more</a>
     			</p>
     			<p>
                     <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">

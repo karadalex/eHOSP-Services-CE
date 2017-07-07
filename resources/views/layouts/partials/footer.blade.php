@@ -37,6 +37,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="https://www.instagram.com/ehosp.cloud/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            &nbsp; Instagram
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://plus.google.com/u/0/101892558228382443178/">
                             <i class="fa fa-google-plus" aria-hidden="true"></i>
                             &nbsp; Google+
