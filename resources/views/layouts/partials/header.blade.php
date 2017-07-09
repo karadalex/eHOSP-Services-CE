@@ -14,7 +14,11 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/home') }}"> @lang('nav.Home') </a></li>
+                @if (Auth::guest())
+                    <li><a href="{{ url('/') }}"> @lang('nav.Home') </a></li>
+                @else
+                    <li><a href="{{ url('/home') }}"> @lang('nav.Home') </a></li>
+                @endif
                 <li><a href="{{ url('/about') }}"> @lang('nav.About') </a></li>
                 <li><a href="{{ url('/contact') }}"> @lang('nav.Contact') </a></li>
                 <li><a href="{{ url('/doc') }}"> @lang('nav.Doc') </a></li>
