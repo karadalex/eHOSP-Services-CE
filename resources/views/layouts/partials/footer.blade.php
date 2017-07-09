@@ -43,6 +43,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="https://www.linkedin.com/company-beta/16184737/">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            &nbsp; LinkedIn
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://plus.google.com/u/0/101892558228382443178/">
                             <i class="fa fa-google-plus" aria-hidden="true"></i>
                             &nbsp; Google+
