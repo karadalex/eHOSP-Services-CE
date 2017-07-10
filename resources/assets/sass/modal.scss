@@ -102,6 +102,11 @@
     margin-bottom: 0px;
 }
 
+.fullscreen {
+    height: 100%;
+    width: 100%;        
+}
+
 @media only screen and (max-width: 40.063em) {
     #left, #right {
         width: 100%;

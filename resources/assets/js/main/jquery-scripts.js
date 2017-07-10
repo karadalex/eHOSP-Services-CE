@@ -23,6 +23,9 @@ $(document).ready(function() {
 		$(".invisible-container").toggleClass('invisible-click');
 		$("#smart-assistance-menu").toggle('slide', {direction: "right"}, 400);
 	});
+	$('.bot-fullscreen').click(function(e){
+    	$('#smart-assistance-menu').toggleClass('fullscreen');
+  	});
 
 	// QR Code Enlarge
 	$(".small-qr").on('click', function(event) {
@@ -33,7 +36,6 @@ $(document).ready(function() {
 		$(triggeredBigQR).on('click', function() {
 			$(triggeredBigQR).toggle('slide', {direction: "down"}, 400);
 			triggeredBigQR = "";
-
 		});
 	});
 
