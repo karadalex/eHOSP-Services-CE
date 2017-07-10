@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Inspiring;
+use eHOSP\Mail\Welcome;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,8 @@ use Illuminate\Foundation\Inspiring;
 
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
+});
+
+Artisan::command('welcome_email', function() {
+    Mail::to('test2@example.com')->send(new Welcome);
 });
