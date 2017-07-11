@@ -34,13 +34,6 @@ class StaticPagesController extends Controller
         ]);
     }
 
-    public function contact()
-    {
-        return view('contact', [
-            'title' => 'eHOSP - Contact'
-        ]);
-    }
-
     public function downloads()
     {
         return view('downloads', [

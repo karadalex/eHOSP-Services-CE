@@ -18,11 +18,13 @@ $closures = include config('global.methods').'/WebRoutesClosures.php';
 Route::get('/', 'StaticPagesController@index');
 Route::get('/about', 'StaticPagesController@about');
 Route::get('/doc', 'StaticPagesController@doc');
-Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/downloads', 'StaticPagesController@downloads');
 Route::get('/refs', 'StaticPagesController@refs');
 Route::get('/research', 'StaticPagesController@research');
 Route::get('/support', 'StaticPagesController@support');
+
+Route::get('/contact', 'ContactController@contact');
+Route::post('/contact', 'ContactController@contact_send_email');
 
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
