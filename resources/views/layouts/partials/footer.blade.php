@@ -63,5 +63,8 @@
                 </ul>
             </div>
         </div>
+        
+        Copyright &copy; 2016-<?php echo date("Y");?> eHOSP Inc. All rights reserved.
+        <br>
     </div>
 </footer>
