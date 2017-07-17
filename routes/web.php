@@ -97,3 +97,6 @@ Route::get('/tissue-sample', 'TissueController@index');
 // Routes with closure functionality
 Route::get('/api', $closures['api_index']);
 Route::post('/avatar', $closures['avatar_post']);
+
+// Blog posts
+include 'includes/blog.php';
