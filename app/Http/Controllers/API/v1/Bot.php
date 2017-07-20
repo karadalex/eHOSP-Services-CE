@@ -3,6 +3,7 @@
 namespace eHOSP\Http\Controllers\API\v1;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 use eHOSP\Http\Requests;
 use eHOSP\Http\Controllers\Controller;
@@ -18,9 +19,14 @@ class Bot extends Controller
     {
         // Retrieve text that user typed to bot
         $request_text = $request->input('text');
-        // Run Bot with retrieved text
-        $command = escapeshellcmd('python ' . '"'.config('global.bot').'/main.py'.'" ' . $request_text);
-        $output = shell_exec($command);
-        return $output;
+        // Call Hospbot throught eHOSP webhook
+        $http = new \GuzzleHttp\Client;
+        $post_url = env('HOSPBOT_WEBHOOK_URL');
+        $response = $http->post($post_url, [
+            'form_params' => [
+                'message' => $request_text
+            ],
+        ]);
+        return $response->getBody();
     }
 }
