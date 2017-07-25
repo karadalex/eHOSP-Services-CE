@@ -17,10 +17,13 @@ services:
         env_file:
             - ./docker/redis/.env
         volumes:
-          - ./docker/redis/storage:/data
-          - ./docker/redis/redis.conf:/usr/local/etc/redis/redis.conf
+            - ./docker/redis/storage:/data
+            - ./docker/redis/redis.conf:/usr/local/etc/redis/redis.conf
     web:
         build: .
+        depends_on:
+            - mysql
+            - redis
         container_name: web
         restart: unless-stopped
         env_file:
