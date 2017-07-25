@@ -12,16 +12,19 @@
 use Illuminate\Support\Facades\DB;
 
 Route::group(['prefix' => '/blog'], function () {
-    $posts = DB::table('blog_posts')->get();
-    foreach ($posts as $post) {
-        $routeTitle = kebab_case(title_case($post->title));
-        Route::get($routeTitle, function () use($post) {
-            try {
-                return view('blog.'.$post->viewname);
-            }
-            catch(Exception $e) {
-                abort('404');
-            }
-        });
+    try {
+        $posts = DB::table('blog_posts')->get();
+        foreach ($posts as $post) {
+            $routeTitle = kebab_case(title_case($post->title));
+            Route::get($routeTitle, function () use($post) {
+                try {
+                    return view('blog.'.$post->viewname);
+                }
+                catch(Exception $e) {
+                    abort('404');
+                }
+            });
+        }
     }
+    catch (Exception $e) {}      
 });
