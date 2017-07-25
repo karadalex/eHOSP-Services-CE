@@ -15,6 +15,7 @@ Homestead.json
 
 # Ignore private files
 .env
+.env.staging
 storage/oauth-private.key
 storage/oauth-public.key
 
@@ -23,3 +24,7 @@ composer.phar
 
 # Ignore log files:
 /npm-debug.log
+
+# Ignore Docker
+docker/mysql/storage
+docker/redis/storage

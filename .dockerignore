@@ -12,6 +12,7 @@
 .travis.yml
 .idea/
 .env.example
+.env              # use .env.staging in container
 
 # Ignore build scripts
 gulpfile.js
@@ -22,3 +23,8 @@ bower.json
 package.json
 composer.phar
 TODO
+
+# Ignore Docker related files and directories
+docker/
+docker-compose.yml
+Dockerfile
