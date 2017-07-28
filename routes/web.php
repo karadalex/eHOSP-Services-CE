@@ -93,6 +93,11 @@ Route::get('/surgery/samples/stiches_test_1', 'SurgeryController@stiches_test_1'
 Route::get('/surgery-ops', 'SurgeryOpsController@index');
 Route::get('/tissue-sample', 'TissueController@index');
 
+// VR Pages
+Route::group(['prefix' => '/vr'], function () {
+    Route::get('/ehosp-surgical', 'VRController@ehospSurgicalModel');
+});
+
 
 // Routes with closure functionality
 Route::get('/api', $closures['api_index']);
