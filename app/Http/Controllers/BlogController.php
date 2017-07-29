@@ -11,7 +11,9 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blog_posts = DB::table('blog_posts')->paginate(4);
+        $blog_posts = DB::table('blog_posts')
+                            ->orderBy('id', 'desc')
+                            ->paginate(4);
         return view('blog', [
             'title' => 'eHOSP - Blog',
             'posts' => $blog_posts
