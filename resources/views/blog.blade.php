@@ -30,8 +30,9 @@
                         <h6 class="pull-right">
                             <a href="{{url('blog/'.kebab_case(title_case($post->title)))}}"> Read more ... </a>
                         </h6>
+                        <br>
+                        <hr style="border-color: #5f5f5f; width: 100%">
                     </div>
-                    <br><br>
                 @endforeach
                 
             </div>
