@@ -72,27 +72,33 @@ class NewBlogPost extends Command
         fprintf($file, $template, $originalTile);
         fclose($file);
 
+        $dbInsertArray = [
+            "title" => $originalTile,
+            "viewname" => $viewname,
+            "description" => $description,
+            "author" => $author,
+            "created_at" => \Carbon\Carbon::now(),
+            "updated_at" => \Carbon\Carbon::now()
+        ];
+        // Add optional image
         if ($image && $image_alt) {
-            DB::table('blog_posts')->insert([
-                "title" => $originalTile,
-                "viewname" => $viewname,
-                "description" => $description,
-                "author" => $author,
-                "img" => $image ,
-                "img_alt" => $image_alt,
-                "created_at" => \Carbon\Carbon::now(),
-                "updated_at" => \Carbon\Carbon::now()
-            ]);
-        } else {
-            DB::table('blog_posts')->insert([
-                "title" => $originalTile,
-                "viewname" => $viewname,
-                "description" => $description,
-                "author" => $author,
-                "created_at" => \Carbon\Carbon::now(),
-                "updated_at" => \Carbon\Carbon::now()
-            ]);
+            $dbInsertImage = [
+                "img" => $post["img"] ,
+                "img_alt" => $post["img_alt"]
+            ];
+            array_push($dbInsertArray, $dbInsertImage);
         }
+
+        // Insert to database
+        DB::table('blog_posts')->insert($dbInsertArray);
+
+        // Append to index.json file for future use
+        $indexJsonFile = file_get_contents(resource_path('views/blog/index.json'));
+        $indexDecode = json_decode($indexJsonFile, true);
+        array_push($indexDecode, $dbInsertArray);
+        $indexEncode = json_encode($indexDecode, JSON_PRETTY_PRINT);
+        file_put_contents(resource_path('views/blog/index.json'), $indexEncode);
+
             
     }
 }
