@@ -39,33 +39,35 @@ Route::get('/api/dashboard', 'ApiController@index');
 
 
 // Service Routes
+Route::group(['prefix' => '/third-party'], function () {
+    Route::get('/accounting', 'ThirdPartyController@accounting');
+    Route::get('/bpm', 'ThirdPartyController@index');
+    Route::get('/business', 'ThirdPartyController@index');
+    Route::get('/collaboration', 'ThirdPartyController@index');
+    Route::get('/crm', 'ThirdPartyController@index');
+    Route::get('/doc-manage', 'ThirdPartyController@index');
+    Route::get('/email', 'ThirdPartyController@index');
+    Route::get('/erp', 'ThirdPartyController@index');
+    Route::get('/human-resources', 'ThirdPartyController@index');
+    Route::get('/marketing', 'ThirdPartyController@index');
+    Route::get('/pim', 'ThirdPartyController@index');
+    Route::get('/project-manage', 'ThirdPartyController@index');
+});
 Route::get('/bioprinting', 'BioprintingController@index');
-Route::get('/third-party/accounting', 'ThirdPartyController@accounting');
-Route::get('/third-party/bpm', 'ThirdPartyController@index');
-Route::get('/third-party/business', 'ThirdPartyController@index');
 Route::get('/communication', 'CommunicationController@index');
 Route::get('/communication/messages', 'CommunicationController@messages');
 Route::get('/communication/video-chat', 'CommunicationController@video_chat');
-Route::get('/third-party/collaboration', 'ThirdPartyController@index');
-Route::get('/third-party/crm', 'ThirdPartyController@index');
 Route::get('/diagnosis', 'DiagnosisController@index');
-Route::get('/third-party/doc-manage', 'ThirdPartyController@index');
 Route::get('/edu', 'EduController@index');
 Route::get('/emergency', 'EmergencyController@index');
 Route::get('/first-aid', 'FirstAidController@index');
-Route::get('/third-party/email', 'ThirdPartyController@index');
-Route::get('/third-party/erp', 'ThirdPartyController@index');
 Route::get('/genetics', 'GeneticsController@index');
 Route::get('/health-policies', 'HealthcareController@index');
 Route::get('/health-services', 'HealthcareController@index');
-Route::get('/third-party/human-resources', 'ThirdPartyController@index');
-
 Route::get('/med-gis', 'MedGisController@index');
 Route::get('/med-gis/maps', 'MedGisController@maps');
-
 Route::get('/reports', 'MedReportsController@index');
 Route::get('/med-lab', 'MedLabController@index');
-Route::get('/third-party/marketing', 'ThirdPartyController@index');
 Route::get('/patients', 'PatientsController@index');
 Route::get('/patient-med-profile', 'PatientHealthProfileController@index');
 Route::get('/patient-monitor', 'PatientMonitorController@index');
@@ -73,8 +75,6 @@ Route::get('/pharmacy-lab', 'PharmaLabController@index');
 Route::get('/physical-treats', 'PhysicalTreatsController@index');
 Route::get('/prescriptions', 'PrescriptionsController@index');
 Route::get('/postop', 'PostopController@index');
-Route::get('/third-party/pim', 'ThirdPartyController@index');
-Route::get('/third-party/project-manage', 'ThirdPartyController@index');
 Route::get('/qa', 'QAController@index');
 Route::get('/radio-lab', 'RadioLabController@index');
 Route::get('/research-platform', 'ResearchController@index');
@@ -82,13 +82,15 @@ Route::get('/robotics', 'RoboticsController@index');
 Route::get('/symptoms', 'SymptomsController@index');
 
 // Surgery
-Route::get('/surgery', 'SurgeryController@index');
-Route::get('/surgery/surgery-design', 'SurgeryController@surgery_design');
-Route::get('/surgery/custom-surgery', 'SurgeryController@custom_surgery');
-Route::get('/surgery/surgery-sample-tasks', 'SurgeryController@surgery_sample_tasks');
-Route::get('/surgery/samples/robotic_arm_test', 'SurgeryController@robotic_arm_test');
-Route::get('/surgery/samples/simple_incision_01', 'SurgeryController@simple_incision_1');
-Route::get('/surgery/samples/stiches_test_1', 'SurgeryController@stiches_test_1');
+Route::group(['prefix' => '/surgery'], function () {
+    Route::get('/', 'SurgeryController@index');
+    Route::get('/surgery-design', 'SurgeryController@surgery_design');
+    Route::get('/custom-surgery', 'SurgeryController@custom_surgery');
+    Route::get('/surgery-sample-tasks', 'SurgeryController@surgery_sample_tasks');
+    Route::get('/samples/robotic_arm_test', 'SurgeryController@robotic_arm_test');
+    Route::get('/samples/simple_incision_01', 'SurgeryController@simple_incision_1');
+    Route::get('/samples/stiches_test_1', 'SurgeryController@stiches_test_1');    
+});
 
 Route::get('/surgery-ops', 'SurgeryOpsController@index');
 Route::get('/tissue-sample', 'TissueController@index');
