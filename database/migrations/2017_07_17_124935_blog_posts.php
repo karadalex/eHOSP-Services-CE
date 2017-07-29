@@ -18,6 +18,9 @@ class BlogPosts extends Migration
             $table->string('title');
             $table->string('viewname');
             $table->mediumText('description');
+            $table->string('author');
+            $table->string('img')->nullable();
+            $table->string('img_alt')->nullable();
             $table->timestamps();
         });
     }
