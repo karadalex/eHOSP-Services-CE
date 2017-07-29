@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(eHOSP\User::class, function (Faker\Generator $faker) {
+$factory->define(eHOSP\Models\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
