@@ -17,6 +17,8 @@ class Kernel extends ConsoleKernel
         Commands\NewBlogPost::class,
         Commands\DeleteBlogPost::class,
         Commands\PublishBlogPosts::class,
+        Commands\DbLoadDump::class,
+        Commands\DbStoreDump::class,
     ];
 
     /**
