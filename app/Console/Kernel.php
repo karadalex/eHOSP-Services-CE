@@ -16,6 +16,7 @@ class Kernel extends ConsoleKernel
         Commands\WelcomeEmail::class,
         Commands\NewBlogPost::class,
         Commands\DeleteBlogPost::class,
+        Commands\PublishBlogPosts::class,
     ];
 
     /**
