@@ -20,7 +20,7 @@
 <meta property="og:url" content="{{url('/')}}" />
 <meta property="og:description" content="eHOSP is a hospital that runs in the Cloud and executes physical tasks with Robotics. It aims to be a complete smart platform to improve healthcare and well-being with new technologies such as wearables, IoT, drones, Artificial Intelligence and of course Robotics" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content=@if (isset($meta_image)) "{{ $meta_image }}" @else "/share.jpg" @endif />
+<meta property="og:image" content=@if (isset($meta_image)) "{{ $meta_image }}" @else "/img/share.jpg" @endif />
 <meta property="og:site_name" content="eHOSP" />
 
 <meta name="twitter:card" content="summary" />
@@ -28,7 +28,7 @@
 <meta name="twitter:title" content=@if (isset($title)) "{{ $title }}" @else "eHOSP" @endif />
 <meta name="twitter:description" content="eHOSP is a hospital that runs in the Cloud and executes physical tasks with Robotics. It aims to be a complete smart platform to improve healthcare and well-being with new technologies such as wearables, IoT, drones, Artificial Intelligence and of course Robotics" />
 <meta name="twitter:creator" content="@eHOSP_Cloud" />
-<meta name="twitter:image" content="/share.jpg" />
+<meta name="twitter:image" content="/img/share.jpg" />
 
 
 <link rel="manifest" href="/manifest.json">
