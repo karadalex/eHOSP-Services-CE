@@ -10,11 +10,26 @@
     @endif
 </title>
 
-<meta name="description" content="eHOSP - Hospital Platform in the Cloud">
+<meta name="description" content="eHOSP is a hospital that runs in the Cloud and executes physical tasks with Robotics. It aims to be a complete smart platform to improve healthcare and well-being with new technologies such as wearables, IoT, drones, Artificial Intelligence and of course Robotics">
 <meta name="keywords" content="eHOSP, Cloud, Hospital,">
 <meta name="author" content="Alex Karadimos">
 <meta name="theme-color" content="#2bb673">
 <meta name="msapplication-TileColor" content="#2bb673">
+
+<meta property="og:title" content=@if (isset($title)) "{{ $title }}" @else "eHOSP" @endif />
+<meta property="og:url" content="{{url('/')}}" />
+<meta property="og:description" content="eHOSP is a hospital that runs in the Cloud and executes physical tasks with Robotics. It aims to be a complete smart platform to improve healthcare and well-being with new technologies such as wearables, IoT, drones, Artificial Intelligence and of course Robotics" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content=@if (isset($meta_image)) "{{ $meta_image }}" @else "/share.jpg" @endif />
+<meta property="og:site_name" content="eHOSP" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eHOSP_Cloud" />
+<meta name="twitter:title" content=@if (isset($title)) "{{ $title }}" @else "eHOSP" @endif />
+<meta name="twitter:description" content="eHOSP is a hospital that runs in the Cloud and executes physical tasks with Robotics. It aims to be a complete smart platform to improve healthcare and well-being with new technologies such as wearables, IoT, drones, Artificial Intelligence and of course Robotics" />
+<meta name="twitter:creator" content="@eHOSP_Cloud" />
+<meta name="twitter:image" content="/share.jpg" />
+
 
 <link rel="manifest" href="/manifest.json">
 
