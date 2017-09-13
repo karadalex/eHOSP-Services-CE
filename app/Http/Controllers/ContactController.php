@@ -17,6 +17,7 @@ class ContactController extends Controller
     public function contact_send_email()
     {
         \Mail::to('ehosp.cloud@gmail.com')->send(new Contact);
-        return redirect()->action('StaticPagesController@index');
+        return redirect()->action('StaticPagesController@index')
+                        ->with('status', 'Your message was successfully sent!');
     }
 }
