@@ -16,8 +16,9 @@ class GenericEmail extends Mailable
      *
      * @return void
      */
-    public function __construct($msgTitle, $msgBody, $msgGoodbye)
+    public function __construct($msgSubject, $msgTitle, $msgBody, $msgGoodbye)
     {
+        $this->msgSubject = $msgSubject;
         $this->msgTitle = $msgTitle;
         $this->msgBody = $msgBody;
         $this->msgGoodbye = $msgGoodbye;
@@ -31,6 +32,7 @@ class GenericEmail extends Mailable
     public function build()
     {
         return $this->markdown('emails.generic-email')
+                    ->subject($this->msgSubject)
                     ->with([
                         'msgTitle' => $this->msgTitle,
                         'msgBody' => $this->msgBody,
