@@ -2,6 +2,7 @@
 node_modules/
 public/components/
 vendor/
+!resources/views/vendor/
 
 # Public files, compiled from resources
 public/storage
