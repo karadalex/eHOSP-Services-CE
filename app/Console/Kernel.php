@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\WelcomeEmail::class,
+        Commands\GenericEmail::class,
         Commands\NewBlogPost::class,
         Commands\DeleteBlogPost::class,
         Commands\PublishBlogPosts::class,
