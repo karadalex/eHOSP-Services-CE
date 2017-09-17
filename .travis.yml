@@ -1,8 +1,22 @@
+sudo: required
+dist: trusty
+
 language: php
 php:
   - 7.1.9
+
+addons:
+   chrome: stable
+
+install:
+   - mv .env.testing .env
+   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
+   - php artisan key:generate
+
+before_script:
+   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+   - php artisan serve &
+
 script:
-  - composer install
-  - mv .env.example .env
-  - php artisan key:generate
-  - phpunit
+   - php artisan dusk
+   - phpunit
