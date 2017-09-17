@@ -1,6 +1,9 @@
-# eHOSP (eHospital):
-[![Build Status](https://travis-ci.com/karadalex/eHOSP_Server_MainSource.svg?token=FumMyzspBbeAxFNpcgVB&branch=master)](https://travis-ci.com/karadalex/eHOSP_Server_MainSource)
-##### by Alex Karadimos
+# eHOSP:
+<p align="center"> 
+  <a href="http://ehosp.azurewebsites.net" target="_blank">
+    <img src="public/img/256x256.png" align="center"/>
+  </a> 
+</p>
 
 Introduction:
 =============
