@@ -9,7 +9,7 @@ addons:
    chrome: stable
 
 install:
-   - mv .env.testing .env
+   - mv .env.example .env
    - travis_retry composer install --no-interaction --prefer-dist --no-suggest
    - php artisan key:generate
 
