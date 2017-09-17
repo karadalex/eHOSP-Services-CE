@@ -5,6 +5,8 @@
   </a> 
 </p>
 
+[![Build Status](https://travis-ci.org/ehosp/eHOSP-Services-CE.svg?branch=master)](https://travis-ci.org/ehosp/eHOSP-Services-CE)
+
 Introduction:
 =============
 Welcome to eHOSP, the hospital on the cloud, a platform for e-health and e-medicine!
