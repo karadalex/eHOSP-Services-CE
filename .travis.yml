@@ -3,4 +3,6 @@ php:
   - 7.1.9
 script:
   - composer install
+  - mv .env.example .env
+  - php artisan key:generate
   - phpunit
