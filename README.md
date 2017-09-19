@@ -13,6 +13,13 @@ Welcome to eHOSP, the hospital on the cloud, a platform for e-health and e-medic
 
 To run thisapplication on aserver simply follow the steps from one of the following categories.
 
+Preview
+=======
+
+<p align="center"> 
+  <img src="preview.png" align="center"/> 
+</p>
+
 
 Server Configuration
 ======================
