@@ -10,6 +10,8 @@ public/css/
 public/js/
 public/sw.js
 
+build/
+
 # Homestead
 Homestead.yaml
 Homestead.json

@@ -1,4 +1,6 @@
 const elixir = require('laravel-elixir');
+const gulp = require('gulp');
+const zip = require('gulp-zip');
 
 require('laravel-elixir-vue');
 
@@ -40,3 +42,28 @@ elixir(mix => {
        files: ['./*', '!public/']
     });
 });
+
+
+/*
+ |--------------------------------------------------------------------------
+ | Custom Gulp Tasks
+ |--------------------------------------------------------------------------
+ |
+ */
+
+gulp.task('zip', () =>
+    gulp.src([
+        './**', 
+        '!node_modules/**', '!node_modules', 
+        '!./.*',
+        '!tests/**', '!tests',
+        '!docker/**', '!docker',
+        '!build/**', '!build',
+        '!*.yml', '!*.js*', '!*.md', '!*.png', '!*file', '!*ph*',
+        '.env'
+    ])
+        .pipe(zip(`build-${Date.now()}.zip`))
+        .pipe(gulp.dest('build'))
+);
+
+gulp.task('production', ['zip']);
