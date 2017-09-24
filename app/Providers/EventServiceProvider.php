@@ -13,7 +13,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'eHOSP\Events\SomeEvent' => [
+        'eHOSP\Events\Event' => [
             'eHOSP\Listeners\EventListener',
         ],
     ];

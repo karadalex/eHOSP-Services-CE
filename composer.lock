@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b71cce3651f219fb2a58a30202fa22d",
-    "content-hash": "882c2f33a5767e0e785ee3fda6b010bc",
+    "hash": "6def16a96f3b8106a992325299419546",
+    "content-hash": "e5c2003144c2b65d4886a79c8e1f7831",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -366,6 +366,63 @@
             "time": "2017-05-14 14:47:48"
         },
         {
+            "name": "fideloper/proxy",
+            "version": "3.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fideloper/TrustedProxy.git",
+                "reference": "9cdf6f118af58d89764249bbcc7bb260c132924f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/9cdf6f118af58d89764249bbcc7bb260c132924f",
+                "reference": "9cdf6f118af58d89764249bbcc7bb260c132924f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/http": "~5.0",
+                "mockery/mockery": "~0.9.3",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Fideloper\\Proxy\\TrustedProxyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fideloper\\Proxy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Fidao",
+                    "email": "fideloper@gmail.com"
+                }
+            ],
+            "description": "Set trusted proxies for Laravel",
+            "keywords": [
+                "load balancing",
+                "proxy",
+                "trusted proxy"
+            ],
+            "time": "2017-06-15 17:19:42"
+        },
+        {
             "name": "firebase/php-jwt",
             "version": "v4.0.0",
             "source": {
@@ -678,16 +735,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.4",
+            "version": "v5.5.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d3e0493bead126cf7fb9a005c64e6b58a9190e51"
+                "reference": "bfbe20d32ee9f98c89df852847827407a5127be4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d3e0493bead126cf7fb9a005c64e6b58a9190e51",
-                "reference": "d3e0493bead126cf7fb9a005c64e6b58a9190e51",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/bfbe20d32ee9f98c89df852847827407a5127be4",
+                "reference": "bfbe20d32ee9f98c89df852847827407a5127be4",
                 "shasum": ""
             },
             "require": {
@@ -806,7 +863,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-09-13 13:36:29"
+            "time": "2017-09-24 19:09:38"
         },
         {
             "name": "laravel/passport",
@@ -1843,16 +1900,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e"
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/45cffe822057a09e05f7bd09ec5fb88eeecd2334",
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334",
                 "shasum": ""
             },
             "require": {
@@ -1921,7 +1978,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2017-08-04 13:39:04"
+            "time": "2017-09-22 20:46:04"
         },
         {
             "name": "simplesoftwareio/simple-qrcode",
@@ -3043,28 +3100,37 @@
         },
         {
             "name": "facebook/webdriver",
-            "version": "1.1.1",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/php-webdriver.git",
-                "reference": "1c98108ba3eb435b681655764de11502a0653705"
+                "reference": "eadb0b7a7c3e6578185197fd40158b08c3164c83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/1c98108ba3eb435b681655764de11502a0653705",
-                "reference": "1c98108ba3eb435b681655764de11502a0653705",
+                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/eadb0b7a7c3e6578185197fd40158b08c3164c83",
+                "reference": "eadb0b7a7c3e6578185197fd40158b08c3164c83",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.19"
+                "ext-curl": "*",
+                "ext-zip": "*",
+                "php": "^5.5 || ~7.0",
+                "symfony/process": "^2.8 || ^3.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.6.*"
-            },
-            "suggest": {
-                "phpdocumentor/phpdocumentor": "2.*"
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "php-mock/php-mock-phpunit": "^1.1",
+                "phpunit/phpunit": "4.6.* || ~5.0",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "^2.6"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-community": "1.5-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Facebook\\WebDriver\\": "lib/"
@@ -3074,7 +3140,7 @@
             "license": [
                 "Apache-2.0"
             ],
-            "description": "A PHP client for WebDriver",
+            "description": "A PHP client for Selenium WebDriver",
             "homepage": "https://github.com/facebook/php-webdriver",
             "keywords": [
                 "facebook",
@@ -3082,7 +3148,7 @@
                 "selenium",
                 "webdriver"
             ],
-            "time": "2015-12-31 15:58:49"
+            "time": "2017-04-28 14:54:49"
         },
         {
             "name": "filp/whoops",
@@ -3971,16 +4037,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.3.0",
+            "version": "6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb"
+                "reference": "c0ff817b36a827e64bf5f57bc72278150cf30a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9501bab711403a1ab5b8378a8adb4ec3db3debdb",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c0ff817b36a827e64bf5f57bc72278150cf30a77",
+                "reference": "c0ff817b36a827e64bf5f57bc72278150cf30a77",
                 "shasum": ""
             },
             "require": {
@@ -4051,7 +4117,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-08-04 05:20:39"
+            "time": "2017-09-24 07:25:54"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4824,7 +4890,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.4"
+        "php": ">=7.0.0"
     },
     "platform-dev": []
 }
