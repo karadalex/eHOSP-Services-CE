@@ -62,7 +62,13 @@ class NewBlogPost extends Command
     <div class=\"row\">
         <div class=\"col-md-10 col-md-offset-1\">
             <h1> %s </h1>
-            
+            <?php
+            \$date = new DateTime(\$post->created_at);
+            ?>
+            <i style=\"font-size: 12px\" class=\"pull-right\">{{date_format(\$date, 'd-m-Y')}}</i>
+            <br>
+            <i style=\"font-size: 14px\" class=\"pull-right\">{{\$post->author}}</i>
+            <br><br>
         </div>
     </div>
 </div>
@@ -77,17 +83,11 @@ class NewBlogPost extends Command
             "viewname" => $viewname,
             "description" => $description,
             "author" => $author,
+            "img" => isset($image)? $image : "" ,
+            "img_alt" => isset($image_alt)? $image_alt : "",
             "created_at" => \Carbon\Carbon::now(),
             "updated_at" => \Carbon\Carbon::now()
         ];
-        // Add optional image
-        if ($image && $image_alt) {
-            $dbInsertImage = [
-                "img" => $post["img"] ,
-                "img_alt" => $post["img_alt"]
-            ];
-            array_push($dbInsertArray, $dbInsertImage);
-        }
 
         // Insert to database
         DB::table('blog_posts')->insert($dbInsertArray);
