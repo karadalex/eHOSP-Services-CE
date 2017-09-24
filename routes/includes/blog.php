@@ -18,7 +18,9 @@ Route::group(['prefix' => '/blog'], function () {
             $routeTitle = kebab_case(title_case($post->title));
             Route::get($routeTitle, function () use($post) {
                 try {
-                    return view('blog.'.$post->viewname);
+                    return view('blog.'.$post->viewname, [
+                        "post" => $post
+                    ]);
                 }
                 catch(Exception $e) {
                     abort('404');
