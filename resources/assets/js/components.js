@@ -38,3 +38,10 @@ Vue.component(
 const app = new Vue({
     el: 'body'
 });
+
+
+import BotUI from 'botui'
+
+const botui = BotUI('hospbot-ui', {
+    vue: Vue // pass the dependency.
+})
