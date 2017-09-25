@@ -107,3 +107,8 @@ Route::post('/avatar', $closures['avatar_post']);
 
 // Blog posts
 include 'includes/blog.php';
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

@@ -4,7 +4,7 @@ namespace eHOSP\Models;
 
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use \TCG\Voyager\Models\User as Authenticatable;
 
 class User extends Authenticatable
 {
