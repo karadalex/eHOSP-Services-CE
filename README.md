@@ -6,6 +6,7 @@
 </p>
 
 [![Build Status](https://travis-ci.org/ehosp/eHOSP-Services-CE.svg?branch=master)](https://travis-ci.org/ehosp/eHOSP-Services-CE)
+[![Coverage Status](https://coveralls.io/repos/github/ehosp/eHOSP-Services-CE/badge.svg?branch=master)](https://coveralls.io/github/ehosp/eHOSP-Services-CE?branch=master)
 
 Introduction:
 =============
