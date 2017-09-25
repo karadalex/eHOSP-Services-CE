@@ -6,7 +6,9 @@
 </p>
 
 [![Build Status](https://travis-ci.org/ehosp/eHOSP-Services-CE.svg?branch=master)](https://travis-ci.org/ehosp/eHOSP-Services-CE)
-[![Coverage Status](https://coveralls.io/repos/github/ehosp/eHOSP-Services-CE/badge.svg?branch=master)](https://coveralls.io/github/ehosp/eHOSP-Services-CE?branch=master)
+[![Code Climate](https://codeclimate.com/github/ehosp/eHOSP-Services-CE/badges/gpa.svg)](https://codeclimate.com/github/ehosp/eHOSP-Services-CE)
+[![Test Coverage](https://codeclimate.com/github/ehosp/eHOSP-Services-CE/badges/coverage.svg)](https://codeclimate.com/github/ehosp/eHOSP-Services-CE/coverage)
+[![Issue Count](https://codeclimate.com/github/ehosp/eHOSP-Services-CE/badges/issue_count.svg)](https://codeclimate.com/github/ehosp/eHOSP-Services-CE)
 
 Introduction:
 =============
