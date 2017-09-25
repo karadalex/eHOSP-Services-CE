@@ -8,6 +8,9 @@ php:
 addons:
    chrome: stable
 
+services:
+  - mysql
+
 install:
    - mv .env.example .env
    - travis_retry composer install --no-interaction --prefer-dist --no-suggest
