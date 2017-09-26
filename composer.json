@@ -17,10 +17,12 @@
         "tcg/voyager": "^1.0"
     },
     "require-dev": {
+        "codeclimate/php-test-reporter": "^0.4.4",
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "laravel/dusk": "^2.0",
         "mockery/mockery": "0.9.*",
+        "phpunit/php-code-coverage": "^5.2",
         "phpunit/phpunit": "~6.0",
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "3.1.*"
