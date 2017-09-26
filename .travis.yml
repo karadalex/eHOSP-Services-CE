@@ -29,7 +29,7 @@ before_script:
 
 script:
    - php artisan dusk
-   - phpunit --coverage-clover=clover.xml
+   - phpunit --coverage-clover build/logs/clover.xml
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
