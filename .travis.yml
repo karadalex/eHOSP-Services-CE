@@ -6,8 +6,9 @@ php:
 	- 7.1.9
 
 cache:
-	- yarn
-	- composer
+	yarn: true
+	directories:
+		- $HOME/.composer/cache
 
 addons:
 	chrome: stable
