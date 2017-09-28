@@ -18,6 +18,7 @@ before_install:
 install:
    - mv .env.example .env
    - travis_retry composer install --no-interaction --prefer-dist --no-suggest
+   - yarn install
    - php artisan key:generate
    - php artisan voyager:install
 
@@ -29,6 +30,7 @@ before_script:
    - php artisan serve &
 
 script:
+   - npm run prod
    - php artisan dusk
    - phpunit --coverage-clover build/logs/clover.xml
 
