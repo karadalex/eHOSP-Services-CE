@@ -13,6 +13,7 @@ services:
 
 before_install:
   - mysql -e 'CREATE DATABASE `ehosp-services`;'
+  - cd src
 
 install:
    - mv .env.example .env
