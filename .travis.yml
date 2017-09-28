@@ -3,38 +3,41 @@ dist: trusty
 
 language: php
 php:
-	- 7.1.9
+  - 7.1.9
 
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - $HOME/.composer/cache
 
 addons:
-	chrome: stable
+  chrome: stable
 
 services:
-	- mysql
+  - mysql
 
 before_install:
-	- mysql -e 'CREATE DATABASE `ehosp-services`;'
-	- cd src
+  - mysql -e 'CREATE DATABASE `ehosp-services`;'
+  - cd src
 
 install:
-	- mv .env.example .env
-	- travis_retry composer install --no-interaction --prefer-dist --no-suggest
-	- yarn install
-	- php artisan key:generate
-	- php artisan voyager:install
+  - mv .env.example .env
+  - travis_retry composer install --no-interaction --prefer-dist --no-suggest
+  - yarn install
+  - php artisan key:generate
+  - php artisan voyager:install
 
 before_script:
-	- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-	- chmod +x ./cc-test-reporter
-	- ./cc-test-reporter before-build
-	- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
-	- php artisan serve &
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - php artisan serve &
 
 script:
-	- npm run prod
-	- php artisan dusk
-	- phpunit --coverage-clover build/logs/clover.xml
+  - npm run prod
+  - php artisan dusk
+  - phpunit --coverage-clover build/logs/clover.xml
 
 after_script:
-	- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
