@@ -1,26 +1,26 @@
 # Vendor modules (NPM, Bower etc.)
-node_modules/
-public/components/
-vendor/
-!resources/views/vendor/
+src/node_modules/
+src/public/components/
+src/vendor/
+!src/resources/views/vendor/
 
 # Public files, compiled from resources
-public/storage
-public/css/
-public/js/
-public/sw.js
+src/public/storage
+src/public/css/
+src/public/js/
+src/public/sw.js
 
 build/
 
 # Homestead
-Homestead.yaml
-Homestead.json
+src/Homestead.yaml
+src/Homestead.json
 
 # Ignore private files
-.env
-.env.staging
-storage/oauth-private.key
-storage/oauth-public.key
+src/.env
+src/.env.staging
+src/storage/oauth-private.key
+src/storage/oauth-public.key
 
 # Local Composer
 composer.phar
