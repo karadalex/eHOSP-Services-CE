@@ -13,18 +13,15 @@
         "axios": "^0.16.2",
         "bootstrap-sass": "^3.3.7",
         "cross-env": "^5.0.1",
-        "jquery": "^3.1.1",
-        "laravel-mix": "^1.0",
-        "lodash": "^4.17.4",
-        "vue": "^2.1.10",
         "gulp": "^3.9.1",
         "gulp-zip": "^4.0.0",
         "jquery": "^3.1.0",
+        "laravel-mix": "^1.0",
         "lodash": "^4.14.0",
-        "vue-resource": "^0.9.3",
-        "laravel-elixir": "^6.0.0-9",
-        "laravel-elixir-browsersync-official": "^1.0.0",
-        "laravel-elixir-vue": "^0.1.4",
-        "laravel-elixir-webpack-official": "^1.0.2"
+        "vue": "^2.1.10",
+        "vue-resource": "^0.9.3"
+    },
+    "dependencies": {
+        "botui": "^0.3.4"
     }
 }
