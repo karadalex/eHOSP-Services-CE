@@ -11,25 +11,23 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('app.scss')
-    .sass('dashboard.scss')
-    .sass('tables.scss')
-    .sass('modal.scss')
-    .sass('surgDesign-interface.scss')
-    .sass('forms.scss');
+mix.sass('resources/assets/sass/app.scss', 'public/css')
+    .sass('resources/assets/sass/dashboard.scss', 'public/css')
+    .sass('resources/assets/sass/tables.scss', 'public/css')
+    .sass('resources/assets/sass/modal.scss', 'public/css')
+    .sass('resources/assets/sass/surgDesign-interface.scss', 'public/css')
+    .sass('resources/assets/sass/forms.scss', 'public/css');
 
-mix.scripts('main/*.js', 'public/js/app.js')
-    .scripts('lib/dashboard.js')
-    .scripts('lib/video-chat.js')
-    .scripts('lib/maps.js')
-    .scripts('lib/nxt-events.js')
-    .scripts('lib/nxt-ui.js')
-    .scripts('lib/diagnosis-form.js')
-    .scripts('lib/patient-med-profile.js')
-    .webpack('components.js')
-    .webpack('sw.js', 'public/sw.js');
+mix.js('resources/assets/js/lib/dashboard.js', 'public/js')
+    .js('resources/assets/js/lib/video-chat.js', 'public/js')
+    .js('resources/assets/js/lib/maps.js', 'public/js')
+    .js('resources/assets/js/lib/nxt-events.js', 'public/js')
+    .js('resources/assets/js/lib/nxt-ui.js', 'public/js')
+    .js('resources/assets/js/lib/diagnosis-form.js', 'public/js')
+    .js('resources/assets/js/lib/patient-med-profile.js', 'public/js')
+    .js('resources/assets/js/components.js', 'public/js')
+    .js('resources/assets/js/sw.js', 'public/sw.js')
+    .scripts([
+        'resources/assets/js/main/jquery-scripts.js'
+    ], 'public/js/app.js');
 
-mix.browserSync({
-    proxy: 'localhost:8000',
-    files: ['./*', '!public/']
-});

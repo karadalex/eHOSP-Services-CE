@@ -1,0 +1,18 @@
+{
+    "/js/components.js": "/js/components.js",
+    "/js/dashboard.js": "/js/dashboard.js",
+    "/css/app.css": "/css/app.css",
+    "/css/dashboard.css": "/css/dashboard.css",
+    "/css/tables.css": "/css/tables.css",
+    "/css/modal.css": "/css/modal.css",
+    "/css/surgDesign-interface.css": "/css/surgDesign-interface.css",
+    "/css/forms.css": "/css/forms.css",
+    "/sw.js": "/sw.js",
+    "/js/video-chat.js": "/js/video-chat.js",
+    "/js/patient-med-profile.js": "/js/patient-med-profile.js",
+    "/js/nxt-ui.js": "/js/nxt-ui.js",
+    "/js/nxt-events.js": "/js/nxt-events.js",
+    "/js/maps.js": "/js/maps.js",
+    "/js/diagnosis-form.js": "/js/diagnosis-form.js",
+    "/js/app.js": "/js/app.js"
+}
