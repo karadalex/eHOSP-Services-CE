@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.menu.toc-menu, .markdown-body  {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body {
+  color: #34495e;
+  font-size: 15px;
+  line-height: 1.6;
+  word-spacing: .05rem;
+  word-wrap: break-word;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.markdown-body code:not([class]) {
+  color: #27a5a5;
+}
+
+
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+pre .hljs-comment, pre .hljs-title {
+  color: #8e908c;
+}
+
+pre .hljs-variable, pre .hljs-attribute, pre .hljs-tag, pre .hljs-regexp, pre .ruby .hljs-constant,
+pre .xml .hljs-tag .hljs-title, pre .xml .hljs-pi, pre .xml .hljs-doctype, pre .html .hljs-doctype, pre .css .hljs-id,
+pre .css .hljs-class, pre .css .hljs-pseudo {
+  color: #147cdc;
+}
+
+pre .hljs-number, pre .hljs-preprocessor, pre .hljs-built_in,
+pre .hljs-literal, pre .hljs-params, pre .hljs-constant {
+  color: #f5871f;
+}
+
+ pre .class, pre .ruby .class .hljs-title, pre .css .rules .hljs-attribute {
+  color: #eab700;
+}
+
+pre .hljs-string, pre .hljs-value, pre .hljs-inheritance, pre .hljs-header,
+pre .ruby .hljs-symbol, pre .xml .hljs-cdata {
+  color: #718c00;
+}
+
+pre .css .hljs-hexcolor {
+  color: #3e999f;
+}
+
+pre .hljs-function, pre .python .hljs-decorator, pre .python .hljs-title,
+pre .ruby .function .hljs-title, pre .ruby .title .hljs-keyword, pre .perl .hljs-sub,
+pre .javascript .hljs-title, pre .coffeescript .hljs-title {
+  color: #4271ae;
+}
+
+pre .hljs-keyword, pre .javascript .hljs-function {
+  color: #8959a8;
+}
+
+.markdown-body .pl-s {
+  color: #27a5a5;
+}
+
+.markdown-body pre {
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+}
+
+.markdown-body pre code {
+  display: block;
+  color: #4d4d4c;
+  line-height: 1.5;
+  font-family: Menlo, Monaco, Consolas, monospace;
+}

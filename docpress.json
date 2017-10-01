@@ -1,0 +1,16 @@
+{
+  "dist": "docs",
+  "docs": "md-docs",
+
+  "css": [
+    "style.css"
+  ],
+  "github": "ehosp/eHOSP-Services-CE",
+  "googleAnalytics": {
+    "id": "",
+    "domain": ""
+  },
+  "scripts": [
+    
+  ]
+}
