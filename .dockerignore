@@ -28,3 +28,8 @@ TODO
 docker/
 docker-compose.yml
 Dockerfile
+
+# Ignore Documentation
+docs
+md-docs
+docpress.json
