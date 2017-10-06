@@ -21,6 +21,31 @@
         ]
       },
       {
+        "title": "Project Structure",
+        "source": "md-docs/files.md",
+        "url": "files.html",
+        "slug": "files",
+        "headings": [
+          {
+            "title": "Project File Structure",
+            "depth": 2,
+            "id": "project-file-structure",
+            "headings": [
+              {
+                "title": "Directories",
+                "depth": 3,
+                "id": "directories"
+              },
+              {
+                "title": "Files",
+                "depth": 3,
+                "id": "files"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "title": "Contribute",
         "source": "md-docs/contribute.md",
         "url": "contribute.html",
@@ -48,6 +73,31 @@
         }
       ]
     },
+    "files.html": {
+      "source": "md-docs/files.md",
+      "title": "Project Structure - eHOSP Services",
+      "pageTitle": "Project Structure",
+      "slug": "files",
+      "headings": [
+        {
+          "title": "Project File Structure",
+          "depth": 2,
+          "id": "project-file-structure",
+          "headings": [
+            {
+              "title": "Directories",
+              "depth": 3,
+              "id": "directories"
+            },
+            {
+              "title": "Files",
+              "depth": 3,
+              "id": "files"
+            }
+          ]
+        }
+      ]
+    },
     "contribute.html": {
       "source": "md-docs/contribute.md",
       "title": "Contribute - eHOSP Services",
@@ -58,6 +108,7 @@
   "sources": {
     "md-docs/overview.md": "index.html",
     "md-docs/install.md": "install.html",
+    "md-docs/files.md": "files.html",
     "md-docs/contribute.md": "contribute.html",
     "md-docs/style.css": "style.css"
   }
