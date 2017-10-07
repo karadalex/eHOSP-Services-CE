@@ -1,5 +1,5 @@
-
-## Project File Structure
+Project File Structure
+======================
 
 ### Directories
 

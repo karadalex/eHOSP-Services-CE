@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../style.css?t=6daf1d3b">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>Installation - eHOSP Services</title>
+    <meta name="viewport" content="width=device-width">
+    <script>if (true || window.location.hostname.indexOf("") === window.location.hostname.length - 0) {
+        (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create',"",'auto')
+      }
+    </script>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">eHOSP Services</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Getting started</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-getting-startedinstall" href="../getting-started/install.html">Installation</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-3"><a class="hlink link-manual" href="#manual">Manual</a>
+                    </li>
+                    <li class="heading-item -depth-3"><a class="hlink link-docker-and-docker-compose" href="#docker-and-docker-compose">Docker &amp; Docker-Compose</a>
+                    </li>
+                    <li class="heading-item -depth-3"><a class="hlink link-digitalocean-lemp" href="#digitalocean-lemp">DigitalOcean LEMP</a>
+                    </li>
+                    <li class="heading-item -depth-3"><a class="hlink link-digitalocean-docker" href="#digitalocean-docker">DigitalOcean Docker</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedconfig" href="../getting-started/config.html">Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedfiles" href="../getting-started/files.html">Project Structure</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-startedbuild" href="../getting-started/build.html">Building</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-getting-starteddeploy" href="../getting-started/deploy.html">Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-architectureoverview" href="../architecture/overview.html">Overview</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Packages</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-packages" href="../packages/index.html">Index</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">API Docs</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2 -parent"><span class="title">v1.0</span>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title  link-apiv1bot" href="../api/v1/bot.html">Bot</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-reference" href="../reference/index.html">Index</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Support</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-supportcontribute" href="../support/contribute.html">Contribute</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-supportdonate" href="../support/donate.html">Donate</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-getting-startedinstall">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/ehosp/eHOSP-Services-CE" data-title="ehosp/eHOSP-Services-CE">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="installation">Installation</h1>
+<h3 id="manual">Manual</h3>
+<h3 id="docker-and-docker-compose">Docker &amp; Docker-Compose</h3>
+<hr>
+<h3 id="digitalocean-lemp">DigitalOcean LEMP</h3>
+<p>Follow these steps if the development team is big and across different timezones.</p>
+<p>Requirements:</p>
+<ul>
+<li>LEMP environment</li>
+<li>PHP &gt;=5.6.4</li>
+</ul>
+<pre><code>apt-get update
+apt-get install git node
+composer global require &quot;laravel/installer&quot;
+npm install
+composer install
+gulp --production
+</code></pre>
+<h3 id="digitalocean-docker">DigitalOcean Docker</h3>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../index.html"><span class="title">eHOSP Services</span></a></div>
+          <div class="right"><a href="../getting-started/config.html"><span class="label">Next: </span><span class="title">Configuration</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -8,28 +8,47 @@
         "slug": "index"
       },
       {
-        "title": "Installation",
-        "source": "md-docs/install.md",
-        "url": "install.html",
-        "slug": "install",
-        "headings": [
+        "title": "Getting started",
+        "sections": [
           {
             "title": "Installation",
-            "depth": 2,
-            "id": "installation"
-          }
-        ]
-      },
-      {
-        "title": "Project Structure",
-        "source": "md-docs/files.md",
-        "url": "files.html",
-        "slug": "files",
-        "headings": [
+            "source": "md-docs/getting-started/install.md",
+            "url": "getting-started/install.html",
+            "slug": "getting-startedinstall",
+            "headings": [
+              {
+                "title": "Manual",
+                "depth": 3,
+                "id": "manual"
+              },
+              {
+                "title": "Docker & Docker-Compose",
+                "depth": 3,
+                "id": "docker-and-docker-compose"
+              },
+              {
+                "title": "DigitalOcean LEMP",
+                "depth": 3,
+                "id": "digitalocean-lemp"
+              },
+              {
+                "title": "DigitalOcean Docker",
+                "depth": 3,
+                "id": "digitalocean-docker"
+              }
+            ]
+          },
           {
-            "title": "Project File Structure",
-            "depth": 2,
-            "id": "project-file-structure",
+            "title": "Configuration",
+            "source": "md-docs/getting-started/config.md",
+            "url": "getting-started/config.html",
+            "slug": "getting-startedconfig"
+          },
+          {
+            "title": "Project Structure",
+            "source": "md-docs/getting-started/files.md",
+            "url": "getting-started/files.html",
+            "slug": "getting-startedfiles",
             "headings": [
               {
                 "title": "Directories",
@@ -42,14 +61,120 @@
                 "id": "files"
               }
             ]
+          },
+          {
+            "title": "Building",
+            "source": "md-docs/getting-started/build.md",
+            "url": "getting-started/build.html",
+            "slug": "getting-startedbuild"
+          },
+          {
+            "title": "Deployment",
+            "source": "md-docs/getting-started/deploy.md",
+            "url": "getting-started/deploy.html",
+            "slug": "getting-starteddeploy",
+            "headings": [
+              {
+                "title": "Microsoft Azure",
+                "depth": 3,
+                "id": "microsoft-azure"
+              },
+              {
+                "title": "AWS Elastic Beanstalk",
+                "depth": 3,
+                "id": "aws-elastic-beanstalk"
+              },
+              {
+                "title": "Google Cloud",
+                "depth": 3,
+                "id": "google-cloud"
+              },
+              {
+                "title": "Heroku",
+                "depth": 3,
+                "id": "heroku"
+              }
+            ]
           }
         ]
       },
       {
-        "title": "Contribute",
-        "source": "md-docs/contribute.md",
-        "url": "contribute.html",
-        "slug": "contribute"
+        "title": "Architecture",
+        "sections": [
+          {
+            "title": "Overview",
+            "source": "md-docs/architecture/overview.md",
+            "url": "architecture/overview.html",
+            "slug": "architectureoverview"
+          }
+        ]
+      },
+      {
+        "title": "Packages",
+        "sections": [
+          {
+            "title": "Index",
+            "source": "md-docs/packages/index.md",
+            "url": "packages/index.html",
+            "slug": "packages"
+          }
+        ]
+      },
+      {
+        "title": "API Docs",
+        "sections": [
+          {
+            "title": "v1.0",
+            "sections": [
+              {
+                "title": "Bot",
+                "source": "md-docs/api/v1/bot.md",
+                "url": "api/v1/bot.html",
+                "slug": "apiv1bot"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Reference",
+        "sections": [
+          {
+            "title": "Index",
+            "source": "md-docs/reference/index.md",
+            "url": "reference/index.html",
+            "slug": "reference"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "sections": [
+          {
+            "title": "Contribute",
+            "source": "md-docs/support/contribute.md",
+            "url": "support/contribute.html",
+            "slug": "supportcontribute",
+            "headings": [
+              {
+                "title": "Code Development",
+                "depth": 3,
+                "id": "code-development"
+              },
+              {
+                "title": "Documentation",
+                "depth": 3,
+                "id": "documentation"
+              }
+            ]
+          },
+          {
+            "title": "Donate",
+            "source": "md-docs/support/donate.md",
+            "url": "support/donate.html",
+            "slug": "supportdonate"
+          }
+        ]
       }
     ]
   },
@@ -60,56 +185,154 @@
       "pageTitle": "eHOSP Services",
       "slug": "index"
     },
-    "install.html": {
-      "source": "md-docs/install.md",
+    "getting-started/install.html": {
+      "source": "md-docs/getting-started/install.md",
       "title": "Installation - eHOSP Services",
       "pageTitle": "Installation",
-      "slug": "install",
+      "slug": "getting-startedinstall",
       "headings": [
         {
-          "title": "Installation",
-          "depth": 2,
-          "id": "installation"
+          "title": "Manual",
+          "depth": 3,
+          "id": "manual"
+        },
+        {
+          "title": "Docker & Docker-Compose",
+          "depth": 3,
+          "id": "docker-and-docker-compose"
+        },
+        {
+          "title": "DigitalOcean LEMP",
+          "depth": 3,
+          "id": "digitalocean-lemp"
+        },
+        {
+          "title": "DigitalOcean Docker",
+          "depth": 3,
+          "id": "digitalocean-docker"
         }
       ]
     },
-    "files.html": {
-      "source": "md-docs/files.md",
+    "getting-started/config.html": {
+      "source": "md-docs/getting-started/config.md",
+      "title": "Configuration - eHOSP Services",
+      "pageTitle": "Configuration",
+      "slug": "getting-startedconfig"
+    },
+    "getting-started/files.html": {
+      "source": "md-docs/getting-started/files.md",
       "title": "Project Structure - eHOSP Services",
       "pageTitle": "Project Structure",
-      "slug": "files",
+      "slug": "getting-startedfiles",
       "headings": [
         {
-          "title": "Project File Structure",
-          "depth": 2,
-          "id": "project-file-structure",
-          "headings": [
-            {
-              "title": "Directories",
-              "depth": 3,
-              "id": "directories"
-            },
-            {
-              "title": "Files",
-              "depth": 3,
-              "id": "files"
-            }
-          ]
+          "title": "Directories",
+          "depth": 3,
+          "id": "directories"
+        },
+        {
+          "title": "Files",
+          "depth": 3,
+          "id": "files"
         }
       ]
     },
-    "contribute.html": {
-      "source": "md-docs/contribute.md",
+    "getting-started/build.html": {
+      "source": "md-docs/getting-started/build.md",
+      "title": "Building - eHOSP Services",
+      "pageTitle": "Building",
+      "slug": "getting-startedbuild"
+    },
+    "getting-started/deploy.html": {
+      "source": "md-docs/getting-started/deploy.md",
+      "title": "Deployment - eHOSP Services",
+      "pageTitle": "Deployment",
+      "slug": "getting-starteddeploy",
+      "headings": [
+        {
+          "title": "Microsoft Azure",
+          "depth": 3,
+          "id": "microsoft-azure"
+        },
+        {
+          "title": "AWS Elastic Beanstalk",
+          "depth": 3,
+          "id": "aws-elastic-beanstalk"
+        },
+        {
+          "title": "Google Cloud",
+          "depth": 3,
+          "id": "google-cloud"
+        },
+        {
+          "title": "Heroku",
+          "depth": 3,
+          "id": "heroku"
+        }
+      ]
+    },
+    "architecture/overview.html": {
+      "source": "md-docs/architecture/overview.md",
+      "title": "Overview - eHOSP Services",
+      "pageTitle": "Overview",
+      "slug": "architectureoverview"
+    },
+    "packages/index.html": {
+      "source": "md-docs/packages/index.md",
+      "title": "Index - eHOSP Services",
+      "pageTitle": "Index",
+      "slug": "packages"
+    },
+    "api/v1/bot.html": {
+      "source": "md-docs/api/v1/bot.md",
+      "title": "Bot - eHOSP Services",
+      "pageTitle": "Bot",
+      "slug": "apiv1bot"
+    },
+    "reference/index.html": {
+      "source": "md-docs/reference/index.md",
+      "title": "Index - eHOSP Services",
+      "pageTitle": "Index",
+      "slug": "reference"
+    },
+    "support/contribute.html": {
+      "source": "md-docs/support/contribute.md",
       "title": "Contribute - eHOSP Services",
       "pageTitle": "Contribute",
-      "slug": "contribute"
+      "slug": "supportcontribute",
+      "headings": [
+        {
+          "title": "Code Development",
+          "depth": 3,
+          "id": "code-development"
+        },
+        {
+          "title": "Documentation",
+          "depth": 3,
+          "id": "documentation"
+        }
+      ]
+    },
+    "support/donate.html": {
+      "source": "md-docs/support/donate.md",
+      "title": "Donate - eHOSP Services",
+      "pageTitle": "Donate",
+      "slug": "supportdonate"
     }
   },
   "sources": {
     "md-docs/overview.md": "index.html",
-    "md-docs/install.md": "install.html",
-    "md-docs/files.md": "files.html",
-    "md-docs/contribute.md": "contribute.html",
+    "md-docs/getting-started/install.md": "getting-started/install.html",
+    "md-docs/getting-started/config.md": "getting-started/config.html",
+    "md-docs/getting-started/files.md": "getting-started/files.html",
+    "md-docs/getting-started/build.md": "getting-started/build.html",
+    "md-docs/getting-started/deploy.md": "getting-started/deploy.html",
+    "md-docs/architecture/overview.md": "architecture/overview.html",
+    "md-docs/packages/index.md": "packages/index.html",
+    "md-docs/api/v1/bot.md": "api/v1/bot.html",
+    "md-docs/reference/index.md": "reference/index.html",
+    "md-docs/support/contribute.md": "support/contribute.html",
+    "md-docs/support/donate.md": "support/donate.html",
     "md-docs/style.css": "style.css"
   }
 }
