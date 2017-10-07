@@ -15,6 +15,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.markdown-body h1, 
+.markdown-body h2 {
+  color: #00CB96;
+}
+
+.markdown-body h3 {
+  color: #4BAED8;
+}
+
+
 .markdown-body code:not([class]) {
   color: #27a5a5;
 }
