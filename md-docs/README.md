@@ -17,6 +17,10 @@ Table of Contents
         - [Bot](api/v1/bot.md)
 * Reference
     - [Index](reference/index.md)
+* Project Info
+    - [Release Notes](info/release.md)
+    - [Changelog](info/changelog.md)
+    - [License](info/license.md)
 * Support
     - [Contribute](support/contribute.md)
     - [Donate](support/donate.md)

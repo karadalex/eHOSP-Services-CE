@@ -148,6 +148,29 @@
         ]
       },
       {
+        "title": "Project Info",
+        "sections": [
+          {
+            "title": "Release Notes",
+            "source": "md-docs/info/release.md",
+            "url": "info/release.html",
+            "slug": "inforelease"
+          },
+          {
+            "title": "Changelog",
+            "source": "md-docs/info/changelog.md",
+            "url": "info/changelog.html",
+            "slug": "infochangelog"
+          },
+          {
+            "title": "License",
+            "source": "md-docs/info/license.md",
+            "url": "info/license.html",
+            "slug": "infolicense"
+          }
+        ]
+      },
+      {
         "title": "Support",
         "sections": [
           {
@@ -295,6 +318,24 @@
       "pageTitle": "Index",
       "slug": "reference"
     },
+    "info/release.html": {
+      "source": "md-docs/info/release.md",
+      "title": "Release Notes - eHOSP Services",
+      "pageTitle": "Release Notes",
+      "slug": "inforelease"
+    },
+    "info/changelog.html": {
+      "source": "md-docs/info/changelog.md",
+      "title": "Changelog - eHOSP Services",
+      "pageTitle": "Changelog",
+      "slug": "infochangelog"
+    },
+    "info/license.html": {
+      "source": "md-docs/info/license.md",
+      "title": "License - eHOSP Services",
+      "pageTitle": "License",
+      "slug": "infolicense"
+    },
     "support/contribute.html": {
       "source": "md-docs/support/contribute.md",
       "title": "Contribute - eHOSP Services",
@@ -331,6 +372,9 @@
     "md-docs/packages/index.md": "packages/index.html",
     "md-docs/api/v1/bot.md": "api/v1/bot.html",
     "md-docs/reference/index.md": "reference/index.html",
+    "md-docs/info/release.md": "info/release.html",
+    "md-docs/info/changelog.md": "info/changelog.html",
+    "md-docs/info/license.md": "info/license.html",
     "md-docs/support/contribute.md": "support/contribute.html",
     "md-docs/support/donate.md": "support/donate.html",
     "md-docs/style.css": "style.css"
