@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div id="welcome-background"></div>
+<div class="container" id="welcome-page">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="main">
@@ -10,7 +11,7 @@
                         {{ session('status') }}
                     </div>
 				@endif
-    	        <h1 style="margin-bottom: 70px"> @lang('titles.Welcome to eHOSP') </h1>
+    	        <h1 id="welcome" style="margin-bottom: 70px"> @lang('titles.Welcome to eHOSP') </h1>
     	        <p>
     				Welcome to eHOSP, the hospital on the cloud,
     				a platform for e-health and e-medicine!

@@ -13,11 +13,12 @@
 }
 
 .navbar-default {
-    background-color: #cccccc;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .navbar-default .navbar-nav li a {
-    color: #2bb673;
+    color: #fff;
 }
 
 .navbar-default .navbar-nav li a:hover {

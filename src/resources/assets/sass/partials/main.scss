@@ -6,7 +6,7 @@ html {
 
 body {
     background-color: #ebebeb;
-    margin-bottom: 250px;
+    margin-bottom: 500px;
 }
 
 * {
@@ -44,7 +44,7 @@ a.services {
     text-align: center;
     display: inline-block;
     font-size: 28px;
-    margin: 15px 2px;
+    margin: 50px 2px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -210,4 +210,22 @@ img.small-qr {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+#welcome-background {
+    background: #49C097; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #49C097, #51A9D1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #49C097, #51A9D1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #49C097, #51A9D1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #49C097, #51A9D1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+h1#welcome,
+#welcome-page {
+    color: #fff;
 }
