@@ -102,7 +102,28 @@
         </div>
         <div class="markdown-body"><h1 id="installation">Installation</h1>
 <h3 id="manual">Manual</h3>
+<p>Requirements:</p>
+<ol>
+<li>PHP version 7.0 or later</li>
+<li>Composer package manager</li>
+<li>NodeJS version 8.0 or later</li>
+<li>YARN (recommended) or NPM</li>
+</ol>
+<pre><code class="lang-sh">git <span class="pl-c1">clone</span> https://github.com/ehosp/eHOSP-Services-CE.git ehosp
+<span class="pl-c1">cd</span> ehosp
+composer global require <span class="pl-s">&quot;laravel/installer&quot;</span>
+composer install
+yarn install
+</code></pre>
 <h3 id="docker-and-docker-compose">Docker &amp; Docker-Compose</h3>
+<p>Requirements:</p>
+<ol>
+<li>Docker</li>
+<li>Docker-Compose</li>
+</ol>
+<p>To run the containers in development mode simply run</p>
+<pre><code class="lang-sh">docker-compose up <span class="hljs-_">-d</span> --file docker-compose.dev.yml
+</code></pre>
 <hr>
 <h3 id="digitalocean-lemp">DigitalOcean LEMP</h3>
 <p>Follow these steps if the development team is big and across different timezones.</p>
@@ -111,9 +132,9 @@
 <li>LEMP environment</li>
 <li>PHP &gt;=5.6.4</li>
 </ul>
-<pre><code>apt-get update
+<pre><code class="lang-sh">apt-get update
 apt-get install git node
-composer global require &quot;laravel/installer&quot;
+composer global require <span class="pl-s">&quot;laravel/installer&quot;</span>
 npm install
 composer install
 gulp --production
