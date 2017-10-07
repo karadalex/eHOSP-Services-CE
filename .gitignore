@@ -30,4 +30,10 @@ composer.phar
 
 # Ignore Docker
 docker/mysql/storage
+docker/mysql/logs
 docker/redis/storage
+docker/dev/jenkins/storage
+docker/dev/jenkins/logs
+docker/dev/mysql/storage
+docker/dev/mysql/logs
+docker/dev/redis/storage
