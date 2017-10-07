@@ -10,6 +10,8 @@ services:
             - ./docker/mysql/storage:/var/lib/mysql
             # - ./docker/mysql/conf.d:/etc/mysql/conf.d
             - ./docker/mysql/logs:/var/log/mysql
+        networks: 
+            - net
     redis:
         build: ./docker/redis
         restart: unless-stopped
@@ -19,6 +21,8 @@ services:
         volumes:
             - ./docker/redis/storage:/data
             - ./docker/redis/redis.conf:/usr/local/etc/redis/redis.conf
+        networks: 
+            - net
     web:
         build: .
         depends_on:
@@ -27,8 +31,14 @@ services:
         container_name: web
         restart: unless-stopped
         env_file:
-            - ./.env.staging
+            - ./src/.env.staging
         ports:
             - 8888:80
         volumes:
-            - .:/var/www
+            - ./src:/var/www
+        networks: 
+            - net
+
+networks: 
+    net:
+        driver: "bridge"
