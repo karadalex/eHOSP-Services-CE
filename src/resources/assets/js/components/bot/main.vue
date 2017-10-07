@@ -1,6 +1,6 @@
 <template>
     <div id="bot">
-        <!-- <div class="col-xs-12">
+        <div class="col-xs-12">
             <div class="input-group">
                 <input v-model="messageToSend" type="text" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
@@ -10,9 +10,9 @@
         </div>
         <div class="col-xs-12">
             <div id="BotResponseArea"></div>
-        </div> -->
-        <div id="my-botui-app">
-            <bot-ui></botui>
+        </div>
+        <div id="hospbot-ui">
+            <bot-ui></bot-ui>
         </div>
     </div>
 </template>
