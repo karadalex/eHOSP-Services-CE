@@ -17,6 +17,7 @@
         "tcg/voyager": "^1.0"
     },
     "require-dev": {
+        "behat/behat": "^3.4",
         "codeclimate/php-test-reporter": "^0.4.4",
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
